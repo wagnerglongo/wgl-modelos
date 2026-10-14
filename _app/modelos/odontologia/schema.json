@@ -1,0 +1,110 @@
+{
+  "nome": "Odontologia",
+  "descricao": "Para consultório ou clínica odontológica: seletor \"onde está incomodando\" (a pessoa toca no dente, escolhe o que sente e a mensagem sai pronta no WhatsApp), tratamentos, primeira consulta, equipe com CRO e convênios. Segue as regras de publicidade do CFO: sem preço, sem forma de pagamento e sem promessa de resultado.",
+  "nichos": "Dentistas, consultórios e clínicas odontológicas",
+  "ordem": 5,
+  "ocultar_comuns": ["depoimentos"],
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "ajuda": "Pela regra do CFO, não use preço, forma de pagamento, promoção, \"o melhor\" nem promessa de resultado.",
+      "campos": [
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Serviço e bairro ajudam no Google. Ex.: Dentista em Perdizes para a família toda"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area", "ajuda": "Como é o atendimento. Ex.: Consultas com hora marcada e plano de tratamento por escrito antes de começar."},
+        {"chave": "hero.fatos", "rotulo": "Informações rápidas (uma por linha)", "tipo": "linhas", "ajuda": "Até 3. Ex.: Atendimento com hora marcada / Acessível para cadeirantes"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto", "ajuda": "Ex.: Agendar consulta"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "seletor",
+      "titulo": "Seletor \"onde está incomodando\"",
+      "ajuda": "Aparece ao lado do título: a pessoa toca no dente, escolhe o motivo e envia. A mensagem chega com o número do dente (padrão FDI). Nada é gravado no site.",
+      "campos": [
+        {"chave": "seletor.esconder", "rotulo": "Esconder o seletor", "tipo": "check"},
+        {"chave": "seletor.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Ex.: Onde está incomodando?"},
+        {"chave": "seletor.texto", "rotulo": "Texto", "tipo": "texto"},
+        {"chave": "seletor.queixas", "rotulo": "Motivos (um por linha)", "tipo": "linhas", "ajuda": "Vazio = Dor, Sensibilidade, Dente quebrado, Gengiva sangrando, Prótese ou aparelho solto, Estética, Check-up."}
+      ]
+    },
+    {
+      "id": "tratamentos",
+      "titulo": "Tratamentos",
+      "campos": [
+        {"chave": "tratamentos_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Tratamentos"},
+        {"chave": "tratamentos_intro", "rotulo": "Texto ao lado do título", "tipo": "area"},
+        {"chave": "tratamentos", "rotulo": "Tratamentos", "tipo": "lista", "item": "Tratamento", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Implantes e próteses"},
+          {"chave": "descricao", "rotulo": "O que é", "tipo": "area"},
+          {"chave": "quando", "rotulo": "Procure quando", "tipo": "texto", "ajuda": "Ex.: perdeu um dente ou a prótese está solta"}
+        ]}
+      ]
+    },
+    {
+      "id": "primeira",
+      "titulo": "Primeira consulta",
+      "campos": [
+        {"chave": "passos_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Como é a primeira consulta"},
+        {"chave": "passos", "rotulo": "Etapas", "tipo": "lista", "item": "Etapa", "campos": [
+          {"chave": "titulo", "rotulo": "Título", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Texto", "tipo": "texto"}
+        ]},
+        {"chave": "passos_nota", "rotulo": "Nota abaixo das etapas", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "equipe",
+      "titulo": "Equipe",
+      "ajuda": "Nome e número do CRO de cada profissional são obrigatórios na publicidade odontológica.",
+      "campos": [
+        {"chave": "equipe_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Quem vai atender você"},
+        {"chave": "equipe", "rotulo": "Profissionais", "tipo": "lista", "item": "Profissional", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Dra. Beatriz Arantes"},
+          {"chave": "profissao", "rotulo": "Profissão", "tipo": "texto", "ajuda": "Vazio = Cirurgião-dentista. Ex.: Cirurgiã-dentista"},
+          {"chave": "area", "rotulo": "Área", "tipo": "texto", "ajuda": "Só escreva \"especialista\" se o título estiver registrado no CRO. Ex.: especialista em Ortodontia"},
+          {"chave": "registro", "rotulo": "Número do CRO", "tipo": "texto", "ajuda": "Ex.: CRO-SP 123456"},
+          {"chave": "bio", "rotulo": "Apresentação curta", "tipo": "area"},
+          {"chave": "foto", "rotulo": "Foto (nome do arquivo enviado em Fotos)", "tipo": "texto", "ajuda": "Sem foto, aparecem as iniciais."}
+        ]}
+      ]
+    },
+    {
+      "id": "convenios",
+      "titulo": "Convênios",
+      "campos": [
+        {"chave": "convenios_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "convenios", "rotulo": "Convênios aceitos (um por linha)", "tipo": "linhas"},
+        {"chave": "convenios_nota", "rotulo": "Nota", "tipo": "texto", "ajuda": "Ex.: Também atendemos particular. Pergunte pelo WhatsApp se o seu plano está na lista."}
+      ]
+    },
+    {
+      "id": "registro",
+      "titulo": "Registro no CRO (rodapé)",
+      "ajuda": "Clínica (pessoa jurídica) precisa mostrar o responsável técnico e o número de inscrição no CRO.",
+      "campos": [
+        {"chave": "clinica.responsavel", "rotulo": "Responsável técnico", "tipo": "texto", "ajuda": "Ex.: Dra. Beatriz Arantes, CRO-SP 123456"},
+        {"chave": "clinica.registro", "rotulo": "Inscrição da clínica", "tipo": "texto", "ajuda": "Ex.: Clínica inscrita no CRO-SP sob o nº 12345 (EPAO)"}
+      ]
+    },
+    {
+      "id": "medicao",
+      "titulo": "Medição de cliques (Google)",
+      "campos": [
+        {"chave": "gtm_id", "rotulo": "ID do Google Tag Manager", "tipo": "texto", "ajuda": "Ex.: GTM-ABC1234. Só carrega depois que o visitante aceita os cookies. Evento enviado: clique_whatsapp (sem o dente nem o motivo, que são dados de saúde)."}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal (botões e dente escolhido)", "tipo": "cor", "padrao": "#b8304f"},
+        {"chave": "cores.gengiva", "rotulo": "Cor clara (gengiva e detalhes)", "tipo": "cor", "padrao": "#f8dfe5"},
+        {"chave": "cores.escuro", "rotulo": "Cor escura (rodapé)", "tipo": "cor", "padrao": "#172338"},
+        {"chave": "cores.tinta", "rotulo": "Cor dos textos", "tipo": "cor", "padrao": "#172338"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#eef3f6"}
+      ]
+    }
+  ]
+}

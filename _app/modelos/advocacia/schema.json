@@ -2,7 +2,7 @@
   "nome": "Advocacia",
   "descricao": "Para advogada ou advogado com escritório próprio: áreas de atuação em abas de pasta, apresentação com OAB, etapas do atendimento e formulário que abre no WhatsApp. Segue o Provimento 205/2021 da OAB: sem preço, sem promessa de resultado e sem depoimentos.",
   "nichos": "Advogadas e advogados, escritórios pequenos",
-  "ordem": 7,
+  "ordem": 8,
   "ocultar_comuns": ["sobre", "depoimentos"],
   "secoes": [
     {

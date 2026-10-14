@@ -2,7 +2,7 @@
   "nome": "Pet shop e veterinário",
   "descricao": "Visual alegre, simulador de banho por porte, tabela de preços, pacotes e leva e traz.",
   "nichos": "Pet shops, banho e tosa, clínicas veterinárias",
-  "ordem": 5,
+  "ordem": 6,
   "secoes": [
     {
       "id": "abertura",

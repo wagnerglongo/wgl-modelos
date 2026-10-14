@@ -2,7 +2,7 @@
   "nome": "Academia e estúdio",
   "descricao": "Visual esportivo, aulas de hoje automáticas, grade da semana, modalidades e planos.",
   "nichos": "Academias de bairro, estúdios funcionais, pilates, crossfit, lutas, dança",
-  "ordem": 6,
+  "ordem": 7,
   "secoes": [
     {
       "id": "abertura",

@@ -21,11 +21,13 @@ _app/dados/              DADOS DO SERVIDOR (fora do Git, ver abaixo)
 demo-*/                  demonstrações geradas a partir de _app/dados/fichas/demo-*.json
 ```
 
-Modelos: beleza, serviços técnicos, alimentação, saúde e bem-estar, pet shop, academia, advocacia e profissional liberal.
+Modelos: beleza, serviços técnicos, alimentação, saúde e bem-estar, odontologia, pet shop, academia, advocacia e profissional liberal.
 
 O modelo **advocacia** (`_app/modelos/advocacia/`) segue o Provimento 205/2021 da OAB: sem preço, sem promessa de resultado e sem depoimentos, com o número da OAB visível. Tem áreas de atuação em abas, formulário que monta a mensagem e abre no WhatsApp (nada é gravado), eventos `clique_whatsapp` e `envio_formulario` para o Google Tag Manager, que só carrega depois do aceite de cookies. Demonstração: `demo-advogada/`.
 
-Um modelo pode esconder seções comuns que não servem ao nicho com `"ocultar_comuns"` no `schema.json` (e `$M['ocultar']` no `modelo.php`), e pode incluir um bloco antes do endereço em `$B['contato']`.
+O modelo **odontologia** (`_app/modelos/odontologia/`) abre com o seletor "onde está incomodando": a pessoa toca no dente numa arcada desenhada em vista de espelho, escolhe o motivo e a mensagem sai pronta no WhatsApp com o número do dente (padrão FDI). Nada é gravado e o site não dá diagnóstico. Segue as regras de publicidade do CFO (Código de Ética Odontológica e Resolução CFO 196/2019): sem preço, sem forma de pagamento, sem promoção e sem depoimentos, com nome e CRO de cada profissional e, no rodapé, o responsável técnico e a inscrição da clínica. O evento `clique_whatsapp` vai para o Tag Manager sem o dente nem o motivo (dados de saúde). Demonstração: `demo-dentista/`.
+
+Um modelo pode esconder seções comuns que não servem ao nicho com `"ocultar_comuns"` no `schema.json` (e `$M['ocultar']` no `modelo.php`), pode incluir um bloco antes do endereço em `$B['contato']` e uma linha no rodapé em `$B['rodape']`.
 
 ## O que fica fora do Git
 

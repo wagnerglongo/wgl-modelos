@@ -107,7 +107,7 @@ function renderizar(array $f, string $modo = 'modelos'): array
 
     // O modelo preenche $M (metadados) e $B (blocos de HTML/CSS)
     $M = ['fontes' => '', 'tipo_schema' => 'LocalBusiness', 'cor_tema' => '#111111', 'favicon' => ['#111111', '#ffffff'], 'menu' => []];
-    $B = ['tokens' => '', 'estilo' => '', 'marca' => '', 'hero' => '', 'principal' => '', 'contato' => '', 'script' => ''];
+    $B = ['tokens' => '', 'estilo' => '', 'marca' => '', 'hero' => '', 'principal' => '', 'contato' => '', 'rodape' => '', 'script' => ''];
     include $arqModelo;
 
     [$jsonNeg, $jsonFaq] = montar_jsonld($f, $M, $url);

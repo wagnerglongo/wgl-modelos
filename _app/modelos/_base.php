@@ -170,6 +170,7 @@ $linkWgl = $wglZap ? 'https://wa.me/' . $wglZap . '?text=' . rawurlencode('Olá!
   <div class="embrulho rodape-linha">
     <p><strong><?= e($f['nome']) ?></strong><?php if ($v('documento')): ?> · <?= e($v('documento')) ?><?php endif; ?><br><?= e(trim(($end['cidade'] ?? '') . ' – ' . ($end['uf'] ?? ''), ' –')) ?> · © <?= $ano ?></p>
     <p class="rodape-links"><a href="politica-de-privacidade.html">Política de privacidade</a><a href="<?= e($wglSite) ?>" rel="noopener">Site por WGL Software</a></p>
+    <?= $B['rodape'] ?? '' ?>
   </div>
 </footer>
 

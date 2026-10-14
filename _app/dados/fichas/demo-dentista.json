@@ -1,0 +1,207 @@
+{
+    "modelo": "odontologia",
+    "slug": "demo-dentista",
+    "situacao": "demonstracao",
+    "nome": "Arco Odontologia",
+    "nome_curto": "Arco Odontologia",
+    "faixa_preco": "",
+    "documento": "",
+    "dominio": "",
+    "whatsapp": "5500000000000",
+    "telefone_exibicao": "(11) 0000-0000",
+    "instagram": "",
+    "email": "",
+    "mensagem_padrao": "Olá! Vim pelo site da Arco Odontologia e gostaria de agendar uma consulta.",
+    "cta_topo": "Agendar",
+    "cta_final": "Agendar pelo WhatsApp",
+    "seo": {
+        "titulo": "Arco Odontologia | Dentista em Perdizes, São Paulo",
+        "descricao": "Clínica odontológica em Perdizes, São Paulo. Limpeza, restaurações, canal, ortodontia, implantes e atendimento infantil, com hora marcada. Agende pelo WhatsApp."
+    },
+    "hero": {
+        "titulo": "Dentista em Perdizes para a família toda",
+        "subtitulo": "Consultas com hora marcada, cada etapa explicada antes de acontecer e o plano de tratamento por escrito para você decidir com calma.",
+        "fatos": [
+            "Atendimento com hora marcada",
+            "Encaixe de urgência em horário comercial",
+            "Acessível para cadeirantes"
+        ],
+        "cta": "Agendar consulta",
+        "cta_msg": "Olá! Vim pelo site e gostaria de agendar uma consulta."
+    },
+    "seletor": {
+        "esconder": false,
+        "titulo": "Onde está incomodando?",
+        "texto": "Toque no dente e diga o que está sentindo. A mensagem chega pronta no WhatsApp da clínica.",
+        "queixas": []
+    },
+    "tratamentos_titulo": "Tratamentos",
+    "tratamentos_intro": "Do check-up ao implante, com a mesma equipe acompanhando você do começo ao fim.",
+    "tratamentos": [
+        {
+            "nome": "Avaliação e limpeza",
+            "descricao": "Exame completo da boca, remoção de tártaro e orientação de escovação e fio dental.",
+            "quando": "faz mais de seis meses da última consulta ou a gengiva sangra ao escovar"
+        },
+        {
+            "nome": "Restaurações",
+            "descricao": "Recuperação de dentes com cárie, lascados ou com restaurações antigas, na cor do dente.",
+            "quando": "um dente lascou, ficou sensível ao doce ou prende comida"
+        },
+        {
+            "nome": "Tratamento de canal",
+            "descricao": "Tratamento da polpa do dente para preservá-lo, com anestesia e acompanhamento por radiografia.",
+            "quando": "a dor aparece sozinha, dura mais de alguns minutos ou piora à noite"
+        },
+        {
+            "nome": "Ortodontia",
+            "descricao": "Aparelho fixo, estético ou alinhadores transparentes, com manutenção marcada.",
+            "quando": "os dentes estão desalinhados ou a mordida não encaixa"
+        },
+        {
+            "nome": "Implantes e próteses",
+            "descricao": "Reposição de dentes perdidos com implante, coroa ou prótese, planejada com exames de imagem.",
+            "quando": "perdeu um dente ou a prótese está solta ou machucando"
+        },
+        {
+            "nome": "Clareamento",
+            "descricao": "Clareamento no consultório ou com moldeira para uso em casa, sempre depois da avaliação.",
+            "quando": "quer dentes mais claros e a avaliação mostrou que a boca está saudável"
+        },
+        {
+            "nome": "Odontopediatria",
+            "descricao": "Atendimento de bebês e crianças, com tempo para a criança se acostumar à cadeira.",
+            "quando": "nasceu o primeiro dentinho ou a criança nunca foi ao dentista"
+        }
+    ],
+    "passos_titulo": "Como é a primeira consulta",
+    "passos": [
+        {
+            "titulo": "Agende pelo WhatsApp",
+            "texto": "Escolha o dia e o horário que forem melhores para você."
+        },
+        {
+            "titulo": "Conversa e exame",
+            "texto": "Você conta o que sente, e o exame clínico mostra o que está acontecendo."
+        },
+        {
+            "titulo": "Plano por escrito",
+            "texto": "Você recebe o tratamento proposto, as etapas e o tempo previsto."
+        },
+        {
+            "titulo": "Tratamento com hora marcada",
+            "texto": "As sessões ficam marcadas e você recebe o lembrete no WhatsApp."
+        }
+    ],
+    "passos_nota": "Traga um documento com foto, a carteirinha do convênio, se tiver, e os exames recentes, se tiver algum.",
+    "equipe_titulo": "Quem vai atender você",
+    "equipe": [
+        {
+            "nome": "Dra. Beatriz Arantes",
+            "profissao": "Cirurgiã-dentista",
+            "area": "implantes e próteses",
+            "registro": "CRO-SP 000000",
+            "bio": "Responsável técnica da clínica. Atende adultos que precisam repor dentes ou refazer próteses.",
+            "foto": ""
+        },
+        {
+            "nome": "Dr. Caio Nakamura",
+            "profissao": "Cirurgião-dentista",
+            "area": "ortodontia",
+            "registro": "CRO-SP 000000",
+            "bio": "Cuida dos aparelhos e alinhadores, de adolescentes a adultos.",
+            "foto": ""
+        },
+        {
+            "nome": "Dra. Lívia Prates",
+            "profissao": "Cirurgiã-dentista",
+            "area": "clínica geral e crianças",
+            "registro": "CRO-SP 000000",
+            "bio": "Faz as avaliações, limpezas e restaurações, e atende as crianças.",
+            "foto": ""
+        }
+    ],
+    "convenios_titulo": "Convênios aceitos",
+    "convenios": [
+        "Amil Dental",
+        "Bradesco Dental",
+        "OdontoPrev",
+        "SulAmérica Odonto",
+        "Porto Seguro Odonto"
+    ],
+    "convenios_nota": "Também atendemos particular. Se o seu plano não estiver na lista, pergunte pelo WhatsApp.",
+    "clinica": {
+        "responsavel": "Dra. Beatriz Arantes, CRO-SP 000000",
+        "registro": "Clínica inscrita no CRO-SP sob o nº 0000 (EPAO)"
+    },
+    "gtm_id": "",
+    "cores": {},
+    "diferenciais": [],
+    "sobre": {
+        "titulo": "A clínica",
+        "paragrafos": [
+            "A Arco Odontologia atende em Perdizes com três consultórios, sala de esterilização própria e equipe fixa: quem começa o seu tratamento é quem termina.",
+            "Antes de cada procedimento, a gente explica o que vai ser feito e por quê. Você só começa quando estiver de acordo com o plano."
+        ]
+    },
+    "faq": [
+        {
+            "pergunta": "Vocês atendem urgência?",
+            "resposta": "Sim, em horário comercial. Chame no WhatsApp contando o que está sentindo e encaixamos você assim que houver horário."
+        },
+        {
+            "pergunta": "Atendem o meu convênio?",
+            "resposta": "Veja a lista de convênios aceitos. Se o seu não estiver lá, pergunte pelo WhatsApp: também atendemos particular."
+        },
+        {
+            "pergunta": "Com que idade a criança deve ir ao dentista?",
+            "resposta": "A primeira consulta é recomendada quando nasce o primeiro dente, ou até o primeiro ano de vida."
+        },
+        {
+            "pergunta": "A clínica é acessível?",
+            "resposta": "Sim. A entrada é no térreo, sem degraus, e há banheiro adaptado."
+        }
+    ],
+    "fotos_titulo": "A clínica",
+    "fotos": [],
+    "depoimentos": [],
+    "local_titulo": "Como chegar",
+    "endereco": {
+        "rua": "Rua dos Ipês, 512",
+        "bairro": "Perdizes",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "cep": ""
+    },
+    "mapa_embed": "",
+    "horarios": [
+        {
+            "dias": "Segunda a sexta",
+            "schema": [
+                "seg",
+                "ter",
+                "qua",
+                "qui",
+                "sex"
+            ],
+            "abre": "08:00",
+            "fecha": "19:00"
+        },
+        {
+            "dias": "Sábado",
+            "schema": [
+                "sab"
+            ],
+            "abre": "08:00",
+            "fecha": "12:00"
+        },
+        {
+            "dias": "Domingo",
+            "fechado": true
+        }
+    ],
+    "horario_obs": "Estacionamento conveniado na esquina.",
+    "criado_em": "2026-10-14T19:30:00-03:00",
+    "previa_desde": "2026-10-14T19:30:00-03:00",
+    "atualizado_em": "2026-10-14T19:30:00-03:00"
+}
