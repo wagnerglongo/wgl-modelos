@@ -94,6 +94,7 @@ a{color:inherit}
 .filtros button[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:#fff}
 .grade{list-style:none;margin:0;padding:0;display:grid;gap:clamp(1.25rem,3vw,2rem);grid-template-columns:repeat(auto-fill,minmax(min(100%,21rem),1fr))}
 .site{display:grid;gap:.875rem;align-content:start}
+.site[hidden]{display:none}
 .janela{border-radius:10px;overflow:hidden;background:var(--superficie);border:1px solid var(--linha);box-shadow:0 18px 36px -26px rgba(19,32,26,.45);transition:transform .2s ease,box-shadow .2s ease}
 .site:hover .janela{transform:translateY(-3px);box-shadow:0 24px 44px -26px rgba(19,32,26,.55)}
 .janela-barra{display:flex;align-items:center;gap:.375rem;padding:.5rem .75rem;border-bottom:1px solid var(--linha);background:#f7f8f6}
