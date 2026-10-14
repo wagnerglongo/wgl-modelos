@@ -1,0 +1,183 @@
+{
+  "modelo": "alimentacao",
+  "slug": "demo-marmitaria",
+  "dominio": "",
+  "nome": "Panela de Barro Marmitaria",
+  "nome_curto": "Panela de Barro",
+  "tipo_schema": "Restaurant",
+  "culinaria": [
+    "Brasileira",
+    "Comida caseira"
+  ],
+  "faixa_preco": "R$ 20 – R$ 30",
+  "documento": "",
+  "whatsapp": "5500000000000",
+  "telefone_exibicao": "(11) 0000-0000",
+  "instagram": "",
+  "email": "",
+  "mensagem_padrao": "Olá! Vim pelo site da Panela de Barro e quero fazer um pedido.",
+  "cta_topo": "Pedir agora",
+  "cta_final": "Fazer pedido pelo WhatsApp",
+  "cores": {},
+  "seo": {
+    "titulo": "Panela de Barro | Marmitex e comida caseira no Centro de São Paulo",
+    "descricao": "Marmitex caseira com cardápio novo todo dia no Centro de São Paulo. Peça até 10h30 pelo WhatsApp e receba no almoço. Tamanhos a partir de R$ 20."
+  },
+  "hero": {
+    "rotulo": "Marmitaria · Centro de São Paulo",
+    "titulo": "Comida de casa,",
+    "titulo_destaque": "quentinha no seu almoço.",
+    "subtitulo": "Tempero caseiro e cardápio novo todo dia. Peça pelo WhatsApp de manhã e receba no trabalho ou em casa.",
+    "cta": "Fazer pedido",
+    "cta_msg": "Olá! Vim pelo site e quero fazer um pedido de hoje."
+  },
+  "cardapio_intro": "Todo prato acompanha arroz, feijão e salada. O dia de hoje aparece destacado.",
+  "cardapio": [
+    {
+      "dia": "Segunda",
+      "sigla": "seg",
+      "prato": "Frango assado com batata",
+      "acompanha": "Arroz, feijão, farofa e salada",
+      "opcao": "Omelete de legumes"
+    },
+    {
+      "dia": "Terça",
+      "sigla": "ter",
+      "prato": "Bife acebolado",
+      "acompanha": "Arroz, feijão, purê de batata e salada",
+      "opcao": "Frango grelhado"
+    },
+    {
+      "dia": "Quarta",
+      "sigla": "qua",
+      "prato": "Feijoada completa",
+      "acompanha": "Arroz, couve refogada, farofa e laranja",
+      "opcao": "Filé de frango à milanesa"
+    },
+    {
+      "dia": "Quinta",
+      "sigla": "qui",
+      "prato": "Strogonoff de frango",
+      "acompanha": "Arroz, batata palha e salada",
+      "opcao": "Carne moída com legumes"
+    },
+    {
+      "dia": "Sexta",
+      "sigla": "sex",
+      "prato": "Peixe empanado",
+      "acompanha": "Arroz, feijão, legumes no vapor e salada",
+      "opcao": "Parmegiana de frango"
+    }
+  ],
+  "cardapio_nota": "Sábado e domingo fechado. Pedidos para eventos e empresas com 2 dias de antecedência.",
+  "tamanhos_intro": "Embalagem de alumínio com tampa, que vai direto ao micro-ondas sem a tampa.",
+  "tamanhos": [
+    {
+      "sigla": "P",
+      "nome": "Marmita pequena",
+      "peso": "500 g",
+      "obs": "para quem come pouco",
+      "preco": 20
+    },
+    {
+      "sigla": "M",
+      "nome": "Marmita média",
+      "peso": "700 g",
+      "obs": "o almoço de sempre",
+      "preco": 24,
+      "popular": true
+    },
+    {
+      "sigla": "G",
+      "nome": "Marmita grande",
+      "peso": "900 g",
+      "obs": "para quem tem fome",
+      "preco": 28
+    }
+  ],
+  "extras": [
+    {
+      "nome": "Suco natural 500 ml",
+      "preco": 8
+    },
+    {
+      "nome": "Refrigerante lata",
+      "preco": 6
+    },
+    {
+      "nome": "Pudim",
+      "preco": 7
+    }
+  ],
+  "entrega": {
+    "pedido_ate": "10:30",
+    "dias": "segunda a sexta",
+    "janela": "11h às 13h30",
+    "taxa": 4,
+    "bairros": [
+      "República",
+      "Consolação",
+      "Bela Vista",
+      "Sé",
+      "Santa Cecília",
+      "Liberdade"
+    ],
+    "nota": "Outros bairros: consulte pelo WhatsApp. Empresas com 5 marmitas ou mais não pagam entrega."
+  },
+  "diferenciais": [],
+  "sobre": {
+    "titulo": "Quem cozinha",
+    "paragrafos": [
+      "A Panela de Barro é uma cozinha de família no Centro de São Paulo. Tudo é feito no dia, com tempero da casa e sem congelados.",
+      "Começamos entregando para os vizinhos do bairro e hoje atendemos escritórios e lojas da região todos os dias úteis."
+    ]
+  },
+  "faq": [
+    {
+      "pergunta": "Até que horas posso pedir?",
+      "resposta": "Até 10h30 para entrega no almoço do mesmo dia. Depois disso, consulte se ainda há marmitas."
+    },
+    {
+      "pergunta": "Vocês fazem pedidos para empresas?",
+      "resposta": "Sim. Para 5 marmitas ou mais a entrega é grátis, e fazemos fechamento semanal ou mensal com nota fiscal."
+    },
+    {
+      "pergunta": "Posso trocar um acompanhamento?",
+      "resposta": "Pode. É só avisar no pedido, por exemplo: sem feijão, com mais salada."
+    },
+    {
+      "pergunta": "Quais formas de pagamento vocês aceitam?",
+      "resposta": "Pix, dinheiro e cartão na entrega."
+    }
+  ],
+  "local_titulo": "Retirada no balcão",
+  "endereco": {
+    "rua": "Rua dos Ipês, 215",
+    "bairro": "Centro",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": ""
+  },
+  "horarios": [
+    {
+      "dias": "Segunda a sexta",
+      "schema": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex"
+      ],
+      "abre": "10:00",
+      "fecha": "14:00"
+    },
+    {
+      "dias": "Sábado e domingo",
+      "fechado": true
+    }
+  ],
+  "horario_obs": "Pedidos pelo WhatsApp a partir das 8h.",
+  "situacao": "demonstracao",
+  "fotos": [],
+  "depoimentos": []
+}

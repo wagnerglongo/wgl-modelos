@@ -1,0 +1,175 @@
+{
+  "nome": "Beleza",
+  "descricao": "Letreiro de barbearia, tabela de preços com botão Agendar em cada serviço.",
+  "nichos": "Barbearias, salões, manicures, estética",
+  "ordem": 1,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {
+          "chave": "hero.rotulo",
+          "rotulo": "Linha pequena acima do título",
+          "tipo": "texto",
+          "ajuda": "Ex.: Barbearia · Vila Arens, Jundiaí"
+        },
+        {
+          "chave": "hero.titulo",
+          "rotulo": "Título",
+          "tipo": "texto"
+        },
+        {
+          "chave": "hero.titulo_destaque",
+          "rotulo": "Final do título em destaque (outra cor)",
+          "tipo": "texto"
+        },
+        {
+          "chave": "hero.subtitulo",
+          "rotulo": "Subtítulo",
+          "tipo": "area"
+        },
+        {
+          "chave": "hero.cta",
+          "rotulo": "Texto do botão",
+          "tipo": "texto"
+        },
+        {
+          "chave": "hero.cta_msg",
+          "rotulo": "Mensagem do botão no WhatsApp",
+          "tipo": "texto"
+        },
+        {
+          "chave": "hero.nota",
+          "rotulo": "Nota abaixo dos horários",
+          "tipo": "texto",
+          "ajuda": "Ex.: Café por conta da casa."
+        },
+        {
+          "chave": "tipo_schema",
+          "rotulo": "Tipo de negócio para o Google",
+          "tipo": "selecao",
+          "opcoes": [
+            [
+              "HairSalon",
+              "Barbearia ou salão de cabelo"
+            ],
+            [
+              "BeautySalon",
+              "Salão de beleza"
+            ],
+            [
+              "NailSalon",
+              "Manicure e pedicure"
+            ],
+            [
+              "DaySpa",
+              "Estética e spa"
+            ],
+            [
+              "HealthAndBeautyBusiness",
+              "Outro"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "precos",
+      "titulo": "Serviços e preços",
+      "campos": [
+        {
+          "chave": "precos_titulo",
+          "rotulo": "Título da seção",
+          "tipo": "texto"
+        },
+        {
+          "chave": "precos_intro",
+          "rotulo": "Texto ao lado do título",
+          "tipo": "texto"
+        },
+        {
+          "chave": "grupos",
+          "rotulo": "Grupos de serviços (um por linha)",
+          "tipo": "linhas",
+          "ajuda": "Ex.: Cabelo / Barba e combos"
+        },
+        {
+          "chave": "servicos",
+          "rotulo": "Serviços",
+          "tipo": "lista",
+          "item": "Serviço",
+          "campos": [
+            {
+              "chave": "nome",
+              "rotulo": "Nome",
+              "tipo": "texto"
+            },
+            {
+              "chave": "grupo",
+              "rotulo": "Grupo (igual a um da lista acima)",
+              "tipo": "texto"
+            },
+            {
+              "chave": "preco",
+              "rotulo": "Preço (R$)",
+              "tipo": "numero"
+            },
+            {
+              "chave": "a_partir",
+              "rotulo": "Mostrar \"a partir de\"",
+              "tipo": "check"
+            },
+            {
+              "chave": "duracao",
+              "rotulo": "Duração",
+              "tipo": "texto",
+              "ajuda": "Ex.: 40 min"
+            },
+            {
+              "chave": "descricao",
+              "rotulo": "Descrição curta",
+              "tipo": "texto"
+            }
+          ]
+        },
+        {
+          "chave": "precos_nota",
+          "rotulo": "Observação abaixo dos preços",
+          "tipo": "texto"
+        }
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {
+          "chave": "cores.tinta",
+          "rotulo": "Cor escura (topo e textos)",
+          "tipo": "cor",
+          "padrao": "#16202b"
+        },
+        {
+          "chave": "cores.destaque",
+          "rotulo": "Cor de destaque (botões)",
+          "tipo": "cor",
+          "padrao": "#b3302a"
+        },
+        {
+          "chave": "cores.destaque_escuro",
+          "rotulo": "Destaque ao passar o mouse",
+          "tipo": "cor",
+          "padrao": "#962620"
+        },
+        {
+          "chave": "cores.fundo",
+          "rotulo": "Fundo",
+          "tipo": "cor",
+          "padrao": "#f3f3ef"
+        }
+      ]
+    }
+  ]
+}

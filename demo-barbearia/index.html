@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbearia Navalha &amp; Café | Corte e barba na Vila Madalena, São Paulo</title>
+<meta name="description" content="Barbearia na Vila Madalena, em São Paulo. Corte masculino, barba com toalha quente e combos, com café por conta da casa. Agende pelo WhatsApp.">
+<link rel="canonical" href="https://modelos.wglsoftware.com/demo-barbearia/">
+<meta name="theme-color" content="#16202b">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Barbearia Navalha &amp; Café">
+<meta property="og:title" content="Barbearia Navalha &amp; Café | Corte e barba na Vila Madalena, São Paulo">
+<meta property="og:description" content="Barbearia na Vila Madalena, em São Paulo. Corte masculino, barba com toalha quente e combos, com café por conta da casa. Agende pelo WhatsApp.">
+<meta property="og:url" content="https://modelos.wglsoftware.com/demo-barbearia/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2316202b%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%2736%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%20fill%3D%27%23efe9dc%27%3EN%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&amp;family=Big+Shoulders+Text:wght@700;800;900&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+/* Layout: faixa escura de letreiro no topo, tabela de preços com pontilhado de cardápio de parede */
+:root{
+  --fundo:#f3f3ef; --superficie:#ffffff; --tinta:#16202b; --tinta-suave:#4c5561; --linha:#d9d9d1;
+  --destaque:#b3302a; --cta:#b3302a; --cta-hover:#962620; --sobre-cta:#ffffff; --escuro:#16202b; --osso:#efe9dc;
+  --fonte-titulo:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --fonte-texto:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --fonte-util:"Big Shoulders Text","Arial Narrow",sans-serif;
+  --raio:6px; --raio-botao:4px; --topo-fundo:color-mix(in srgb,var(--fundo) 92%,transparent);
+}/* ===== Base comum a todos os modelos (usa os tokens definidos por cada nicho) ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:5rem;color-scheme:light}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--fonte-texto);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fonte-titulo);line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--foco,var(--destaque));outline-offset:3px;border-radius:4px}
+.embrulho{width:100%;max-width:var(--largura,72rem);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:var(--fundo);padding:.75rem 1rem;z-index:100}
+.pular:focus{left:1rem;top:1rem}
+
+/* barra de demonstração */
+.barra-demo{background:#16181d;color:#e9ebef;font:500 .8125rem/1.4 var(--fonte-texto)}
+.barra-demo .embrulho{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:.5rem}
+.barra-demo a{color:#c6f135;text-decoration:none;font-weight:600}
+.barra-demo a:hover{text-decoration:underline}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:20;background:var(--topo-fundo,var(--fundo));border-bottom:1px solid var(--linha);backdrop-filter:saturate(1.4) blur(8px)}
+.topo-linha{display:flex;align-items:center;gap:1rem;min-height:4rem}
+.marca{text-decoration:none;display:flex;align-items:center;gap:.5rem;margin-right:auto;min-width:0}
+.marca-nome{font-family:var(--fonte-titulo);font-weight:800;font-size:1.25rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{display:none;gap:1.5rem;font-weight:500;font-size:.9375rem}
+.menu a{text-decoration:none;color:var(--tinta-suave)}
+.menu a:hover{color:var(--tinta)}
+@media (min-width:62rem){.menu{display:flex}}
+
+/* botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.375rem;border-radius:var(--raio-botao,var(--raio));font:700 1rem/1.1 var(--fonte-texto);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.botao:hover{transform:translateY(-1px)}
+.botao svg{width:1.25rem;height:1.25rem;flex:none}
+.botao-cta{background:var(--cta);color:var(--sobre-cta)}
+.botao-cta:hover{background:var(--cta-hover,var(--cta))}
+.botao-contorno{border-color:currentColor;background:transparent}
+.botao-pequeno{min-height:2.5rem;padding:.5rem 1rem;font-size:.9375rem}
+@media (max-width:30rem){.topo .botao-pequeno span{display:none}.topo .botao-pequeno{padding:.5rem .75rem}}
+.link-seta{font-weight:700;text-underline-offset:.2em}
+.link-seta::after{content:" →"}
+
+/* seções */
+.secao{padding-block:clamp(3.5rem,8vw,6rem)}
+.titulo-secao{font-size:clamp(1.875rem,4.5vw,2.875rem);margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.rotulo{font:700 .8125rem/1.2 var(--fonte-util,var(--fonte-texto));letter-spacing:.1em;text-transform:uppercase;color:var(--destaque)}
+
+/* diferenciais */
+.diferenciais{list-style:none;padding:0;margin:0;display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.diferenciais li{background:var(--superficie);padding:1.5rem;display:grid;gap:.375rem;align-content:start}
+.diferenciais strong{font-family:var(--fonte-titulo);font-size:1.25rem;line-height:1.2}
+.diferenciais span{color:var(--tinta-suave)}
+
+/* galeria */
+.galeria{list-style:none;padding:0;margin:0;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr))}
+.galeria img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--raio)}
+
+/* sobre */
+.sobre{display:grid;gap:1rem 3rem}
+@media (min-width:56rem){.sobre{grid-template-columns:1fr 1.4fr}}
+.sobre-texto{display:grid;gap:1rem;max-width:62ch;color:var(--tinta-suave);font-size:1.125rem}
+
+/* depoimentos */
+.depoimentos{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr))}
+.depoimentos li{background:var(--superficie);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.depoimentos blockquote{margin:0 0 1rem}
+.depoimentos cite{font-style:normal;font-weight:700}
+
+/* faq */
+.faq-grade{display:grid;gap:0 3rem}
+@media (min-width:56rem){.faq-grade{grid-template-columns:1fr 1.6fr}}
+.faq{border-top:1px solid var(--linha)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;padding:1.125rem 0;font-weight:700;font-size:1.0625rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.5rem/1 var(--fonte-titulo);color:var(--destaque);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 1.25rem;color:var(--tinta-suave);max-width:62ch}
+
+/* local e horários */
+.secao-local{background:var(--superficie);border-top:1px solid var(--linha)}
+.local{display:grid;gap:2.5rem}
+@media (min-width:56rem){.local{grid-template-columns:1.2fr 1fr;align-items:start}}
+.local address{font-style:normal;font-size:1.125rem;margin-bottom:1rem}
+.contato-linhas{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-bottom:1.5rem;color:var(--tinta-suave)}
+.contato-linhas a{font-weight:600}
+.local-botoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.horarios{background:var(--fundo);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.horarios h3{font-size:1.25rem;margin-bottom:1rem}
+.horarios table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horarios th,.horarios td{padding:.625rem 0;border-bottom:1px dashed var(--linha);text-align:left;font-weight:500}
+.horarios td{text-align:right;font-weight:700}
+.horarios tr:last-child th,.horarios tr:last-child td{border-bottom:0}
+.horarios .obs{margin-top:.75rem;font-size:.9375rem;color:var(--tinta-suave)}
+.mapa{grid-column:1/-1}
+.mapa iframe{width:100%;height:22rem;border:0;border-radius:var(--raio)}
+
+/* rodapé */
+.rodape{background:var(--rodape-fundo,var(--tinta));color:var(--rodape-tinta,var(--fundo));padding-block:2.5rem calc(2.5rem + env(safe-area-inset-bottom,0px));font-size:.9375rem}
+.rodape-linha{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem}
+.rodape-links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.rodape a{opacity:.85;text-underline-offset:.2em}
+.rodape a:hover{opacity:1}
+
+/* WhatsApp flutuante */
+.zap-flutuante{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:3.5rem;height:3.5rem;border-radius:50%;display:grid;place-items:center;background:#1f8f4e;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s}
+.zap-flutuante:hover{transform:scale(1.06)}
+.zap-flutuante svg{width:1.75rem;height:1.75rem}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+.marca-nome{text-transform:uppercase;letter-spacing:.02em;font-size:1.5rem}
+.poste{width:.625rem;height:1.75rem;border-radius:99px;flex:none;background:repeating-linear-gradient(-45deg,var(--destaque) 0 5px,#fff 5px 10px,#27456b 10px 15px,#fff 15px 20px);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+
+.hero{background:var(--escuro);color:var(--osso);position:relative}
+.hero-grade{display:grid;gap:2.5rem;padding-block:clamp(3rem,8vw,5.5rem) clamp(3.5rem,8vw,6rem)}
+@media (min-width:60rem){.hero-grade{grid-template-columns:1.5fr 1fr;align-items:end}}
+.hero .rotulo{color:#e8a39c;margin-bottom:1rem;display:block}
+.hero h1{font-weight:900;text-transform:uppercase;font-size:clamp(3rem,10vw,6.5rem);line-height:.9;letter-spacing:-.005em;color:#fff}
+.hero h1 em{font-style:normal;color:#e8a39c}
+.hero-sub{margin-top:1.25rem;font-size:1.1875rem;max-width:34rem;color:#d6d2c7}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero .botao-contorno{color:var(--osso)}
+.placa{border:2px solid rgba(239,233,220,.35);border-radius:var(--raio);padding:1.5rem;display:grid;gap:1rem;font-variant-numeric:tabular-nums}
+.placa-titulo{font:800 1rem/1 var(--fonte-util);letter-spacing:.14em;text-transform:uppercase;color:#e8a39c}
+.placa dl{margin:0;display:grid;gap:.5rem}
+.placa dl div{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dashed rgba(239,233,220,.25);padding-bottom:.5rem}
+.placa dt{color:#d6d2c7}
+.placa dd{margin:0;font:800 1.25rem/1.2 var(--fonte-util);color:#fff}
+.placa-nota{font-size:.9375rem;color:#d6d2c7}
+.faixa-poste{height:14px;background:repeating-linear-gradient(-45deg,var(--destaque) 0 14px,var(--osso) 14px 28px,#27456b 28px 42px,var(--osso) 42px 56px)}
+
+.precos-cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.precos-cab .titulo-secao{margin:0;text-transform:uppercase;font-weight:900}
+.precos-cab p{color:var(--tinta-suave);max-width:28rem}
+.grupos{display:grid;gap:2.5rem 4rem}
+@media (min-width:56rem){.grupos{grid-template-columns:1fr 1fr}}
+.grupo h3{font:800 1rem/1 var(--fonte-util);letter-spacing:.14em;text-transform:uppercase;color:var(--destaque);padding-bottom:.75rem;border-bottom:2px solid var(--tinta)}
+.itens{list-style:none;margin:0;padding:0}
+.item{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:.25rem .75rem;padding:1rem 0;border-bottom:1px solid var(--linha)}
+.item-nome{font:700 1.4375rem/1.1 var(--fonte-util);text-transform:uppercase;letter-spacing:.01em}
+.item-pontos{border-bottom:2px dotted #b9b8ae;transform:translateY(-.3em);min-width:1.5rem}
+.item-preco{font:900 1.625rem/1 var(--fonte-util);font-variant-numeric:tabular-nums}
+.item-preco small{font:600 .8125rem/1 var(--fonte-texto);color:var(--tinta-suave);margin-right:.25rem;text-transform:none}
+.item-desc{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;color:var(--tinta-suave);font-size:.9375rem}
+.item-desc a{color:var(--destaque);font-weight:700;text-decoration:none;white-space:nowrap;margin-left:auto}
+.item-desc a:hover{text-decoration:underline}
+.item-desc a::after{content:" →"}
+.precos-nota{margin-top:1.5rem;color:var(--tinta-suave);font-size:.9375rem}
+
+.secao-diferenciais{background:var(--superficie);border-block:1px solid var(--linha)}
+.secao-diferenciais .titulo-secao,.secao-faq .titulo-secao,.secao-sobre .titulo-secao,.secao-local .titulo-secao{text-transform:uppercase;font-weight:900}
+.diferenciais strong{font-family:var(--fonte-util);text-transform:uppercase;font-weight:800;font-size:1.375rem}
+</style>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Barbearia Navalha & Café",
+    "description": "Barbearia na Vila Madalena, em São Paulo. Corte masculino, barba com toalha quente e combos, com café por conta da casa. Agende pelo WhatsApp.",
+    "url": "https://modelos.wglsoftware.com/demo-barbearia/",
+    "telephone": "+5500000000000",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua das Acácias, 480",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+    },
+    "priceRange": "R$ 15 – R$ 120",
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "20:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços e preços",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Corte masculino"
+                },
+                "price": "50.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Corte infantil"
+                },
+                "price": "40.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Pezinho"
+                },
+                "price": "20.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Luzes ou platinado"
+                },
+                "price": "120.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Barba"
+                },
+                "price": "40.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Corte + barba"
+                },
+                "price": "80.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Sobrancelha"
+                },
+                "price": "15.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Hidratação"
+                },
+                "price": "35.00",
+                "priceCurrency": "BRL"
+            }
+        ]
+    }
+}</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Precisa agendar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Recomendamos agendar pelo WhatsApp para garantir o horário. Se houver cadeira livre, atendemos na hora."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quais formas de pagamento vocês aceitam?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pix, cartão de débito e cartão de crédito."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Vocês cortam cabelo de criança?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, atendemos crianças de todas as idades. O corte infantil vale até 12 anos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Tem onde estacionar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Há vagas na rua em frente e um estacionamento conveniado a 50 metros."
+            }
+        }
+    ]
+}</script></head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="barra-demo" role="note"><div class="embrulho">
+  <span>Modelo de demonstração · negócio fictício</span>
+  <a href="https://modelos.wglsoftware.com/">Ver todos os modelos da WGL Software</a>
+</div></div>
+
+<header class="topo">
+  <div class="embrulho topo-linha">
+    <a class="marca" href="#inicio" aria-label="Barbearia Navalha &amp; Café, início"><span class="poste" aria-hidden="true"></span><span class="marca-nome">Navalha &amp; Café</span></a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#precos">Preços</a><a href="#sobre">A barbearia</a><a href="#duvidas">Dúvidas</a><a href="#contato">Como chegar</a>    </nav>
+    <a class="botao botao-cta botao-pequeno" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Navalha%20%26%20Caf%C3%A9%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="t-hero">
+  <div class="embrulho hero-grade">
+    <div>
+      <span class="rotulo">Barbearia · Vila Madalena, São Paulo</span>
+      <h1 id="t-hero">Corte, barba e <em>café passado na hora.</em></h1>
+      <p class="hero-sub">Atendimento com hora marcada, toalha quente e sem fila. Escolha o serviço e agende pelo WhatsApp em menos de um minuto.</p>
+      <div class="hero-acoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar pelo WhatsApp</span></a>
+        <a class="botao botao-contorno" href="#precos">Ver preços</a>
+      </div>
+    </div>
+        <aside class="placa" aria-label="Horários">
+      <span class="placa-titulo">Horário</span>
+      <dl>
+        <div><dt>Terça a sexta</dt><dd>9h–20h</dd></div><div><dt>Sábado</dt><dd>8h–18h</dd></div><div><dt>Domingo e segunda</dt><dd>Fechado</dd></div>      </dl>
+      <p class="placa-nota">Café coado e água gelada por conta da casa.</p>    </aside>
+      </div>
+  <div class="faixa-poste" aria-hidden="true"></div>
+</section>
+<section class="secao" id="precos" aria-labelledby="t-precos">
+  <div class="embrulho">
+    <div class="precos-cab">
+      <h2 id="t-precos" class="titulo-secao">Serviços e preços</h2>
+      <p>Toque em “Agendar” no serviço que você quer e a mensagem já vai pronta.</p>    </div>
+    <div class="grupos">
+            <div class="grupo">
+        <h3>Cabelo</h3>
+        <ul class="itens">
+                    <li class="item">
+            <span class="item-nome">Corte masculino</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 50</span>
+            <span class="item-desc"><span>Máquina e tesoura, com lavagem · 40 min</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Corte%20masculino.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                    <li class="item">
+            <span class="item-nome">Corte infantil</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 40</span>
+            <span class="item-desc"><span>Até 12 anos · 30 min</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Corte%20infantil.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                    <li class="item">
+            <span class="item-nome">Pezinho</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 20</span>
+            <span class="item-desc"><span>Acabamento entre um corte e outro · 15 min</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Pezinho.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                    <li class="item">
+            <span class="item-nome">Luzes ou platinado</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco"><small>a partir de</small>R$ 120</span>
+            <span class="item-desc"><span>Valor final depende do comprimento · 2 h</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Luzes%20ou%20platinado.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                  </ul>
+      </div>
+            <div class="grupo">
+        <h3>Barba e combos</h3>
+        <ul class="itens">
+                    <li class="item">
+            <span class="item-nome">Barba</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 40</span>
+            <span class="item-desc"><span>Toalha quente, navalha e balm · 30 min</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Barba.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                    <li class="item">
+            <span class="item-nome">Corte + barba</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 80</span>
+            <span class="item-desc"><span>O combo mais pedido da casa · 1 h 10</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Corte%20%2B%20barba.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                    <li class="item">
+            <span class="item-nome">Sobrancelha</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 15</span>
+            <span class="item-desc"><span>Na navalha · 10 min</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Sobrancelha.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                    <li class="item">
+            <span class="item-nome">Hidratação</span>
+            <span class="item-pontos" aria-hidden="true"></span>
+            <span class="item-preco">R$ 35</span>
+            <span class="item-desc"><span>Para cabelo ou barba · 20 min</span><a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%3A%20Hidrata%C3%A7%C3%A3o.%20Qual%20hor%C3%A1rio%20voc%C3%AAs%20t%C3%AAm%3F" target="_blank" rel="noopener">Agendar</a></span>
+          </li>
+                  </ul>
+      </div>
+          </div>
+    <p class="precos-nota">Aceitamos Pix, débito e crédito. Valores podem mudar para cabelos muito longos ou químicas.</p>  </div>
+</section>
+
+<section class="secao secao-diferenciais" aria-labelledby="t-dif">
+  <div class="embrulho">
+    <h2 id="t-dif" class="titulo-secao">Por que voltar</h2>
+    <ul class="diferenciais">
+      <li><strong>Hora marcada</strong><span>Você agenda pelo WhatsApp e é atendido no horário, sem fila.</span></li><li><strong>Material esterilizado</strong><span>Lâmina descartável em cada atendimento e ferramentas na autoclave.</span></li><li><strong>Café da casa</strong><span>Café coado na hora enquanto você espera ou depois do corte.</span></li><li><strong>Pix e cartão</strong><span>Aceitamos Pix, débito e crédito.</span></li>    </ul>
+  </div>
+</section>
+
+
+<section class="secao secao-sobre" id="sobre" aria-labelledby="t-sobre">
+  <div class="embrulho sobre">
+    <h2 id="t-sobre" class="titulo-secao">A barbearia</h2>
+    <div class="sobre-texto"><p>A Navalha &amp; Café nasceu da ideia de juntar duas coisas que combinam: um corte bem feito e um café sem pressa.</p><p>São três cadeiras, atendimento só com hora marcada e barbeiros que conhecem o seu estilo depois da primeira visita.</p></div>
+  </div>
+</section>
+
+
+<section class="secao secao-faq" id="duvidas" aria-labelledby="t-faq">
+  <div class="embrulho faq-grade">
+    <h2 id="t-faq" class="titulo-secao">Perguntas frequentes</h2>
+    <div class="faq">
+            <details open><summary>Precisa agendar?</summary><p>Recomendamos agendar pelo WhatsApp para garantir o horário. Se houver cadeira livre, atendemos na hora.</p></details>
+            <details><summary>Quais formas de pagamento vocês aceitam?</summary><p>Pix, cartão de débito e cartão de crédito.</p></details>
+            <details><summary>Vocês cortam cabelo de criança?</summary><p>Sim, atendemos crianças de todas as idades. O corte infantil vale até 12 anos.</p></details>
+            <details><summary>Tem onde estacionar?</summary><p>Há vagas na rua em frente e um estacionamento conveniado a 50 metros.</p></details>
+          </div>
+  </div>
+</section>
+
+<section class="secao secao-local" id="contato" aria-labelledby="t-local">
+  <div class="embrulho local">
+    <div class="local-info">
+      <h2 id="t-local" class="titulo-secao">Como chegar</h2>
+            <address>Rua das Acácias, 480<br>Vila Madalena · São Paulo – SP</address>
+            <p class="contato-linhas">
+        <span>WhatsApp <strong>(11) 0000-0000</strong></span>                      </p>
+      <div class="local-botoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Navalha%20%26%20Caf%C3%A9%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar pelo WhatsApp</span></a>
+        <a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Barbearia%20Navalha%20%26%20Caf%C3%A9%20Rua%20das%20Ac%C3%A1cias%2C%20480%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>      </div>
+    </div>
+        <div class="horarios">
+      <h3>Horário de atendimento</h3>
+      <table><tbody>
+                <tr><th scope="row">Terça a sexta</th><td>9h às 20h</td></tr>
+                <tr><th scope="row">Sábado</th><td>8h às 18h</td></tr>
+                <tr><th scope="row">Domingo e segunda</th><td>Fechado</td></tr>
+              </tbody></table>
+      <p class="obs">Feriados: consulte pelo WhatsApp.</p>    </div>
+          </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="embrulho rodape-linha">
+    <p><strong>Barbearia Navalha &amp; Café</strong><br>São Paulo – SP · © 2026</p>
+    <p class="rodape-links"><a href="politica-de-privacidade.html">Política de privacidade</a><a href="https://wglsoftware.com" rel="noopener">Site por WGL Software</a></p>
+  </div>
+</footer>
+
+<a class="zap-flutuante" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Navalha%20%26%20Caf%C3%A9%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg></a>
+</body>
+</html>

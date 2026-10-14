@@ -1,0 +1,62 @@
+{
+  "nome": "Serviços técnicos",
+  "descricao": "Ficha técnica com grade de planta, serviços com o que está incluso, passo a passo e cidades atendidas.",
+  "nichos": "Refrigeração, eletricistas, reformas, esquadrias, oficinas, assistência técnica",
+  "ordem": 2,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Ar-condicionado · Jundiaí e região"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Use serviço + cidade. Ex.: Instalação de ar-condicionado em Jundiaí"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "garantias", "rotulo": "Selos de confiança (um por linha)", "tipo": "linhas", "ajuda": "Ex.: Nota fiscal / Garantia de 90 dias"},
+        {"chave": "calculadora.ativa", "rotulo": "Mostrar calculadora de BTUs (só para ar-condicionado)", "tipo": "check"},
+        {"chave": "calculadora.titulo", "rotulo": "Título da calculadora", "tipo": "texto"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de negócio para o Google", "tipo": "selecao", "opcoes": [["HVACBusiness", "Ar-condicionado e refrigeração"], ["Electrician", "Eletricista"], ["Plumber", "Encanador"], ["GeneralContractor", "Reformas e construção"], ["HousePainter", "Pintor"], ["Locksmith", "Chaveiro"], ["AutoRepair", "Oficina mecânica"], ["HomeAndConstructionBusiness", "Outros serviços para casa"], ["ProfessionalService", "Outros serviços"]]}
+      ]
+    },
+    {
+      "id": "servicos",
+      "titulo": "Serviços e preços",
+      "campos": [
+        {"chave": "servicos_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "servicos_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "servicos", "rotulo": "Serviços", "tipo": "lista", "item": "Serviço", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "preco", "rotulo": "Preço (número, ou texto como \"sob consulta\")", "tipo": "texto"},
+          {"chave": "a_partir", "rotulo": "Mostrar \"a partir de\"", "tipo": "check"},
+          {"chave": "descricao", "rotulo": "Descrição", "tipo": "area"},
+          {"chave": "inclui", "rotulo": "O que está incluso (um por linha)", "tipo": "linhas"}
+        ]}
+      ]
+    },
+    {
+      "id": "etapas",
+      "titulo": "Como funciona e onde atende",
+      "campos": [
+        {"chave": "etapas", "rotulo": "Etapas do atendimento", "tipo": "lista", "item": "Etapa", "campos": [
+          {"chave": "titulo", "rotulo": "Título", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Texto", "tipo": "texto"}
+        ]},
+        {"chave": "areas_atendidas", "rotulo": "Cidades ou bairros atendidos (um por linha)", "tipo": "linhas", "ajuda": "A primeira fica destacada."},
+        {"chave": "areas_nota", "rotulo": "Observação", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal", "tipo": "cor", "padrao": "#0b5d8f"},
+        {"chave": "cores.cta", "rotulo": "Cor dos botões", "tipo": "cor", "padrao": "#f47b2a"},
+        {"chave": "cores.cta_hover", "rotulo": "Botões ao passar o mouse", "tipo": "cor", "padrao": "#e56a17"},
+        {"chave": "cores.tinta", "rotulo": "Cor escura (textos)", "tipo": "cor", "padrao": "#0f2233"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#f4f7f9"}
+      ]
+    }
+  ]
+}

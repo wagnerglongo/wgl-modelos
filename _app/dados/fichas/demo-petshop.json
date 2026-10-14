@@ -1,0 +1,214 @@
+{
+    "modelo": "pet",
+    "slug": "demo-petshop",
+    "situacao": "demonstracao",
+    "nome": "Patas & Cia Pet Shop",
+    "nome_curto": "Patas & Cia",
+    "tipo_schema": "PetStore",
+    "faixa_preco": "R$ 25 – R$ 340",
+    "documento": "",
+    "dominio": "",
+    "whatsapp": "5500000000000",
+    "telefone_exibicao": "(11) 0000-0000",
+    "instagram": "",
+    "email": "",
+    "mensagem_padrao": "Olá! Vim pelo site da Patas & Cia e quero agendar um horário.",
+    "cta_topo": "Agendar",
+    "cta_final": "Agendar pelo WhatsApp",
+    "seo": {
+        "titulo": "Patas & Cia | Banho e tosa em Moema, São Paulo",
+        "descricao": "Pet shop em Moema, São Paulo. Banho e tosa com preço por porte, pacotes mensais, leva e traz e veterinário. Agende pelo WhatsApp."
+    },
+    "hero": {
+        "rotulo": "Banho e tosa · Moema, São Paulo",
+        "titulo": "Banho, tosa e carinho",
+        "titulo_destaque": "sem gaiola.",
+        "subtitulo": "Seu pet é atendido com hora marcada, sem ficar esperando preso. Buscamos e levamos em casa no bairro.",
+        "cta": "Agendar banho",
+        "cta_msg": "Olá! Vim pelo site e quero agendar um banho."
+    },
+    "selos": [
+        "Sem gaiola",
+        "Produtos hipoalergênicos",
+        "Foto do seu pet no WhatsApp"
+    ],
+    "simulador_titulo": "Quanto fica o banho?",
+    "precos_titulo": "Preços por porte",
+    "precos_intro": "Valores para pelo normal. Pelo longo ou com nós pode ter acréscimo.",
+    "portes": [
+        {
+            "nome": "Pequeno",
+            "peso": "até 10 kg"
+        },
+        {
+            "nome": "Médio",
+            "peso": "10 a 25 kg"
+        },
+        {
+            "nome": "Grande",
+            "peso": "acima de 25 kg"
+        }
+    ],
+    "servicos": [
+        {
+            "nome": "Banho",
+            "descricao": "Com secagem, perfume e corte de unhas",
+            "preco_p": 55,
+            "preco_m": 70,
+            "preco_g": 95
+        },
+        {
+            "nome": "Banho e tosa higiênica",
+            "descricao": "Patas, barriga e região íntima",
+            "preco_p": 70,
+            "preco_m": 90,
+            "preco_g": 120
+        },
+        {
+            "nome": "Banho e tosa completa",
+            "descricao": "Na máquina ou na tesoura",
+            "preco_p": 95,
+            "preco_m": 125,
+            "preco_g": 170
+        },
+        {
+            "nome": "Hidratação",
+            "descricao": "Para pelo ressecado",
+            "preco_p": 25,
+            "preco_m": 35,
+            "preco_g": 45
+        }
+    ],
+    "precos_nota": "Gatos: consulte pelo WhatsApp. Pagamento em Pix, débito ou crédito.",
+    "pacotes_titulo": "Pacotes mensais",
+    "pacotes_intro": "Para quem dá banho toda semana ou a cada 15 dias, sai mais em conta.",
+    "pacotes": [
+        {
+            "nome": "Quinzenal",
+            "descricao": "2 banhos por mês, porte pequeno.",
+            "preco": 100,
+            "sufixo": "/mês",
+            "tag": "",
+            "destaque": false
+        },
+        {
+            "nome": "Semanal",
+            "descricao": "4 banhos por mês e 1 tosa higiênica, porte pequeno.",
+            "preco": 190,
+            "sufixo": "/mês",
+            "tag": "Mais escolhido",
+            "destaque": true
+        },
+        {
+            "nome": "Semanal porte grande",
+            "descricao": "4 banhos por mês e 1 hidratação.",
+            "preco": 340,
+            "sufixo": "/mês",
+            "tag": "",
+            "destaque": false
+        }
+    ],
+    "leva": {
+        "titulo": "Leva e traz",
+        "texto": "Buscamos seu pet em casa e devolvemos limpinho, de terça a sábado.",
+        "taxa": 15,
+        "taxa_obs": "grátis nos pacotes mensais",
+        "bairros": [
+            "Moema",
+            "Vila Olímpia",
+            "Campo Belo",
+            "Indianópolis",
+            "Vila Nova Conceição",
+            "Brooklin"
+        ]
+    },
+    "vet_titulo": "Veterinário",
+    "vet_intro": "Atendimento clínico com hora marcada, no mesmo endereço.",
+    "vet": [
+        {
+            "nome": "Consulta clínica",
+            "preco": 150,
+            "descricao": "Exame completo e orientação"
+        },
+        {
+            "nome": "Vacina V10",
+            "preco": 110,
+            "descricao": "Aplicação com carteirinha atualizada"
+        },
+        {
+            "nome": "Vacina antirrábica",
+            "preco": 80,
+            "descricao": ""
+        },
+        {
+            "nome": "Exames",
+            "preco": "sob consulta",
+            "descricao": "Coleta no local, resultado no WhatsApp"
+        }
+    ],
+    "diferenciais": [],
+    "sobre": {
+        "titulo": "Quem somos",
+        "paragrafos": [
+            "A Patas & Cia nasceu em Moema para cuidar de cães e gatos como a gente cuida dos nossos: sem pressa e sem gaiola.",
+            "Toda a equipe é treinada em manejo sem estresse, e você recebe uma foto do seu pet no WhatsApp quando ele fica pronto."
+        ]
+    },
+    "faq": [
+        {
+            "pergunta": "Quanto tempo demora o banho?",
+            "resposta": "Entre 1h30 e 3h, dependendo do porte e do serviço. Avisamos pelo WhatsApp quando estiver pronto."
+        },
+        {
+            "pergunta": "Vocês atendem gatos?",
+            "resposta": "Sim, em horários separados dos cães, para eles ficarem mais tranquilos."
+        },
+        {
+            "pergunta": "Preciso levar a carteirinha de vacinação?",
+            "resposta": "Sim. Para a segurança de todos, pedimos a V10 (ou V8) e a antirrábica em dia."
+        },
+        {
+            "pergunta": "Como funciona o leva e traz?",
+            "resposta": "Combinamos o horário pelo WhatsApp, buscamos na sua porta e devolvemos no mesmo dia."
+        }
+    ],
+    "local_titulo": "Onde estamos",
+    "endereco": {
+        "rua": "Avenida dos Ipês, 1.150",
+        "bairro": "Moema",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "cep": ""
+    },
+    "horarios": [
+        {
+            "dias": "Terça a sexta",
+            "schema": [
+                "ter",
+                "qua",
+                "qui",
+                "sex"
+            ],
+            "abre": "08:00",
+            "fecha": "18:00"
+        },
+        {
+            "dias": "Sábado",
+            "schema": [
+                "sab"
+            ],
+            "abre": "08:00",
+            "fecha": "16:00"
+        },
+        {
+            "dias": "Domingo e segunda",
+            "fechado": true
+        }
+    ],
+    "horario_obs": "Estacionamento na frente da loja.",
+    "fotos": [],
+    "depoimentos": [],
+    "criado_em": "2026-10-01T10:00:00-03:00",
+    "previa_desde": "2026-10-01T10:00:00-03:00",
+    "atualizado_em": "2026-10-01T10:02:00-03:00"
+}

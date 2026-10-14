@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Duarte &amp; Lima Advocacia | Advogados trabalhistas e previdenciários em São Paulo</title>
+<meta name="description" content="Escritório de advocacia na Bela Vista, em São Paulo. Direito do trabalho, previdenciário, família e consumidor. Atendimento presencial e online.">
+<link rel="canonical" href="https://modelos.wglsoftware.com/demo-advocacia/">
+<meta name="theme-color" content="#24453a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Duarte &amp; Lima Advocacia">
+<meta property="og:title" content="Duarte &amp; Lima Advocacia | Advogados trabalhistas e previdenciários em São Paulo">
+<meta property="og:description" content="Escritório de advocacia na Bela Vista, em São Paulo. Direito do trabalho, previdenciário, família e consumidor. Atendimento presencial e online.">
+<meta property="og:url" content="https://modelos.wglsoftware.com/demo-advocacia/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2324453a%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%2736%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%20fill%3D%27%23ffffff%27%3ED%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,600;1,600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+/* Layout: herói tipográfico com ficha de atendimento ao lado, áreas em linhas de índice editorial, etapas numeradas, equipe com retratos */
+:root{
+  --fundo:#f5f6f4; --superficie:#ffffff; --tinta:#1b2330; --tinta-suave:#545e6b; --linha:#dcdfe0;
+  --destaque:#24453a; --bronze:#a07c43; --bronze-claro:color-mix(in srgb,#a07c43 60%,#fff); --cta:#24453a; --cta-hover:color-mix(in srgb,#24453a 80%,#000); --sobre-cta:#ffffff;
+  --fonte-titulo:"Spectral",Georgia,"Times New Roman",serif;
+  --fonte-texto:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --raio:4px; --raio-botao:4px; --topo-fundo:color-mix(in srgb,var(--fundo) 94%,transparent); --rodape-fundo:#24453a;
+}/* ===== Base comum a todos os modelos (usa os tokens definidos por cada nicho) ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:5rem;color-scheme:light}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--fonte-texto);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fonte-titulo);line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--foco,var(--destaque));outline-offset:3px;border-radius:4px}
+.embrulho{width:100%;max-width:var(--largura,72rem);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:var(--fundo);padding:.75rem 1rem;z-index:100}
+.pular:focus{left:1rem;top:1rem}
+
+/* barra de demonstração */
+.barra-demo{background:#16181d;color:#e9ebef;font:500 .8125rem/1.4 var(--fonte-texto)}
+.barra-demo .embrulho{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:.5rem}
+.barra-demo a{color:#c6f135;text-decoration:none;font-weight:600}
+.barra-demo a:hover{text-decoration:underline}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:20;background:var(--topo-fundo,var(--fundo));border-bottom:1px solid var(--linha);backdrop-filter:saturate(1.4) blur(8px)}
+.topo-linha{display:flex;align-items:center;gap:1rem;min-height:4rem}
+.marca{text-decoration:none;display:flex;align-items:center;gap:.5rem;margin-right:auto;min-width:0}
+.marca-nome{font-family:var(--fonte-titulo);font-weight:800;font-size:1.25rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{display:none;gap:1.5rem;font-weight:500;font-size:.9375rem}
+.menu a{text-decoration:none;color:var(--tinta-suave)}
+.menu a:hover{color:var(--tinta)}
+@media (min-width:62rem){.menu{display:flex}}
+
+/* botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.375rem;border-radius:var(--raio-botao,var(--raio));font:700 1rem/1.1 var(--fonte-texto);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.botao:hover{transform:translateY(-1px)}
+.botao svg{width:1.25rem;height:1.25rem;flex:none}
+.botao-cta{background:var(--cta);color:var(--sobre-cta)}
+.botao-cta:hover{background:var(--cta-hover,var(--cta))}
+.botao-contorno{border-color:currentColor;background:transparent}
+.botao-pequeno{min-height:2.5rem;padding:.5rem 1rem;font-size:.9375rem}
+@media (max-width:30rem){.topo .botao-pequeno span{display:none}.topo .botao-pequeno{padding:.5rem .75rem}}
+.link-seta{font-weight:700;text-underline-offset:.2em}
+.link-seta::after{content:" →"}
+
+/* seções */
+.secao{padding-block:clamp(3.5rem,8vw,6rem)}
+.titulo-secao{font-size:clamp(1.875rem,4.5vw,2.875rem);margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.rotulo{font:700 .8125rem/1.2 var(--fonte-util,var(--fonte-texto));letter-spacing:.1em;text-transform:uppercase;color:var(--destaque)}
+
+/* diferenciais */
+.diferenciais{list-style:none;padding:0;margin:0;display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.diferenciais li{background:var(--superficie);padding:1.5rem;display:grid;gap:.375rem;align-content:start}
+.diferenciais strong{font-family:var(--fonte-titulo);font-size:1.25rem;line-height:1.2}
+.diferenciais span{color:var(--tinta-suave)}
+
+/* galeria */
+.galeria{list-style:none;padding:0;margin:0;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr))}
+.galeria img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--raio)}
+
+/* sobre */
+.sobre{display:grid;gap:1rem 3rem}
+@media (min-width:56rem){.sobre{grid-template-columns:1fr 1.4fr}}
+.sobre-texto{display:grid;gap:1rem;max-width:62ch;color:var(--tinta-suave);font-size:1.125rem}
+
+/* depoimentos */
+.depoimentos{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr))}
+.depoimentos li{background:var(--superficie);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.depoimentos blockquote{margin:0 0 1rem}
+.depoimentos cite{font-style:normal;font-weight:700}
+
+/* faq */
+.faq-grade{display:grid;gap:0 3rem}
+@media (min-width:56rem){.faq-grade{grid-template-columns:1fr 1.6fr}}
+.faq{border-top:1px solid var(--linha)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;padding:1.125rem 0;font-weight:700;font-size:1.0625rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.5rem/1 var(--fonte-titulo);color:var(--destaque);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 1.25rem;color:var(--tinta-suave);max-width:62ch}
+
+/* local e horários */
+.secao-local{background:var(--superficie);border-top:1px solid var(--linha)}
+.local{display:grid;gap:2.5rem}
+@media (min-width:56rem){.local{grid-template-columns:1.2fr 1fr;align-items:start}}
+.local address{font-style:normal;font-size:1.125rem;margin-bottom:1rem}
+.contato-linhas{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-bottom:1.5rem;color:var(--tinta-suave)}
+.contato-linhas a{font-weight:600}
+.local-botoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.horarios{background:var(--fundo);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.horarios h3{font-size:1.25rem;margin-bottom:1rem}
+.horarios table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horarios th,.horarios td{padding:.625rem 0;border-bottom:1px dashed var(--linha);text-align:left;font-weight:500}
+.horarios td{text-align:right;font-weight:700}
+.horarios tr:last-child th,.horarios tr:last-child td{border-bottom:0}
+.horarios .obs{margin-top:.75rem;font-size:.9375rem;color:var(--tinta-suave)}
+.mapa{grid-column:1/-1}
+.mapa iframe{width:100%;height:22rem;border:0;border-radius:var(--raio)}
+
+/* rodapé */
+.rodape{background:var(--rodape-fundo,var(--tinta));color:var(--rodape-tinta,var(--fundo));padding-block:2.5rem calc(2.5rem + env(safe-area-inset-bottom,0px));font-size:.9375rem}
+.rodape-linha{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem}
+.rodape-links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.rodape a{opacity:.85;text-underline-offset:.2em}
+.rodape a:hover{opacity:1}
+
+/* WhatsApp flutuante */
+.zap-flutuante{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:3.5rem;height:3.5rem;border-radius:50%;display:grid;place-items:center;background:#1f8f4e;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s}
+.zap-flutuante:hover{transform:scale(1.06)}
+.zap-flutuante svg{width:1.75rem;height:1.75rem}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+h1,h2,h3{font-weight:600;letter-spacing:-.01em}
+.marca-nome{font-family:var(--fonte-titulo);font-weight:600;font-size:1.3125rem;letter-spacing:.01em}
+.monograma{width:2rem;height:2rem;border:1.5px solid var(--bronze);display:grid;place-items:center;font:600 .9375rem/1 var(--fonte-titulo);color:var(--destaque);flex:none}
+.rotulo{color:var(--bronze);letter-spacing:.14em}
+.titulo-secao{font-size:clamp(1.875rem,4vw,2.625rem)}
+
+.hero{border-bottom:1px solid var(--linha)}
+.hero-grade{display:grid;gap:2.5rem;padding-block:clamp(3rem,8vw,6rem)}
+@media (min-width:60rem){.hero-grade{grid-template-columns:1.5fr 1fr;align-items:end}}
+.hero .rotulo{display:block;margin-bottom:1.25rem}
+.hero h1{font-size:clamp(2.5rem,6vw,4.25rem);line-height:1.04;max-width:16ch}
+.hero h1 em{font-style:italic;color:var(--destaque)}
+.hero-sub{margin-top:1.5rem;font-size:1.1875rem;color:var(--tinta-suave);max-width:38rem;padding-left:1.25rem;border-left:2px solid var(--bronze)}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero .botao-contorno{color:var(--destaque)}
+.ficha-atendimento{background:var(--destaque);color:#eef2ef;padding:1.75rem;display:grid;gap:1rem}
+.ficha-atendimento h2{font-size:1.25rem;color:#fff;padding-bottom:.875rem;border-bottom:1px solid rgba(255,255,255,.2)}
+.ficha-atendimento ul{list-style:none;margin:0;padding:0;display:grid;gap:.625rem}
+.ficha-atendimento li{display:flex;gap:.625rem}
+.ficha-atendimento li::before{content:"";width:.875rem;height:1px;background:var(--bronze-claro);margin-top:.8rem;flex:none}
+.ficha-atendimento p{font-size:.9375rem;color:#c9d4cf}
+.ficha-atendimento .botao{background:#fff;color:var(--destaque)}
+
+.areas{display:grid;gap:0;border-top:1px solid var(--tinta)}
+.area{display:grid;gap:.75rem 3rem;padding:2rem 0;border-bottom:1px solid var(--linha)}
+@media (min-width:56rem){.area{grid-template-columns:1fr 1.5fr}}
+.area h3{font-size:clamp(1.5rem,3vw,1.875rem)}
+.area-corpo{display:grid;gap:1rem}
+.area-corpo p{color:var(--tinta-suave);font-size:1.0625rem;max-width:62ch}
+.area-corpo ul{list-style:none;margin:0;padding:0;display:grid;gap:.375rem 1.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr))}
+.area-corpo li{display:flex;gap:.625rem;font-size:.9375rem}
+.area-corpo li::before{content:"";width:.375rem;height:.375rem;background:var(--bronze);margin-top:.55rem;flex:none}
+
+.secao-etapas{background:var(--superficie);border-block:1px solid var(--linha)}
+.etapas{list-style:none;margin:0;padding:0;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr));counter-reset:e}
+.etapas li{counter-increment:e;display:grid;gap:.5rem;align-content:start;border-top:1px solid var(--tinta);padding-top:1rem}
+.etapas li::before{content:counter(e,decimal-leading-zero);font:600 1.75rem/1 var(--fonte-titulo);color:var(--bronze)}
+.etapas strong{font-size:1.125rem}
+.etapas span{color:var(--tinta-suave)}
+
+.equipe{list-style:none;margin:0;padding:0;display:grid;gap:2rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,14rem),1fr))}
+.pessoa{display:grid;gap:.375rem;align-content:start}
+.retrato{aspect-ratio:4/5;background:linear-gradient(160deg,color-mix(in srgb,var(--destaque) 14%,#fff),color-mix(in srgb,var(--destaque) 30%,#fff));display:grid;place-items:center;font:600 3rem/1 var(--fonte-titulo);color:var(--destaque);margin-bottom:.75rem;overflow:hidden;max-width:100%}
+.retrato img{width:100%;height:100%;object-fit:cover}
+.pessoa h3{font-size:1.375rem}
+.pessoa .cargo{color:var(--bronze);font-weight:600;font-size:.9375rem;letter-spacing:.02em}
+.pessoa .registro{font-size:.875rem;color:var(--tinta-suave)}
+.pessoa p{color:var(--tinta-suave);font-size:.9375rem;margin-top:.25rem}
+.aviso-legal{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--linha);font-size:.875rem;color:var(--tinta-suave);max-width:70ch}
+.secao-faq{background:var(--superficie);border-block:1px solid var(--linha)}
+</style>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Duarte & Lima Advocacia",
+    "description": "Escritório de advocacia na Bela Vista, em São Paulo. Direito do trabalho, previdenciário, família e consumidor. Atendimento presencial e online.",
+    "url": "https://modelos.wglsoftware.com/demo-advocacia/",
+    "telephone": "+5500000000000",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua dos Jasmins, 77, conjunto 41",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+        }
+    ]
+}</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "A primeira conversa tem custo?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Consulte as condições pelo WhatsApp. Em todos os casos, a proposta de honorários é apresentada por escrito antes de qualquer contratação."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Vocês atendem online?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Fazemos a conversa por videochamada e os documentos podem ser enviados pelo WhatsApp ou e-mail."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quanto tempo demora um processo?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende da área e do tribunal. Na primeira conversa explicamos o prazo médio para o seu tipo de caso."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Que documentos devo levar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Documento com foto e tudo o que tiver sobre o caso: contratos, carteira de trabalho, cartas do INSS, mensagens e comprovantes."
+            }
+        }
+    ]
+}</script></head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="barra-demo" role="note"><div class="embrulho">
+  <span>Modelo de demonstração · negócio fictício</span>
+  <a href="https://modelos.wglsoftware.com/">Ver todos os modelos da WGL Software</a>
+</div></div>
+
+<header class="topo">
+  <div class="embrulho topo-linha">
+    <a class="marca" href="#inicio" aria-label="Duarte &amp; Lima Advocacia, início"><span class="monograma" aria-hidden="true">DL</span><span class="marca-nome">Duarte &amp; Lima</span></a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#areas">Áreas de atuação</a><a href="#como-trabalhamos">Como trabalhamos</a><a href="#equipe">Equipe</a><a href="#duvidas">Dúvidas</a>    </nav>
+    <a class="botao botao-cta botao-pequeno" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Duarte%20%26%20Lima%20Advocacia%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Fale conosco</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="t-hero">
+  <div class="embrulho hero-grade">
+    <div>
+      <span class="rotulo">Advocacia · Bela Vista, São Paulo</span>
+      <h1 id="t-hero">Orientação jurídica clara para <em>decidir com segurança.</em></h1>
+      <p class="hero-sub">Explicamos seus direitos em linguagem simples, analisamos os documentos e só seguimos com o caso quando você entender cada etapa.</p>
+      <div class="hero-acoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20conversa%20para%20explicar%20o%20meu%20caso." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar uma conversa</span></a>
+        <a class="botao botao-contorno" href="#areas">Áreas de atuação</a>      </div>
+    </div>
+        <aside class="ficha-atendimento" aria-labelledby="t-ficha">
+      <h2 id="t-ficha">Atendimento</h2>
+      <ul><li>Presencial e por videochamada</li><li>Retorno em até 1 dia útil</li><li>Acompanhamento do processo pelo WhatsApp</li><li>Atendemos todo o estado de São Paulo</li></ul>
+      <p>Traga carteira de trabalho, documentos e o que tiver sobre o caso.</p>      <a class="botao" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20para%20explicar%20o%20meu%20caso." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Falar pelo WhatsApp</span></a>
+    </aside>
+      </div>
+</section>
+<section class="secao" id="areas" aria-labelledby="t-areas">
+  <div class="embrulho">
+    <h2 id="t-areas" class="titulo-secao">Áreas de atuação</h2>
+    <div class="areas">
+            <article class="area">
+        <h3>Direito do Trabalho</h3>
+        <div class="area-corpo">
+          <p>Para trabalhadores que tiveram direitos desrespeitados durante o contrato ou na demissão.</p>          <ul><li>Verbas rescisórias</li><li>Horas extras</li><li>Assédio moral</li><li>Reconhecimento de vínculo</li></ul>        </div>
+      </article>
+            <article class="area">
+        <h3>Direito Previdenciário</h3>
+        <div class="area-corpo">
+          <p>Pedidos e revisões junto ao INSS, do planejamento ao recurso.</p>          <ul><li>Aposentadorias</li><li>Auxílio por incapacidade</li><li>BPC/LOAS</li><li>Revisão de benefício</li></ul>        </div>
+      </article>
+            <article class="area">
+        <h3>Família e Sucessões</h3>
+        <div class="area-corpo">
+          <p>Situações delicadas tratadas com discrição e foco em acordo sempre que possível.</p>          <ul><li>Divórcio</li><li>Pensão alimentícia</li><li>Guarda</li><li>Inventário</li></ul>        </div>
+      </article>
+            <article class="area">
+        <h3>Direito do Consumidor</h3>
+        <div class="area-corpo">
+          <p>Problemas com empresas, bancos e planos de saúde.</p>          <ul><li>Cobranças indevidas</li><li>Negativação</li><li>Negativa de plano de saúde</li><li>Produtos com defeito</li></ul>        </div>
+      </article>
+          </div>
+  </div>
+</section>
+
+<section class="secao secao-etapas" id="como-trabalhamos" aria-labelledby="t-etapas">
+  <div class="embrulho">
+    <h2 id="t-etapas" class="titulo-secao">Como trabalhamos</h2>
+    <ol class="etapas"><li><strong>Primeira conversa</strong><span>Você conta o que aconteceu e nós explicamos os caminhos possíveis.</span></li><li><strong>Análise dos documentos</strong><span>Estudamos o caso e dizemos com franqueza se há fundamento para seguir.</span></li><li><strong>Proposta por escrito</strong><span>Contrato de honorários claro, sem surpresas.</span></li><li><strong>Acompanhamento</strong><span>Você recebe cada movimentação do processo pelo WhatsApp.</span></li></ol>
+  </div>
+</section>
+
+<section class="secao" id="equipe" aria-labelledby="t-eq">
+  <div class="embrulho">
+    <h2 id="t-eq" class="titulo-secao">Equipe</h2>
+    <ul class="equipe">
+            <li class="pessoa">
+        <div class="retrato" aria-hidden="true">HD</div>
+        <h3>Helena Duarte</h3>
+        <span class="cargo">Sócia · Trabalhista e Previdenciário</span>                <p>Pós-graduada em Direito do Trabalho, atua há 14 anos na defesa de trabalhadores.</p>      </li>
+            <li class="pessoa">
+        <div class="retrato" aria-hidden="true">ML</div>
+        <h3>Marcos Lima</h3>
+        <span class="cargo">Sócio · Família e Consumidor</span>                <p>Mediador e especialista em Direito de Família, com foco em soluções por acordo.</p>      </li>
+          </ul>
+    <p class="aviso-legal">Conteúdo informativo. As informações deste site não substituem a análise de um advogado sobre o seu caso.</p>  </div>
+</section>
+
+
+
+<section class="secao secao-sobre" id="sobre" aria-labelledby="t-sobre">
+  <div class="embrulho sobre">
+    <h2 id="t-sobre" class="titulo-secao">O escritório</h2>
+    <div class="sobre-texto"><p>A Duarte &amp; Lima Advocacia atende na Bela Vista, no centro de São Paulo, e também por videochamada para todo o estado.</p><p>Acreditamos que o cliente precisa entender o próprio caso. Por isso explicamos cada passo e respondemos rápido.</p></div>
+  </div>
+</section>
+
+
+<section class="secao secao-faq" id="duvidas" aria-labelledby="t-faq">
+  <div class="embrulho faq-grade">
+    <h2 id="t-faq" class="titulo-secao">Perguntas frequentes</h2>
+    <div class="faq">
+            <details open><summary>A primeira conversa tem custo?</summary><p>Consulte as condições pelo WhatsApp. Em todos os casos, a proposta de honorários é apresentada por escrito antes de qualquer contratação.</p></details>
+            <details><summary>Vocês atendem online?</summary><p>Sim. Fazemos a conversa por videochamada e os documentos podem ser enviados pelo WhatsApp ou e-mail.</p></details>
+            <details><summary>Quanto tempo demora um processo?</summary><p>Depende da área e do tribunal. Na primeira conversa explicamos o prazo médio para o seu tipo de caso.</p></details>
+            <details><summary>Que documentos devo levar?</summary><p>Documento com foto e tudo o que tiver sobre o caso: contratos, carteira de trabalho, cartas do INSS, mensagens e comprovantes.</p></details>
+          </div>
+  </div>
+</section>
+
+<section class="secao secao-local" id="contato" aria-labelledby="t-local">
+  <div class="embrulho local">
+    <div class="local-info">
+      <h2 id="t-local" class="titulo-secao">Onde estamos</h2>
+            <address>Rua dos Jasmins, 77, conjunto 41<br>Bela Vista · São Paulo – SP</address>
+            <p class="contato-linhas">
+        <span>WhatsApp <strong>(11) 0000-0000</strong></span>                      </p>
+      <div class="local-botoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Duarte%20%26%20Lima%20Advocacia%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar uma conversa</span></a>
+        <a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Duarte%20%26%20Lima%20Advocacia%20Rua%20dos%20Jasmins%2C%2077%2C%20conjunto%2041%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>      </div>
+    </div>
+        <div class="horarios">
+      <h3>Horário de atendimento</h3>
+      <table><tbody>
+                <tr><th scope="row">Segunda a sexta</th><td>9h às 18h</td></tr>
+                <tr><th scope="row">Sábado e domingo</th><td>Fechado</td></tr>
+              </tbody></table>
+      <p class="obs">Atendimento presencial com hora marcada.</p>    </div>
+          </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="embrulho rodape-linha">
+    <p><strong>Duarte &amp; Lima Advocacia</strong><br>São Paulo – SP · © 2026</p>
+    <p class="rodape-links"><a href="politica-de-privacidade.html">Política de privacidade</a><a href="https://wglsoftware.com" rel="noopener">Site por WGL Software</a></p>
+  </div>
+</footer>
+
+<a class="zap-flutuante" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Duarte%20%26%20Lima%20Advocacia%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg></a>
+</body>
+</html>

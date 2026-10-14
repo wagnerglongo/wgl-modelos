@@ -1,0 +1,178 @@
+{
+  "modelo": "beleza",
+  "slug": "demo-barbearia",
+  "dominio": "",
+  "nome": "Barbearia Navalha & Café",
+  "nome_curto": "Navalha & Café",
+  "tipo_schema": "HairSalon",
+  "faixa_preco": "R$ 15 – R$ 120",
+  "documento": "",
+  "whatsapp": "5500000000000",
+  "telefone_exibicao": "(11) 0000-0000",
+  "instagram": "",
+  "email": "",
+  "mensagem_padrao": "Olá! Vim pelo site da Navalha & Café e quero agendar um horário.",
+  "cta_topo": "Agendar",
+  "cta_final": "Agendar pelo WhatsApp",
+  "cores": {},
+  "seo": {
+    "titulo": "Barbearia Navalha & Café | Corte e barba na Vila Madalena, São Paulo",
+    "descricao": "Barbearia na Vila Madalena, em São Paulo. Corte masculino, barba com toalha quente e combos, com café por conta da casa. Agende pelo WhatsApp."
+  },
+  "hero": {
+    "rotulo": "Barbearia · Vila Madalena, São Paulo",
+    "titulo": "Corte, barba e",
+    "titulo_destaque": "café passado na hora.",
+    "subtitulo": "Atendimento com hora marcada, toalha quente e sem fila. Escolha o serviço e agende pelo WhatsApp em menos de um minuto.",
+    "cta": "Agendar pelo WhatsApp",
+    "cta_msg": "Olá! Vim pelo site e quero agendar um horário.",
+    "nota": "Café coado e água gelada por conta da casa."
+  },
+  "precos_titulo": "Serviços e preços",
+  "precos_intro": "Toque em “Agendar” no serviço que você quer e a mensagem já vai pronta.",
+  "precos_nota": "Aceitamos Pix, débito e crédito. Valores podem mudar para cabelos muito longos ou químicas.",
+  "grupos": [
+    "Cabelo",
+    "Barba e combos"
+  ],
+  "servicos": [
+    {
+      "grupo": "Cabelo",
+      "nome": "Corte masculino",
+      "preco": 50,
+      "duracao": "40 min",
+      "descricao": "Máquina e tesoura, com lavagem"
+    },
+    {
+      "grupo": "Cabelo",
+      "nome": "Corte infantil",
+      "preco": 40,
+      "duracao": "30 min",
+      "descricao": "Até 12 anos"
+    },
+    {
+      "grupo": "Cabelo",
+      "nome": "Pezinho",
+      "preco": 20,
+      "duracao": "15 min",
+      "descricao": "Acabamento entre um corte e outro"
+    },
+    {
+      "grupo": "Cabelo",
+      "nome": "Luzes ou platinado",
+      "preco": 120,
+      "a_partir": true,
+      "duracao": "2 h",
+      "descricao": "Valor final depende do comprimento"
+    },
+    {
+      "grupo": "Barba e combos",
+      "nome": "Barba",
+      "preco": 40,
+      "duracao": "30 min",
+      "descricao": "Toalha quente, navalha e balm"
+    },
+    {
+      "grupo": "Barba e combos",
+      "nome": "Corte + barba",
+      "preco": 80,
+      "duracao": "1 h 10",
+      "descricao": "O combo mais pedido da casa"
+    },
+    {
+      "grupo": "Barba e combos",
+      "nome": "Sobrancelha",
+      "preco": 15,
+      "duracao": "10 min",
+      "descricao": "Na navalha"
+    },
+    {
+      "grupo": "Barba e combos",
+      "nome": "Hidratação",
+      "preco": 35,
+      "duracao": "20 min",
+      "descricao": "Para cabelo ou barba"
+    }
+  ],
+  "diferenciais_titulo": "Por que voltar",
+  "diferenciais": [
+    {
+      "titulo": "Hora marcada",
+      "texto": "Você agenda pelo WhatsApp e é atendido no horário, sem fila."
+    },
+    {
+      "titulo": "Material esterilizado",
+      "texto": "Lâmina descartável em cada atendimento e ferramentas na autoclave."
+    },
+    {
+      "titulo": "Café da casa",
+      "texto": "Café coado na hora enquanto você espera ou depois do corte."
+    },
+    {
+      "titulo": "Pix e cartão",
+      "texto": "Aceitamos Pix, débito e crédito."
+    }
+  ],
+  "sobre": {
+    "titulo": "A barbearia",
+    "paragrafos": [
+      "A Navalha & Café nasceu da ideia de juntar duas coisas que combinam: um corte bem feito e um café sem pressa.",
+      "São três cadeiras, atendimento só com hora marcada e barbeiros que conhecem o seu estilo depois da primeira visita."
+    ]
+  },
+  "faq": [
+    {
+      "pergunta": "Precisa agendar?",
+      "resposta": "Recomendamos agendar pelo WhatsApp para garantir o horário. Se houver cadeira livre, atendemos na hora."
+    },
+    {
+      "pergunta": "Quais formas de pagamento vocês aceitam?",
+      "resposta": "Pix, cartão de débito e cartão de crédito."
+    },
+    {
+      "pergunta": "Vocês cortam cabelo de criança?",
+      "resposta": "Sim, atendemos crianças de todas as idades. O corte infantil vale até 12 anos."
+    },
+    {
+      "pergunta": "Tem onde estacionar?",
+      "resposta": "Há vagas na rua em frente e um estacionamento conveniado a 50 metros."
+    }
+  ],
+  "local_titulo": "Como chegar",
+  "endereco": {
+    "rua": "Rua das Acácias, 480",
+    "bairro": "Vila Madalena",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": ""
+  },
+  "horarios": [
+    {
+      "dias": "Terça a sexta",
+      "schema": [
+        "ter",
+        "qua",
+        "qui",
+        "sex"
+      ],
+      "abre": "09:00",
+      "fecha": "20:00"
+    },
+    {
+      "dias": "Sábado",
+      "schema": [
+        "sab"
+      ],
+      "abre": "08:00",
+      "fecha": "18:00"
+    },
+    {
+      "dias": "Domingo e segunda",
+      "fechado": true
+    }
+  ],
+  "horario_obs": "Feriados: consulte pelo WhatsApp.",
+  "situacao": "demonstracao",
+  "fotos": [],
+  "depoimentos": []
+}

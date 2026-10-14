@@ -1,0 +1,90 @@
+{
+  "modelo": "academia",
+  "slug": "demo-academia",
+  "situacao": "demonstracao",
+  "nome": "Studio Força Funcional",
+  "nome_curto": "Força Funcional",
+  "tipo_schema": "ExerciseGym",
+  "faixa_preco": "R$ 199 – R$ 329",
+  "documento": "",
+  "dominio": "",
+  "whatsapp": "5500000000000",
+  "telefone_exibicao": "(11) 0000-0000",
+  "instagram": "",
+  "email": "",
+  "mensagem_padrao": "Olá! Vim pelo site do Studio Força Funcional e quero conhecer o estúdio.",
+  "cta_topo": "Aula grátis",
+  "cta_final": "Agendar aula experimental",
+  "seo": {
+    "titulo": "Studio Força Funcional | Treino funcional em Pinheiros, São Paulo",
+    "descricao": "Estúdio de treino funcional em Pinheiros, São Paulo. Turmas pequenas, horários das 6h às 21h e aula experimental grátis. Veja planos e agende pelo WhatsApp."
+  },
+  "hero": {
+    "rotulo": "Treino funcional · Pinheiros, São Paulo",
+    "titulo": "Treino em turma pequena,",
+    "titulo_destaque": "resultado de verdade.",
+    "subtitulo": "Aulas de 50 minutos com no máximo 10 alunos e professor corrigindo cada movimento. A primeira aula é por nossa conta.",
+    "cta": "Agendar aula experimental",
+    "cta_msg": "Olá! Vim pelo site e quero agendar uma aula experimental.",
+    "destaque_extra": "1ª",
+    "destaque_extra_rotulo": "aula grátis"
+  },
+  "modalidades_titulo": "Modalidades",
+  "modalidades_intro": "Todas as aulas são adaptadas ao seu nível, do iniciante ao avançado.",
+  "modalidades": [
+    {"nome": "Funcional", "descricao": "Força, mobilidade e condicionamento no mesmo treino.", "duracao": "50 min", "nivel": "Todos os níveis"},
+    {"nome": "HIIT", "descricao": "Treino intervalado de alta intensidade para queimar calorias.", "duracao": "40 min", "nivel": "Intermediário"},
+    {"nome": "Mobilidade", "descricao": "Alongamento ativo e controle do corpo para quem passa o dia sentado.", "duracao": "50 min", "nivel": "Todos os níveis"},
+    {"nome": "Força 50+", "descricao": "Treino de força pensado para quem tem mais de 50 anos.", "duracao": "50 min", "nivel": "Iniciante"}
+  ],
+  "grade_titulo": "Horários da semana",
+  "grade_intro": "Você escolhe o horário de cada dia. O dia de hoje aparece destacado.",
+  "aulas": [
+    {"modalidade": "Funcional", "horario": "06:30", "dias": ["seg", "ter", "qua", "qui", "sex"]},
+    {"modalidade": "HIIT", "horario": "07:30", "dias": ["seg", "qua", "sex"]},
+    {"modalidade": "Mobilidade", "horario": "07:30", "dias": ["ter", "qui"]},
+    {"modalidade": "Funcional", "horario": "09:00", "dias": ["sab"]},
+    {"modalidade": "Força 50+", "horario": "10:00", "dias": ["ter", "qui"]},
+    {"modalidade": "Funcional", "horario": "12:15", "dias": ["seg", "ter", "qua", "qui", "sex"]},
+    {"modalidade": "Funcional", "horario": "18:30", "dias": ["seg", "ter", "qua", "qui", "sex"]},
+    {"modalidade": "HIIT", "horario": "19:30", "dias": ["ter", "qui"]},
+    {"modalidade": "Mobilidade", "horario": "19:30", "dias": ["seg", "qua"]}
+  ],
+  "planos_titulo": "Planos",
+  "planos_intro": "Sem taxa de matrícula. Todos os planos dão acesso a todas as modalidades.",
+  "planos": [
+    {"nome": "Mensal", "preco": 329, "periodo": "/mês", "detalhe": "Sem fidelidade", "inclui": ["Aulas ilimitadas", "Avaliação física inicial"], "tag": "", "destaque": false},
+    {"nome": "Trimestral", "preco": 279, "periodo": "/mês", "detalhe": "R$ 837 no trimestre", "inclui": ["Aulas ilimitadas", "Avaliação física a cada 3 meses", "1 semana de férias congelada"], "tag": "Mais escolhido", "destaque": true},
+    {"nome": "Anual", "preco": 239, "periodo": "/mês", "detalhe": "12x no cartão", "inclui": ["Aulas ilimitadas", "Avaliação física a cada 3 meses", "1 mês de férias congelado", "Camiseta do estúdio"], "tag": "", "destaque": false}
+  ],
+  "diferenciais_titulo": "Por que treinar aqui",
+  "diferenciais": [
+    {"titulo": "Até 10 alunos", "texto": "Turma pequena para o professor acompanhar cada um."},
+    {"titulo": "Sem fila de aparelho", "texto": "Cada aluno tem a sua estação durante a aula."},
+    {"titulo": "Vestiário com ducha", "texto": "Para treinar antes do trabalho."},
+    {"titulo": "Avaliação física", "texto": "Você acompanha a evolução a cada 3 meses."}
+  ],
+  "sobre": {
+    "titulo": "O estúdio",
+    "paragrafos": [
+      "O Studio Força Funcional fica em Pinheiros, a duas quadras do metrô, com 180 m² de área de treino.",
+      "Nossos professores são formados em Educação Física e montam cada aula para que iniciantes e avançados treinem juntos, cada um no seu ritmo."
+    ]
+  },
+  "faq": [
+    {"pergunta": "Nunca treinei. Consigo acompanhar?", "resposta": "Sim. Cada exercício tem uma versão mais leve, e o professor ajusta para você durante a aula."},
+    {"pergunta": "Preciso agendar as aulas?", "resposta": "Sim, pelo WhatsApp ou pelo aplicativo do estúdio, para garantir no máximo 10 alunos por turma."},
+    {"pergunta": "Tem fidelidade?", "resposta": "O plano mensal não tem. Os planos trimestral e anual têm preço menor e permitem congelar nas férias."},
+    {"pergunta": "Como funciona a aula experimental?", "resposta": "É grátis e sem compromisso. Escolha um horário da grade e chame no WhatsApp para reservar."}
+  ],
+  "local_titulo": "Como chegar",
+  "endereco": {"rua": "Rua das Paineiras, 320", "bairro": "Pinheiros", "cidade": "São Paulo", "uf": "SP", "cep": ""},
+  "horarios": [
+    {"dias": "Segunda a sexta", "schema": ["seg", "ter", "qua", "qui", "sex"], "abre": "06:00", "fecha": "21:00"},
+    {"dias": "Sábado", "schema": ["sab"], "abre": "08:00", "fecha": "12:00"},
+    {"dias": "Domingo", "fechado": true}
+  ],
+  "horario_obs": "A duas quadras do metrô.",
+  "fotos": [],
+  "depoimentos": []
+}

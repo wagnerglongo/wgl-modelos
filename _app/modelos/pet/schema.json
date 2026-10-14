@@ -1,0 +1,95 @@
+{
+  "nome": "Pet shop e veterinário",
+  "descricao": "Visual alegre, simulador de banho por porte, tabela de preços, pacotes e leva e traz.",
+  "nichos": "Pet shops, banho e tosa, clínicas veterinárias",
+  "ordem": 5,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Banho e tosa · Moema, São Paulo"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "hero.titulo_destaque", "rotulo": "Final do título em destaque (marca-texto)", "tipo": "texto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "selos", "rotulo": "Selos de confiança (um por linha)", "tipo": "linhas", "ajuda": "Ex.: Banho sem gaiola / Produtos hipoalergênicos"},
+        {"chave": "simulador_titulo", "rotulo": "Título do simulador de preço", "tipo": "texto"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de negócio para o Google", "tipo": "selecao", "opcoes": [["PetStore", "Pet shop"], ["VeterinaryCare", "Clínica veterinária"], ["AnimalShelter", "Abrigo ou ONG"], ["LocalBusiness", "Outro (hotel, adestramento…)"]]}
+      ]
+    },
+    {
+      "id": "precos",
+      "titulo": "Preços por porte",
+      "ajuda": "Os mesmos preços alimentam o simulador do topo.",
+      "campos": [
+        {"chave": "precos_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "precos_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "portes", "rotulo": "Portes (até 3)", "tipo": "lista", "item": "Porte", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Pequeno"},
+          {"chave": "peso", "rotulo": "Peso", "tipo": "texto", "ajuda": "Ex.: até 10 kg"}
+        ]},
+        {"chave": "servicos", "rotulo": "Serviços", "tipo": "lista", "item": "Serviço", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "descricao", "rotulo": "Descrição curta", "tipo": "texto"},
+          {"chave": "preco_p", "rotulo": "Preço porte 1 (R$)", "tipo": "numero"},
+          {"chave": "preco_m", "rotulo": "Preço porte 2 (R$)", "tipo": "numero"},
+          {"chave": "preco_g", "rotulo": "Preço porte 3 (R$)", "tipo": "numero"}
+        ]},
+        {"chave": "precos_nota", "rotulo": "Observação abaixo da tabela", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "pacotes",
+      "titulo": "Pacotes",
+      "campos": [
+        {"chave": "pacotes_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "pacotes_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "pacotes", "rotulo": "Pacotes", "tipo": "lista", "item": "Pacote", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "descricao", "rotulo": "Descrição", "tipo": "area"},
+          {"chave": "preco", "rotulo": "Preço (R$)", "tipo": "numero"},
+          {"chave": "sufixo", "rotulo": "Depois do preço", "tipo": "texto", "ajuda": "Ex.: /mês"},
+          {"chave": "tag", "rotulo": "Etiqueta", "tipo": "texto", "ajuda": "Ex.: Mais escolhido"},
+          {"chave": "destaque", "rotulo": "Destacar este pacote", "tipo": "check"}
+        ]}
+      ]
+    },
+    {
+      "id": "leva",
+      "titulo": "Leva e traz",
+      "campos": [
+        {"chave": "leva.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "leva.texto", "rotulo": "Texto", "tipo": "area"},
+        {"chave": "leva.taxa", "rotulo": "Taxa (R$, 0 = grátis)", "tipo": "numero"},
+        {"chave": "leva.taxa_obs", "rotulo": "Observação da taxa", "tipo": "texto"},
+        {"chave": "leva.bairros", "rotulo": "Bairros atendidos (um por linha)", "tipo": "linhas"}
+      ]
+    },
+    {
+      "id": "vet",
+      "titulo": "Veterinário (opcional)",
+      "campos": [
+        {"chave": "vet_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "vet_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "vet", "rotulo": "Serviços veterinários", "tipo": "lista", "item": "Serviço", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "preco", "rotulo": "Preço (número ou texto)", "tipo": "texto"},
+          {"chave": "descricao", "rotulo": "Descrição", "tipo": "texto"}
+        ]}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal", "tipo": "cor", "padrao": "#5b2fa8"},
+        {"chave": "cores.sol", "rotulo": "Cor de destaque alegre", "tipo": "cor", "padrao": "#ffc93c"},
+        {"chave": "cores.tinta", "rotulo": "Cor escura", "tipo": "cor", "padrao": "#24163f"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#fbf8ff"}
+      ]
+    }
+  ]
+}

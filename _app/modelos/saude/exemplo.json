@@ -1,0 +1,87 @@
+{
+  "modelo": "saude",
+  "slug": "demo-odontologia",
+  "situacao": "demonstracao",
+  "nome": "Clínica Âncora Odontologia",
+  "nome_curto": "Âncora Odontologia",
+  "tipo_schema": "Dentist",
+  "faixa_preco": "R$ 180 – R$ 4.500",
+  "documento": "",
+  "dominio": "",
+  "whatsapp": "5500000000000",
+  "telefone_exibicao": "(11) 0000-0000",
+  "instagram": "",
+  "email": "",
+  "mensagem_padrao": "Olá! Vim pelo site da Âncora Odontologia e quero agendar uma consulta.",
+  "cta_topo": "Agendar",
+  "cta_final": "Agendar pelo WhatsApp",
+  "seo": {
+    "titulo": "Clínica Âncora Odontologia | Dentista na Vila Mariana, São Paulo",
+    "descricao": "Dentista na Vila Mariana, em São Paulo. Avaliação, limpeza, clareamento, implantes e ortodontia. Convênios e particular com recibo. Agende pelo WhatsApp."
+  },
+  "hero": {
+    "rotulo": "Odontologia · Vila Mariana, São Paulo",
+    "titulo": "Cuidar do sorriso",
+    "titulo_destaque": "sem medo de dentista.",
+    "subtitulo": "Consultas com hora marcada, explicação de cada etapa do tratamento e orçamento por escrito antes de começar.",
+    "cta": "Agendar consulta",
+    "cta_msg": "Olá! Vim pelo site e quero agendar uma consulta."
+  },
+  "selos": ["Hora marcada, sem espera", "Orçamento por escrito", "Acessível para cadeirantes"],
+  "consulta": {
+    "titulo": "Sua primeira consulta",
+    "duracao": "40 min",
+    "valor": 180,
+    "reembolso": "Recibo para reembolso",
+    "nota": "A avaliação inclui exame clínico completo e plano de tratamento."
+  },
+  "especialidades_titulo": "Tratamentos",
+  "especialidades_intro": "Do check-up ao implante, tudo no mesmo lugar e com a mesma equipe.",
+  "especialidades": [
+    {"nome": "Avaliação e limpeza", "descricao": "Exame completo, remoção de tártaro e orientação de escovação.", "detalhe": "Recomendado a cada 6 meses"},
+    {"nome": "Clareamento", "descricao": "Clareamento no consultório ou com moldeira para usar em casa.", "detalhe": "Resultado em cerca de 3 semanas"},
+    {"nome": "Implantes", "descricao": "Reposição de dentes perdidos com implante e coroa de porcelana.", "detalhe": "Planejamento com tomografia"},
+    {"nome": "Ortodontia", "descricao": "Aparelho fixo, estético ou alinhadores transparentes.", "detalhe": "Manutenção mensal"},
+    {"nome": "Tratamento de canal", "descricao": "Endodontia com anestesia e técnica rotatória, em menos sessões.", "detalhe": "Alívio da dor na primeira sessão"},
+    {"nome": "Odontopediatria", "descricao": "Atendimento para crianças, com consultório preparado para os pequenos.", "detalhe": "A partir de 1 ano"}
+  ],
+  "equipe_titulo": "Quem vai cuidar de você",
+  "equipe": [
+    {"nome": "Dra. Marina Teles", "funcao": "Implantes e prótese", "registro": "", "bio": "Especialista em implantodontia, 12 anos de clínica."},
+    {"nome": "Dr. Rafael Okada", "funcao": "Ortodontia", "registro": "", "bio": "Especialista em ortodontia e alinhadores transparentes."},
+    {"nome": "Dra. Júlia Campos", "funcao": "Clínica geral e crianças", "registro": "", "bio": "Atende adultos e crianças, com foco em prevenção."}
+  ],
+  "convenios": ["Amil Dental", "Bradesco Dental", "OdontoPrev", "SulAmérica Odonto", "Porto Seguro Odonto"],
+  "convenios_nota": "Também atendemos particular, com recibo para pedir reembolso ao seu plano.",
+  "passos_titulo": "Como é a primeira consulta",
+  "passos": [
+    {"titulo": "Agende pelo WhatsApp", "texto": "Escolha o dia e o horário que forem melhores para você."},
+    {"titulo": "Avaliação completa", "texto": "Exame clínico e, se preciso, radiografia no próprio consultório."},
+    {"titulo": "Plano por escrito", "texto": "Você recebe o tratamento proposto e o orçamento antes de decidir."},
+    {"titulo": "Tratamento no seu tempo", "texto": "Sessões marcadas com antecedência e lembrete no WhatsApp."}
+  ],
+  "diferenciais": [],
+  "sobre": {
+    "titulo": "A clínica",
+    "paragrafos": [
+      "A Âncora Odontologia atende na Vila Mariana com três consultórios, esterilização própria e equipe fixa.",
+      "Explicamos cada passo do tratamento e só começamos quando você estiver seguro com o plano e o orçamento."
+    ]
+  },
+  "faq": [
+    {"pergunta": "Vocês atendem convênio?", "resposta": "Sim. Veja a lista de convênios aceitos. Se o seu não estiver lá, atendemos particular com recibo para reembolso."},
+    {"pergunta": "Quanto custa a primeira consulta?", "resposta": "A avaliação particular custa R$ 180 e inclui exame completo e plano de tratamento."},
+    {"pergunta": "Atendem urgência?", "resposta": "Sim, em horário comercial. Chame no WhatsApp e encaixamos você no mesmo dia sempre que possível."},
+    {"pergunta": "Quais formas de pagamento vocês aceitam?", "resposta": "Pix, débito e crédito em até 10 vezes nos tratamentos."}
+  ],
+  "local_titulo": "Como chegar",
+  "endereco": {"rua": "Rua das Magnólias, 210", "bairro": "Vila Mariana", "cidade": "São Paulo", "uf": "SP", "cep": ""},
+  "horarios": [
+    {"dias": "Segunda a sexta", "schema": ["seg", "ter", "qua", "qui", "sex"], "abre": "08:00", "fecha": "19:00"},
+    {"dias": "Sábado", "schema": ["sab"], "abre": "08:00", "fecha": "12:00"},
+    {"dias": "Domingo", "fechado": true}
+  ],
+  "horario_obs": "A 5 minutos a pé do metrô.",
+  "fotos": [],
+  "depoimentos": []
+}

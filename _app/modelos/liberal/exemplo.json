@@ -1,0 +1,78 @@
+{
+  "modelo": "liberal",
+  "slug": "demo-advocacia",
+  "situacao": "demonstracao",
+  "nome": "Duarte & Lima Advocacia",
+  "nome_curto": "Duarte & Lima",
+  "tipo_schema": "LegalService",
+  "faixa_preco": "",
+  "documento": "",
+  "dominio": "",
+  "whatsapp": "5500000000000",
+  "telefone_exibicao": "(11) 0000-0000",
+  "instagram": "",
+  "email": "",
+  "mensagem_padrao": "Olá! Vim pelo site da Duarte & Lima Advocacia e gostaria de agendar uma conversa.",
+  "cta_topo": "Fale conosco",
+  "cta_final": "Agendar uma conversa",
+  "seo": {
+    "titulo": "Duarte & Lima Advocacia | Advogados trabalhistas e previdenciários em São Paulo",
+    "descricao": "Escritório de advocacia na Bela Vista, em São Paulo. Direito do trabalho, previdenciário, família e consumidor. Atendimento presencial e online."
+  },
+  "hero": {
+    "rotulo": "Advocacia · Bela Vista, São Paulo",
+    "titulo": "Orientação jurídica clara para",
+    "titulo_destaque": "decidir com segurança.",
+    "subtitulo": "Explicamos seus direitos em linguagem simples, analisamos os documentos e só seguimos com o caso quando você entender cada etapa.",
+    "cta": "Agendar uma conversa",
+    "cta_msg": "Olá! Vim pelo site e gostaria de agendar uma conversa para explicar o meu caso."
+  },
+  "atendimento": {
+    "titulo": "Atendimento",
+    "itens": ["Presencial e por videochamada", "Retorno em até 1 dia útil", "Acompanhamento do processo pelo WhatsApp", "Atendemos todo o estado de São Paulo"],
+    "nota": "Traga carteira de trabalho, documentos e o que tiver sobre o caso."
+  },
+  "areas_titulo": "Áreas de atuação",
+  "areas": [
+    {"nome": "Direito do Trabalho", "descricao": "Para trabalhadores que tiveram direitos desrespeitados durante o contrato ou na demissão.", "itens": ["Verbas rescisórias", "Horas extras", "Assédio moral", "Reconhecimento de vínculo"]},
+    {"nome": "Direito Previdenciário", "descricao": "Pedidos e revisões junto ao INSS, do planejamento ao recurso.", "itens": ["Aposentadorias", "Auxílio por incapacidade", "BPC/LOAS", "Revisão de benefício"]},
+    {"nome": "Família e Sucessões", "descricao": "Situações delicadas tratadas com discrição e foco em acordo sempre que possível.", "itens": ["Divórcio", "Pensão alimentícia", "Guarda", "Inventário"]},
+    {"nome": "Direito do Consumidor", "descricao": "Problemas com empresas, bancos e planos de saúde.", "itens": ["Cobranças indevidas", "Negativação", "Negativa de plano de saúde", "Produtos com defeito"]}
+  ],
+  "etapas_titulo": "Como trabalhamos",
+  "etapas": [
+    {"titulo": "Primeira conversa", "texto": "Você conta o que aconteceu e nós explicamos os caminhos possíveis."},
+    {"titulo": "Análise dos documentos", "texto": "Estudamos o caso e dizemos com franqueza se há fundamento para seguir."},
+    {"titulo": "Proposta por escrito", "texto": "Contrato de honorários claro, sem surpresas."},
+    {"titulo": "Acompanhamento", "texto": "Você recebe cada movimentação do processo pelo WhatsApp."}
+  ],
+  "equipe_titulo": "Equipe",
+  "equipe": [
+    {"nome": "Helena Duarte", "cargo": "Sócia · Trabalhista e Previdenciário", "registro": "", "bio": "Pós-graduada em Direito do Trabalho, atua há 14 anos na defesa de trabalhadores."},
+    {"nome": "Marcos Lima", "cargo": "Sócio · Família e Consumidor", "registro": "", "bio": "Mediador e especialista em Direito de Família, com foco em soluções por acordo."}
+  ],
+  "aviso_legal": "Conteúdo informativo. As informações deste site não substituem a análise de um advogado sobre o seu caso.",
+  "diferenciais": [],
+  "sobre": {
+    "titulo": "O escritório",
+    "paragrafos": [
+      "A Duarte & Lima Advocacia atende na Bela Vista, no centro de São Paulo, e também por videochamada para todo o estado.",
+      "Acreditamos que o cliente precisa entender o próprio caso. Por isso explicamos cada passo e respondemos rápido."
+    ]
+  },
+  "faq": [
+    {"pergunta": "A primeira conversa tem custo?", "resposta": "Consulte as condições pelo WhatsApp. Em todos os casos, a proposta de honorários é apresentada por escrito antes de qualquer contratação."},
+    {"pergunta": "Vocês atendem online?", "resposta": "Sim. Fazemos a conversa por videochamada e os documentos podem ser enviados pelo WhatsApp ou e-mail."},
+    {"pergunta": "Quanto tempo demora um processo?", "resposta": "Depende da área e do tribunal. Na primeira conversa explicamos o prazo médio para o seu tipo de caso."},
+    {"pergunta": "Que documentos devo levar?", "resposta": "Documento com foto e tudo o que tiver sobre o caso: contratos, carteira de trabalho, cartas do INSS, mensagens e comprovantes."}
+  ],
+  "local_titulo": "Onde estamos",
+  "endereco": {"rua": "Rua dos Jasmins, 77, conjunto 41", "bairro": "Bela Vista", "cidade": "São Paulo", "uf": "SP", "cep": ""},
+  "horarios": [
+    {"dias": "Segunda a sexta", "schema": ["seg", "ter", "qua", "qui", "sex"], "abre": "09:00", "fecha": "18:00"},
+    {"dias": "Sábado e domingo", "fechado": true}
+  ],
+  "horario_obs": "Atendimento presencial com hora marcada.",
+  "fotos": [],
+  "depoimentos": []
+}

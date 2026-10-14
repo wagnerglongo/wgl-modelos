@@ -1,0 +1,364 @@
+{
+  "secoes": [
+    {
+      "id": "identificacao",
+      "titulo": "Negócio",
+      "campos": [
+        {
+          "chave": "nome",
+          "rotulo": "Nome do negócio",
+          "tipo": "texto",
+          "obrigatorio": true
+        },
+        {
+          "chave": "nome_curto",
+          "rotulo": "Nome curto",
+          "tipo": "texto",
+          "ajuda": "Opcional, aparece no topo. Ex.: Navalha & Café"
+        },
+        {
+          "chave": "situacao",
+          "rotulo": "Situação",
+          "tipo": "selecao",
+          "opcoes": [
+            [
+              "previa",
+              "Prévia — só quem tem o link vê"
+            ],
+            [
+              "portfolio",
+              "Portfólio — aparece na galeria"
+            ],
+            [
+              "demonstracao",
+              "Demonstração — negócio fictício, aparece na galeria"
+            ],
+            [
+              "rascunho",
+              "Rascunho"
+            ]
+          ],
+          "ajuda": "Só use Portfólio com autorização do cliente."
+        },
+        {
+          "chave": "documento",
+          "rotulo": "CNPJ ou CPF",
+          "tipo": "texto",
+          "ajuda": "Aparece no rodapé e na política de privacidade. Ex.: CNPJ 12.345.678/0001-90"
+        },
+        {
+          "chave": "faixa_preco",
+          "rotulo": "Faixa de preço",
+          "tipo": "texto",
+          "ajuda": "Para o Google. Ex.: R$ 15 – R$ 120"
+        }
+      ]
+    },
+    {
+      "id": "contato",
+      "titulo": "WhatsApp e contato",
+      "campos": [
+        {
+          "chave": "whatsapp",
+          "rotulo": "WhatsApp",
+          "tipo": "texto",
+          "ajuda": "Só números, com 55 e DDD. Ex.: 5511987654321",
+          "obrigatorio": true
+        },
+        {
+          "chave": "telefone_exibicao",
+          "rotulo": "Telefone como aparece no site",
+          "tipo": "texto",
+          "ajuda": "Ex.: (11) 98765-4321"
+        },
+        {
+          "chave": "instagram",
+          "rotulo": "Instagram",
+          "tipo": "texto",
+          "ajuda": "Sem o @"
+        },
+        {
+          "chave": "email",
+          "rotulo": "E-mail",
+          "tipo": "texto"
+        },
+        {
+          "chave": "mensagem_padrao",
+          "rotulo": "Mensagem padrão",
+          "tipo": "texto",
+          "ajuda": "Texto que já vem escrito quando o cliente clica."
+        },
+        {
+          "chave": "cta_topo",
+          "rotulo": "Texto do botão do topo",
+          "tipo": "texto",
+          "ajuda": "Ex.: Agendar"
+        },
+        {
+          "chave": "cta_final",
+          "rotulo": "Texto do botão do final",
+          "tipo": "texto",
+          "ajuda": "Ex.: Agendar pelo WhatsApp"
+        }
+      ]
+    },
+    {
+      "id": "fotos",
+      "titulo": "Fotos",
+      "ajuda": "Aparecem numa galeria. A primeira vira a imagem de compartilhamento no WhatsApp e no Google.",
+      "campos": [
+        {
+          "chave": "fotos_titulo",
+          "rotulo": "Título da galeria",
+          "tipo": "texto",
+          "ajuda": "Ex.: O espaço"
+        },
+        {
+          "chave": "fotos",
+          "rotulo": "Fotos",
+          "tipo": "fotos"
+        }
+      ]
+    },
+    {
+      "id": "sobre",
+      "titulo": "Sobre e diferenciais",
+      "campos": [
+        {
+          "chave": "sobre.titulo",
+          "rotulo": "Título da seção Sobre",
+          "tipo": "texto"
+        },
+        {
+          "chave": "sobre.paragrafos",
+          "rotulo": "Texto (deixe uma linha em branco entre parágrafos)",
+          "tipo": "paragrafos"
+        },
+        {
+          "chave": "diferenciais_titulo",
+          "rotulo": "Título dos diferenciais",
+          "tipo": "texto",
+          "ajuda": "Ex.: Por que escolher a gente"
+        },
+        {
+          "chave": "diferenciais",
+          "rotulo": "Diferenciais",
+          "tipo": "lista",
+          "item": "Diferencial",
+          "campos": [
+            {
+              "chave": "titulo",
+              "rotulo": "Título",
+              "tipo": "texto"
+            },
+            {
+              "chave": "texto",
+              "rotulo": "Texto",
+              "tipo": "texto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duvidas",
+      "titulo": "Perguntas frequentes",
+      "ajuda": "Também aparecem no Google como perguntas e respostas.",
+      "campos": [
+        {
+          "chave": "faq",
+          "rotulo": "Perguntas",
+          "tipo": "lista",
+          "item": "Pergunta",
+          "campos": [
+            {
+              "chave": "pergunta",
+              "rotulo": "Pergunta",
+              "tipo": "texto"
+            },
+            {
+              "chave": "resposta",
+              "rotulo": "Resposta",
+              "tipo": "area"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "depoimentos",
+      "titulo": "Depoimentos",
+      "ajuda": "Só depoimentos reais, com autorização de quem escreveu.",
+      "campos": [
+        {
+          "chave": "depoimentos",
+          "rotulo": "Depoimentos",
+          "tipo": "lista",
+          "item": "Depoimento",
+          "campos": [
+            {
+              "chave": "texto",
+              "rotulo": "Texto",
+              "tipo": "area"
+            },
+            {
+              "chave": "nome",
+              "rotulo": "Nome de quem escreveu",
+              "tipo": "texto"
+            }
+          ]
+        },
+        {
+          "chave": "link_avaliacoes",
+          "rotulo": "Link das avaliações no Google",
+          "tipo": "texto"
+        }
+      ]
+    },
+    {
+      "id": "local",
+      "titulo": "Endereço e horários",
+      "campos": [
+        {
+          "chave": "local_titulo",
+          "rotulo": "Título da seção",
+          "tipo": "texto",
+          "ajuda": "Ex.: Como chegar"
+        },
+        {
+          "chave": "endereco.rua",
+          "rotulo": "Rua e número",
+          "tipo": "texto",
+          "ajuda": "Deixe vazio se atende só em domicílio."
+        },
+        {
+          "chave": "endereco.bairro",
+          "rotulo": "Bairro",
+          "tipo": "texto"
+        },
+        {
+          "chave": "endereco.cidade",
+          "rotulo": "Cidade",
+          "tipo": "texto",
+          "obrigatorio": true
+        },
+        {
+          "chave": "endereco.uf",
+          "rotulo": "UF",
+          "tipo": "texto"
+        },
+        {
+          "chave": "endereco.cep",
+          "rotulo": "CEP",
+          "tipo": "texto"
+        },
+        {
+          "chave": "mapa_embed",
+          "rotulo": "Link do mapa incorporado (opcional)",
+          "tipo": "texto",
+          "ajuda": "Google Maps → Compartilhar → Incorporar mapa → copie só o endereço que começa com https://www.google.com/maps/embed"
+        },
+        {
+          "chave": "horarios",
+          "rotulo": "Horários",
+          "tipo": "lista",
+          "item": "Horário",
+          "campos": [
+            {
+              "chave": "dias",
+              "rotulo": "Dias (como aparece no site)",
+              "tipo": "texto",
+              "ajuda": "Ex.: Terça a sexta"
+            },
+            {
+              "chave": "schema",
+              "rotulo": "Quais dias",
+              "tipo": "dias"
+            },
+            {
+              "chave": "abre",
+              "rotulo": "Abre",
+              "tipo": "hora"
+            },
+            {
+              "chave": "fecha",
+              "rotulo": "Fecha",
+              "tipo": "hora"
+            },
+            {
+              "chave": "fechado",
+              "rotulo": "Fechado nesses dias",
+              "tipo": "check"
+            }
+          ]
+        },
+        {
+          "chave": "horario_obs",
+          "rotulo": "Observação dos horários",
+          "tipo": "texto"
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "titulo": "Google e domínio",
+      "ajuda": "É o que aparece na busca. Use serviço + bairro + cidade.",
+      "campos": [
+        {
+          "chave": "seo.titulo",
+          "rotulo": "Título no Google",
+          "tipo": "texto",
+          "max": 65,
+          "ajuda": "Ex.: Barbearia Navalha & Café | Corte e barba na Vila Arens, Jundiaí"
+        },
+        {
+          "chave": "seo.descricao",
+          "rotulo": "Descrição no Google",
+          "tipo": "area",
+          "max": 160
+        },
+        {
+          "chave": "dominio",
+          "rotulo": "Domínio do cliente (para exportar)",
+          "tipo": "texto",
+          "ajuda": "Ex.: https://barbeariadojoao.com.br — usado no pacote .zip do domínio próprio."
+        }
+      ]
+    },
+    {
+      "id": "proposta",
+      "titulo": "Proposta (para prévias)",
+      "ajuda": "Cria a página proposta.html ao lado da prévia, com o plano e o botão para o cliente aceitar. Os valores padrão ficam em Configurações.",
+      "campos": [
+        {
+          "chave": "proposta.ativa",
+          "rotulo": "Mostrar a página de proposta",
+          "tipo": "check"
+        },
+        {
+          "chave": "proposta.para",
+          "rotulo": "Nome de quem vai receber",
+          "tipo": "texto",
+          "ajuda": "Ex.: João. Aparece na saudação. Pode deixar vazio."
+        },
+        {
+          "chave": "proposta.valor",
+          "rotulo": "Valor mensal (R$)",
+          "tipo": "numero",
+          "ajuda": "Vazio = valor padrão das Configurações."
+        },
+        {
+          "chave": "proposta.condicao",
+          "rotulo": "Condição especial",
+          "tipo": "texto",
+          "ajuda": "Vazio = condição padrão. Ex.: 1º mês grátis"
+        },
+        {
+          "chave": "proposta.observacao",
+          "rotulo": "Observação para este cliente",
+          "tipo": "area"
+        }
+      ]
+    }
+  ]
+}

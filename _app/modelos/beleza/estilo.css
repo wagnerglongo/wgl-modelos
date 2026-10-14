@@ -1,0 +1,42 @@
+.marca-nome{text-transform:uppercase;letter-spacing:.02em;font-size:1.5rem}
+.poste{width:.625rem;height:1.75rem;border-radius:99px;flex:none;background:repeating-linear-gradient(-45deg,var(--destaque) 0 5px,#fff 5px 10px,#27456b 10px 15px,#fff 15px 20px);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+
+.hero{background:var(--escuro);color:var(--osso);position:relative}
+.hero-grade{display:grid;gap:2.5rem;padding-block:clamp(3rem,8vw,5.5rem) clamp(3.5rem,8vw,6rem)}
+@media (min-width:60rem){.hero-grade{grid-template-columns:1.5fr 1fr;align-items:end}}
+.hero .rotulo{color:#e8a39c;margin-bottom:1rem;display:block}
+.hero h1{font-weight:900;text-transform:uppercase;font-size:clamp(3rem,10vw,6.5rem);line-height:.9;letter-spacing:-.005em;color:#fff}
+.hero h1 em{font-style:normal;color:#e8a39c}
+.hero-sub{margin-top:1.25rem;font-size:1.1875rem;max-width:34rem;color:#d6d2c7}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero .botao-contorno{color:var(--osso)}
+.placa{border:2px solid rgba(239,233,220,.35);border-radius:var(--raio);padding:1.5rem;display:grid;gap:1rem;font-variant-numeric:tabular-nums}
+.placa-titulo{font:800 1rem/1 var(--fonte-util);letter-spacing:.14em;text-transform:uppercase;color:#e8a39c}
+.placa dl{margin:0;display:grid;gap:.5rem}
+.placa dl div{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dashed rgba(239,233,220,.25);padding-bottom:.5rem}
+.placa dt{color:#d6d2c7}
+.placa dd{margin:0;font:800 1.25rem/1.2 var(--fonte-util);color:#fff}
+.placa-nota{font-size:.9375rem;color:#d6d2c7}
+.faixa-poste{height:14px;background:repeating-linear-gradient(-45deg,var(--destaque) 0 14px,var(--osso) 14px 28px,#27456b 28px 42px,var(--osso) 42px 56px)}
+
+.precos-cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.precos-cab .titulo-secao{margin:0;text-transform:uppercase;font-weight:900}
+.precos-cab p{color:var(--tinta-suave);max-width:28rem}
+.grupos{display:grid;gap:2.5rem 4rem}
+@media (min-width:56rem){.grupos{grid-template-columns:1fr 1fr}}
+.grupo h3{font:800 1rem/1 var(--fonte-util);letter-spacing:.14em;text-transform:uppercase;color:var(--destaque);padding-bottom:.75rem;border-bottom:2px solid var(--tinta)}
+.itens{list-style:none;margin:0;padding:0}
+.item{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:.25rem .75rem;padding:1rem 0;border-bottom:1px solid var(--linha)}
+.item-nome{font:700 1.4375rem/1.1 var(--fonte-util);text-transform:uppercase;letter-spacing:.01em}
+.item-pontos{border-bottom:2px dotted #b9b8ae;transform:translateY(-.3em);min-width:1.5rem}
+.item-preco{font:900 1.625rem/1 var(--fonte-util);font-variant-numeric:tabular-nums}
+.item-preco small{font:600 .8125rem/1 var(--fonte-texto);color:var(--tinta-suave);margin-right:.25rem;text-transform:none}
+.item-desc{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;color:var(--tinta-suave);font-size:.9375rem}
+.item-desc a{color:var(--destaque);font-weight:700;text-decoration:none;white-space:nowrap;margin-left:auto}
+.item-desc a:hover{text-decoration:underline}
+.item-desc a::after{content:" →"}
+.precos-nota{margin-top:1.5rem;color:var(--tinta-suave);font-size:.9375rem}
+
+.secao-diferenciais{background:var(--superficie);border-block:1px solid var(--linha)}
+.secao-diferenciais .titulo-secao,.secao-faq .titulo-secao,.secao-sobre .titulo-secao,.secao-local .titulo-secao{text-transform:uppercase;font-weight:900}
+.diferenciais strong{font-family:var(--fonte-util);text-transform:uppercase;font-weight:800;font-size:1.375rem}

@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panela de Barro | Marmitex e comida caseira no Centro de São Paulo</title>
+<meta name="description" content="Marmitex caseira com cardápio novo todo dia no Centro de São Paulo. Peça até 10h30 pelo WhatsApp e receba no almoço. Tamanhos a partir de R$ 20.">
+<link rel="canonical" href="https://modelos.wglsoftware.com/demo-marmitaria/">
+<meta name="theme-color" content="#c63f24">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Panela de Barro Marmitaria">
+<meta property="og:title" content="Panela de Barro | Marmitex e comida caseira no Centro de São Paulo">
+<meta property="og:description" content="Marmitex caseira com cardápio novo todo dia no Centro de São Paulo. Peça até 10h30 pelo WhatsApp e receba no almoço. Tamanhos a partir de R$ 20.">
+<meta property="og:url" content="https://modelos.wglsoftware.com/demo-marmitaria/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%23c63f24%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%2736%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%20fill%3D%27%23fffaf4%27%3EP%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&amp;display=swap">
+<style>
+/* Layout: herói com a comanda do dia ao lado, cardápio da semana em 5 colunas, tamanhos em cartões, entrega em faixa */
+:root{
+  --fundo:#fffaf4; --superficie:#ffffff; --tinta:#2b1d14; --tinta-suave:#6b5747; --linha:#ecdfcd;
+  --destaque:#c63f24; --folha:#2f6b3a; --mostarda:#f3b634; --cta:#2f6b3a; --cta-hover:color-mix(in srgb,#2f6b3a 85%,#000); --sobre-cta:#ffffff;
+  --fonte-titulo:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --fonte-texto:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --raio:16px; --raio-botao:999px; --topo-fundo:color-mix(in srgb,var(--fundo) 93%,transparent); --rodape-fundo:#2b1d14;
+}/* ===== Base comum a todos os modelos (usa os tokens definidos por cada nicho) ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:5rem;color-scheme:light}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--fonte-texto);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fonte-titulo);line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--foco,var(--destaque));outline-offset:3px;border-radius:4px}
+.embrulho{width:100%;max-width:var(--largura,72rem);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:var(--fundo);padding:.75rem 1rem;z-index:100}
+.pular:focus{left:1rem;top:1rem}
+
+/* barra de demonstração */
+.barra-demo{background:#16181d;color:#e9ebef;font:500 .8125rem/1.4 var(--fonte-texto)}
+.barra-demo .embrulho{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:.5rem}
+.barra-demo a{color:#c6f135;text-decoration:none;font-weight:600}
+.barra-demo a:hover{text-decoration:underline}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:20;background:var(--topo-fundo,var(--fundo));border-bottom:1px solid var(--linha);backdrop-filter:saturate(1.4) blur(8px)}
+.topo-linha{display:flex;align-items:center;gap:1rem;min-height:4rem}
+.marca{text-decoration:none;display:flex;align-items:center;gap:.5rem;margin-right:auto;min-width:0}
+.marca-nome{font-family:var(--fonte-titulo);font-weight:800;font-size:1.25rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{display:none;gap:1.5rem;font-weight:500;font-size:.9375rem}
+.menu a{text-decoration:none;color:var(--tinta-suave)}
+.menu a:hover{color:var(--tinta)}
+@media (min-width:62rem){.menu{display:flex}}
+
+/* botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.375rem;border-radius:var(--raio-botao,var(--raio));font:700 1rem/1.1 var(--fonte-texto);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.botao:hover{transform:translateY(-1px)}
+.botao svg{width:1.25rem;height:1.25rem;flex:none}
+.botao-cta{background:var(--cta);color:var(--sobre-cta)}
+.botao-cta:hover{background:var(--cta-hover,var(--cta))}
+.botao-contorno{border-color:currentColor;background:transparent}
+.botao-pequeno{min-height:2.5rem;padding:.5rem 1rem;font-size:.9375rem}
+@media (max-width:30rem){.topo .botao-pequeno span{display:none}.topo .botao-pequeno{padding:.5rem .75rem}}
+.link-seta{font-weight:700;text-underline-offset:.2em}
+.link-seta::after{content:" →"}
+
+/* seções */
+.secao{padding-block:clamp(3.5rem,8vw,6rem)}
+.titulo-secao{font-size:clamp(1.875rem,4.5vw,2.875rem);margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.rotulo{font:700 .8125rem/1.2 var(--fonte-util,var(--fonte-texto));letter-spacing:.1em;text-transform:uppercase;color:var(--destaque)}
+
+/* diferenciais */
+.diferenciais{list-style:none;padding:0;margin:0;display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.diferenciais li{background:var(--superficie);padding:1.5rem;display:grid;gap:.375rem;align-content:start}
+.diferenciais strong{font-family:var(--fonte-titulo);font-size:1.25rem;line-height:1.2}
+.diferenciais span{color:var(--tinta-suave)}
+
+/* galeria */
+.galeria{list-style:none;padding:0;margin:0;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr))}
+.galeria img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--raio)}
+
+/* sobre */
+.sobre{display:grid;gap:1rem 3rem}
+@media (min-width:56rem){.sobre{grid-template-columns:1fr 1.4fr}}
+.sobre-texto{display:grid;gap:1rem;max-width:62ch;color:var(--tinta-suave);font-size:1.125rem}
+
+/* depoimentos */
+.depoimentos{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr))}
+.depoimentos li{background:var(--superficie);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.depoimentos blockquote{margin:0 0 1rem}
+.depoimentos cite{font-style:normal;font-weight:700}
+
+/* faq */
+.faq-grade{display:grid;gap:0 3rem}
+@media (min-width:56rem){.faq-grade{grid-template-columns:1fr 1.6fr}}
+.faq{border-top:1px solid var(--linha)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;padding:1.125rem 0;font-weight:700;font-size:1.0625rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.5rem/1 var(--fonte-titulo);color:var(--destaque);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 1.25rem;color:var(--tinta-suave);max-width:62ch}
+
+/* local e horários */
+.secao-local{background:var(--superficie);border-top:1px solid var(--linha)}
+.local{display:grid;gap:2.5rem}
+@media (min-width:56rem){.local{grid-template-columns:1.2fr 1fr;align-items:start}}
+.local address{font-style:normal;font-size:1.125rem;margin-bottom:1rem}
+.contato-linhas{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-bottom:1.5rem;color:var(--tinta-suave)}
+.contato-linhas a{font-weight:600}
+.local-botoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.horarios{background:var(--fundo);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.horarios h3{font-size:1.25rem;margin-bottom:1rem}
+.horarios table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horarios th,.horarios td{padding:.625rem 0;border-bottom:1px dashed var(--linha);text-align:left;font-weight:500}
+.horarios td{text-align:right;font-weight:700}
+.horarios tr:last-child th,.horarios tr:last-child td{border-bottom:0}
+.horarios .obs{margin-top:.75rem;font-size:.9375rem;color:var(--tinta-suave)}
+.mapa{grid-column:1/-1}
+.mapa iframe{width:100%;height:22rem;border:0;border-radius:var(--raio)}
+
+/* rodapé */
+.rodape{background:var(--rodape-fundo,var(--tinta));color:var(--rodape-tinta,var(--fundo));padding-block:2.5rem calc(2.5rem + env(safe-area-inset-bottom,0px));font-size:.9375rem}
+.rodape-linha{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem}
+.rodape-links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.rodape a{opacity:.85;text-underline-offset:.2em}
+.rodape a:hover{opacity:1}
+
+/* WhatsApp flutuante */
+.zap-flutuante{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:3.5rem;height:3.5rem;border-radius:50%;display:grid;place-items:center;background:#1f8f4e;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s}
+.zap-flutuante:hover{transform:scale(1.06)}
+.zap-flutuante svg{width:1.75rem;height:1.75rem}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+h1,h2,h3,.marca-nome{font-weight:800;letter-spacing:-.02em}
+.marca-nome{color:var(--destaque)}
+.panela{width:1.75rem;height:1.25rem;border-radius:0 0 .75rem .75rem;background:var(--destaque);position:relative;flex:none;margin-top:.35rem}
+.panela::before{content:"";position:absolute;left:-.25rem;right:-.25rem;top:-.35rem;height:.3rem;border-radius:99px;background:var(--tinta)}
+.rotulo{color:var(--folha)}
+
+.hero-grade{display:grid;gap:2.5rem;padding-block:clamp(2.5rem,7vw,5rem)}
+@media (min-width:60rem){.hero-grade{grid-template-columns:1.3fr 1fr;align-items:center}}
+.hero .rotulo{display:block;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.75rem,7.5vw,5rem);line-height:.95}
+.hero h1 em{font-style:normal;color:var(--destaque)}
+.hero-sub{margin-top:1.25rem;font-size:1.1875rem;color:var(--tinta-suave);max-width:34rem}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.hero .botao-contorno{color:var(--tinta)}
+.prazo{margin-top:1.5rem;display:inline-block;background:var(--superficie);border:1px solid var(--linha);border-radius:999px;padding:.5rem 1rem;font-weight:700;font-size:.9375rem}
+.prazo b{color:var(--destaque)}
+
+.comanda{background:var(--superficie);border-radius:6px 6px 0 0;padding:1.75rem 1.5rem 2.25rem;box-shadow:0 20px 40px -26px rgba(43,29,20,.45);position:relative;transform:rotate(1.2deg);max-width:26rem;justify-self:center;width:100%}
+.comanda::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:radial-gradient(circle at 10px 0,var(--superficie) 9.5px,transparent 10px) 0 0/20px 10px repeat-x}
+.comanda-topo{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;border-bottom:2px dashed var(--linha);padding-bottom:.875rem;margin-bottom:1rem}
+.comanda-dia{font:800 .875rem/1 var(--fonte-titulo);text-transform:uppercase;letter-spacing:.1em;color:var(--folha)}
+.comanda-num{font-size:.8125rem;color:var(--tinta-suave);font-variant-numeric:tabular-nums}
+.comanda h2{font-size:clamp(1.75rem,4vw,2.25rem);line-height:1.05}
+.comanda-acomp{margin-top:.625rem;color:var(--tinta-suave)}
+.comanda-opcao{margin-top:1rem;padding-top:.875rem;border-top:1px solid var(--linha);font-size:.9375rem}
+.comanda-opcao b{color:var(--folha)}
+.comanda-preco{margin-top:1.25rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.comanda-preco span{font:800 1.75rem/1 var(--fonte-titulo);color:var(--destaque);font-variant-numeric:tabular-nums}
+.comanda-preco small{display:block;font:600 .8125rem/1.2 var(--fonte-texto);color:var(--tinta-suave)}
+.comanda .botao{min-height:2.75rem;padding:.625rem 1.125rem}
+
+.secao-cardapio{background:var(--superficie);border-block:1px solid var(--linha)}
+.cab-secao{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.cab-secao .titulo-secao{margin:0}
+.cab-secao p{max-width:30rem;color:var(--tinta-suave)}
+.semana{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+@media (min-width:62rem){.semana{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.dia{border:1px solid var(--linha);border-radius:var(--raio);padding:1.25rem;display:grid;gap:.5rem;align-content:start;background:var(--fundo);position:relative}
+.dia h3{font:800 .875rem/1 var(--fonte-titulo);text-transform:uppercase;letter-spacing:.1em;color:var(--tinta-suave);display:flex;justify-content:space-between;gap:.5rem}
+.dia-prato{font:800 1.3125rem/1.15 var(--fonte-titulo);letter-spacing:-.01em}
+.dia-acomp{color:var(--tinta-suave);font-size:.9375rem}
+.dia-opcao{font-size:.875rem;padding-top:.5rem;border-top:1px dashed var(--linha)}
+.dia-opcao b{color:var(--folha)}
+.dia.hoje{background:var(--superficie);border:2px solid var(--destaque)}
+.dia.hoje h3{color:var(--destaque)}
+.selo-hoje{display:none;background:var(--destaque);color:#fff;border-radius:99px;padding:.2rem .5rem;font-size:.6875rem;letter-spacing:.06em}
+.dia.hoje .selo-hoje{display:inline-block}
+.cardapio-nota{margin-top:1.25rem;color:var(--tinta-suave);font-size:.9375rem}
+
+.tamanhos{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.tamanho{position:relative;background:var(--superficie);border:1px solid var(--linha);border-radius:var(--raio);padding:1.75rem 1.5rem 1.5rem;display:grid;gap:.5rem;align-content:start;text-align:center;justify-items:center}
+.tamanho-letra{width:3.5rem;height:3.5rem;border-radius:50%;display:grid;place-items:center;background:var(--mostarda);font:800 1.5rem/1 var(--fonte-titulo)}
+.tamanho h3{font-size:1.375rem;margin-top:.25rem}
+.tamanho-peso{color:var(--tinta-suave);font-size:.9375rem}
+.tamanho-preco{font:800 2.25rem/1 var(--fonte-titulo);color:var(--destaque);font-variant-numeric:tabular-nums;margin:.5rem 0}
+.tamanho a{font-weight:800;color:var(--folha);text-underline-offset:.2em}
+.tamanho.popular{border:2px solid var(--folha)}
+.tamanho-tag{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);background:var(--folha);color:#fff;border-radius:99px;padding:.3rem .75rem;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.extras{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;color:var(--tinta-suave)}
+.extras span{font-variant-numeric:tabular-nums}
+.extras b{color:var(--tinta)}
+
+.secao-entrega{background:var(--folha);color:#fff}
+.entrega{display:grid;gap:2rem}
+@media (min-width:56rem){.entrega{grid-template-columns:1fr 1.3fr;align-items:start}}
+.secao-entrega .titulo-secao{color:#fff;margin-bottom:1rem}
+.entrega-dados{display:grid;gap:.75rem;font-size:1.0625rem}
+.entrega-dados b{color:var(--mostarda)}
+.bairros{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.bairros li{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:.5rem 1rem;font-weight:700}
+.entrega-nota{margin-top:1rem;color:rgba(255,255,255,.8);font-size:.9375rem}
+</style>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Panela de Barro Marmitaria",
+    "description": "Marmitex caseira com cardápio novo todo dia no Centro de São Paulo. Peça até 10h30 pelo WhatsApp e receba no almoço. Tamanhos a partir de R$ 20.",
+    "url": "https://modelos.wglsoftware.com/demo-marmitaria/",
+    "telephone": "+5500000000000",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua dos Ipês, 215",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+    },
+    "priceRange": "R$ 20 – R$ 30",
+    "servesCuisine": [
+        "Brasileira",
+        "Comida caseira"
+    ],
+    "hasMenu": "https://modelos.wglsoftware.com/demo-marmitaria/#cardapio",
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "14:00"
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços e preços",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Marmita pequena"
+                },
+                "price": "20.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Marmita média"
+                },
+                "price": "24.00",
+                "priceCurrency": "BRL"
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Marmita grande"
+                },
+                "price": "28.00",
+                "priceCurrency": "BRL"
+            }
+        ]
+    }
+}</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Até que horas posso pedir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Até 10h30 para entrega no almoço do mesmo dia. Depois disso, consulte se ainda há marmitas."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Vocês fazem pedidos para empresas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Para 5 marmitas ou mais a entrega é grátis, e fazemos fechamento semanal ou mensal com nota fiscal."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Posso trocar um acompanhamento?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pode. É só avisar no pedido, por exemplo: sem feijão, com mais salada."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quais formas de pagamento vocês aceitam?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pix, dinheiro e cartão na entrega."
+            }
+        }
+    ]
+}</script></head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="barra-demo" role="note"><div class="embrulho">
+  <span>Modelo de demonstração · negócio fictício</span>
+  <a href="https://modelos.wglsoftware.com/">Ver todos os modelos da WGL Software</a>
+</div></div>
+
+<header class="topo">
+  <div class="embrulho topo-linha">
+    <a class="marca" href="#inicio" aria-label="Panela de Barro Marmitaria, início"><span class="panela" aria-hidden="true"></span><span class="marca-nome">Panela de Barro</span></a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#cardapio">Cardápio</a><a href="#precos">Preços</a><a href="#entrega">Entrega</a><a href="#duvidas">Dúvidas</a>    </nav>
+    <a class="botao botao-cta botao-pequeno" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Panela%20de%20Barro%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Pedir agora</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="t-hero">
+  <div class="embrulho hero-grade">
+    <div>
+      <span class="rotulo">Marmitaria · Centro de São Paulo</span>
+      <h1 id="t-hero">Comida de casa, <em>quentinha no seu almoço.</em></h1>
+      <p class="hero-sub">Tempero caseiro e cardápio novo todo dia. Peça pelo WhatsApp de manhã e receba no trabalho ou em casa.</p>
+      <div class="hero-acoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20de%20hoje." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Fazer pedido</span></a>
+        <a class="botao botao-contorno" href="#cardapio">Cardápio da semana</a>      </div>
+      <p class="prazo">Pedidos até <b>10h30</b> · entrega 11h às 13h30</p>    </div>
+        <article class="comanda" id="comanda" aria-label="Prato do dia">
+      <div class="comanda-topo"><span class="comanda-dia" id="comanda-dia">Segunda</span><span class="comanda-num">Prato do dia</span></div>
+      <h2 id="comanda-prato">Frango assado com batata</h2>
+      <p class="comanda-acomp" id="comanda-acomp">Arroz, feijão, farofa e salada</p>
+      <p class="comanda-opcao" id="comanda-opcao"><b>Opção:</b> <span>Omelete de legumes</span></p>
+      <div class="comanda-preco">
+        <span><small>marmita média</small>R$ 24</span>        <a class="botao botao-cta" id="comanda-botao" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20pedir%20o%20prato%20de%20segunda%3A%20Frango%20assado%20com%20batata.%20Tamanho%20Marmita%20m%C3%A9dia." target="_blank" rel="noopener">Pedir este</a>
+      </div>
+    </article>
+      </div>
+</section>
+<section class="secao secao-cardapio" id="cardapio" aria-labelledby="t-card">
+  <div class="embrulho">
+    <div class="cab-secao">
+      <h2 id="t-card" class="titulo-secao">Cardápio da semana</h2>
+      <p>Todo prato acompanha arroz, feijão e salada. O dia de hoje aparece destacado.</p>    </div>
+    <ol class="semana">
+            <li class="dia" data-dia="seg">
+        <h3>Segunda<span class="selo-hoje">Hoje</span></h3>
+        <p class="dia-prato">Frango assado com batata</p>
+        <p class="dia-acomp">Arroz, feijão, farofa e salada</p>
+        <p class="dia-opcao"><b>Opção:</b> Omelete de legumes</p>      </li>
+            <li class="dia" data-dia="ter">
+        <h3>Terça<span class="selo-hoje">Hoje</span></h3>
+        <p class="dia-prato">Bife acebolado</p>
+        <p class="dia-acomp">Arroz, feijão, purê de batata e salada</p>
+        <p class="dia-opcao"><b>Opção:</b> Frango grelhado</p>      </li>
+            <li class="dia" data-dia="qua">
+        <h3>Quarta<span class="selo-hoje">Hoje</span></h3>
+        <p class="dia-prato">Feijoada completa</p>
+        <p class="dia-acomp">Arroz, couve refogada, farofa e laranja</p>
+        <p class="dia-opcao"><b>Opção:</b> Filé de frango à milanesa</p>      </li>
+            <li class="dia" data-dia="qui">
+        <h3>Quinta<span class="selo-hoje">Hoje</span></h3>
+        <p class="dia-prato">Strogonoff de frango</p>
+        <p class="dia-acomp">Arroz, batata palha e salada</p>
+        <p class="dia-opcao"><b>Opção:</b> Carne moída com legumes</p>      </li>
+            <li class="dia" data-dia="sex">
+        <h3>Sexta<span class="selo-hoje">Hoje</span></h3>
+        <p class="dia-prato">Peixe empanado</p>
+        <p class="dia-acomp">Arroz, feijão, legumes no vapor e salada</p>
+        <p class="dia-opcao"><b>Opção:</b> Parmegiana de frango</p>      </li>
+          </ol>
+    <p class="cardapio-nota">Sábado e domingo fechado. Pedidos para eventos e empresas com 2 dias de antecedência.</p>  </div>
+</section>
+
+<section class="secao" id="precos" aria-labelledby="t-tam">
+  <div class="embrulho">
+    <div class="cab-secao">
+      <h2 id="t-tam" class="titulo-secao">Tamanhos e preços</h2>
+      <p>Embalagem de alumínio com tampa, que vai direto ao micro-ondas sem a tampa.</p>    </div>
+    <ul class="tamanhos">
+            <li class="tamanho">
+                <span class="tamanho-letra" aria-hidden="true">P</span>
+        <h3>Marmita pequena</h3>
+        <span class="tamanho-peso">500 g · para quem come pouco</span>
+        <span class="tamanho-preco">R$ 20</span>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20pedir%201%20marmita%20pequena%20do%20prato%20de%20hoje." target="_blank" rel="noopener">Pedir</a>
+      </li>
+            <li class="tamanho popular">
+        <span class="tamanho-tag">Mais pedida</span>        <span class="tamanho-letra" aria-hidden="true">M</span>
+        <h3>Marmita média</h3>
+        <span class="tamanho-peso">700 g · o almoço de sempre</span>
+        <span class="tamanho-preco">R$ 24</span>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20pedir%201%20marmita%20m%C3%A9dia%20do%20prato%20de%20hoje." target="_blank" rel="noopener">Pedir</a>
+      </li>
+            <li class="tamanho">
+                <span class="tamanho-letra" aria-hidden="true">G</span>
+        <h3>Marmita grande</h3>
+        <span class="tamanho-peso">900 g · para quem tem fome</span>
+        <span class="tamanho-preco">R$ 28</span>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20pedir%201%20marmita%20grande%20do%20prato%20de%20hoje." target="_blank" rel="noopener">Pedir</a>
+      </li>
+          </ul>
+    <p class="extras"><span><b>Suco natural 500 ml</b> R$ 8</span><span><b>Refrigerante lata</b> R$ 6</span><span><b>Pudim</b> R$ 7</span></p>  </div>
+</section>
+
+<section class="secao secao-entrega" id="entrega" aria-labelledby="t-ent">
+  <div class="embrulho entrega">
+    <div>
+      <h2 id="t-ent" class="titulo-secao">Entrega</h2>
+      <div class="entrega-dados">
+        <p>Pedidos até <b>10h30</b>, de segunda a sexta.</p>        <p>Entrega das <b>11h às 13h30</b>.</p>        <p>Taxa de entrega: <b>R$ 4</b>. Retirada no balcão sem taxa.</p>      </div>
+    </div>
+    <div>
+      <ul class="bairros"><li>República</li><li>Consolação</li><li>Bela Vista</li><li>Sé</li><li>Santa Cecília</li><li>Liberdade</li></ul>      <p class="entrega-nota">Outros bairros: consulte pelo WhatsApp. Empresas com 5 marmitas ou mais não pagam entrega.</p>    </div>
+  </div>
+</section>
+
+
+
+<section class="secao secao-sobre" id="sobre" aria-labelledby="t-sobre">
+  <div class="embrulho sobre">
+    <h2 id="t-sobre" class="titulo-secao">Quem cozinha</h2>
+    <div class="sobre-texto"><p>A Panela de Barro é uma cozinha de família no Centro de São Paulo. Tudo é feito no dia, com tempero da casa e sem congelados.</p><p>Começamos entregando para os vizinhos do bairro e hoje atendemos escritórios e lojas da região todos os dias úteis.</p></div>
+  </div>
+</section>
+
+
+<section class="secao secao-faq" id="duvidas" aria-labelledby="t-faq">
+  <div class="embrulho faq-grade">
+    <h2 id="t-faq" class="titulo-secao">Perguntas frequentes</h2>
+    <div class="faq">
+            <details open><summary>Até que horas posso pedir?</summary><p>Até 10h30 para entrega no almoço do mesmo dia. Depois disso, consulte se ainda há marmitas.</p></details>
+            <details><summary>Vocês fazem pedidos para empresas?</summary><p>Sim. Para 5 marmitas ou mais a entrega é grátis, e fazemos fechamento semanal ou mensal com nota fiscal.</p></details>
+            <details><summary>Posso trocar um acompanhamento?</summary><p>Pode. É só avisar no pedido, por exemplo: sem feijão, com mais salada.</p></details>
+            <details><summary>Quais formas de pagamento vocês aceitam?</summary><p>Pix, dinheiro e cartão na entrega.</p></details>
+          </div>
+  </div>
+</section>
+
+<section class="secao secao-local" id="contato" aria-labelledby="t-local">
+  <div class="embrulho local">
+    <div class="local-info">
+      <h2 id="t-local" class="titulo-secao">Retirada no balcão</h2>
+            <address>Rua dos Ipês, 215<br>Centro · São Paulo – SP</address>
+            <p class="contato-linhas">
+        <span>WhatsApp <strong>(11) 0000-0000</strong></span>                      </p>
+      <div class="local-botoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Panela%20de%20Barro%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Fazer pedido pelo WhatsApp</span></a>
+        <a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Panela%20de%20Barro%20Marmitaria%20Rua%20dos%20Ip%C3%AAs%2C%20215%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>      </div>
+    </div>
+        <div class="horarios">
+      <h3>Horário de atendimento</h3>
+      <table><tbody>
+                <tr><th scope="row">Segunda a sexta</th><td>10h às 14h</td></tr>
+                <tr><th scope="row">Sábado e domingo</th><td>Fechado</td></tr>
+              </tbody></table>
+      <p class="obs">Pedidos pelo WhatsApp a partir das 8h.</p>    </div>
+          </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="embrulho rodape-linha">
+    <p><strong>Panela de Barro Marmitaria</strong><br>São Paulo – SP · © 2026</p>
+    <p class="rodape-links"><a href="politica-de-privacidade.html">Política de privacidade</a><a href="https://wglsoftware.com" rel="noopener">Site por WGL Software</a></p>
+  </div>
+</footer>
+
+<a class="zap-flutuante" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Panela%20de%20Barro%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg></a>
+<script>
+(function(){
+  var cardapio=[{"dia":"Segunda","sigla":"seg","prato":"Frango assado com batata","acompanha":"Arroz, feijão, farofa e salada","opcao":"Omelete de legumes"},{"dia":"Terça","sigla":"ter","prato":"Bife acebolado","acompanha":"Arroz, feijão, purê de batata e salada","opcao":"Frango grelhado"},{"dia":"Quarta","sigla":"qua","prato":"Feijoada completa","acompanha":"Arroz, couve refogada, farofa e laranja","opcao":"Filé de frango à milanesa"},{"dia":"Quinta","sigla":"qui","prato":"Strogonoff de frango","acompanha":"Arroz, batata palha e salada","opcao":"Carne moída com legumes"},{"dia":"Sexta","sigla":"sex","prato":"Peixe empanado","acompanha":"Arroz, feijão, legumes no vapor e salada","opcao":"Parmegiana de frango"}];
+  var siglas=['dom','seg','ter','qua','qui','sex','sab'];
+  var hoje=siglas[new Date().getDay()];
+  var item=cardapio.find(function(d){return d.sigla===hoje});
+  var li=document.querySelector('.dia[data-dia="'+hoje+'"]');
+  if(li) li.classList.add('hoje');
+  var alvo=item||cardapio[0];
+  document.getElementById('comanda-dia').textContent=item?'Hoje · '+item.dia:alvo.dia+' · próximo cardápio';
+  document.getElementById('comanda-prato').textContent=alvo.prato;
+  document.getElementById('comanda-acomp').textContent=alvo.acompanha;
+  var op=document.getElementById('comanda-opcao');
+  op.hidden=!alvo.opcao; op.querySelector('span').textContent=alvo.opcao;
+  var btn=document.getElementById('comanda-botao');
+  btn.href="https://wa.me/5500000000000?text="+encodeURIComponent('Olá! Quero pedir o prato de '+alvo.dia.toLowerCase()+': '+alvo.prato+'.'+" Tamanho Marmita média.");
+  if(!item) btn.textContent='Encomendar';
+})();
+</script></body>
+</html>

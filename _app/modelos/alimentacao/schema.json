@@ -1,0 +1,81 @@
+{
+  "nome": "Alimentação",
+  "descricao": "Comanda com o prato do dia, cardápio da semana, tamanhos e entrega.",
+  "nichos": "Marmitarias, restaurantes, confeitarias, lanchonetes, delivery",
+  "ordem": 3,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Marmitaria · Centro de Jundiaí"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "hero.titulo_destaque", "rotulo": "Final do título em destaque (outra cor)", "tipo": "texto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de negócio para o Google", "tipo": "selecao", "opcoes": [["Restaurant", "Restaurante ou marmitaria"], ["Bakery", "Padaria ou confeitaria"], ["FastFoodRestaurant", "Lanchonete"], ["CafeOrCoffeeShop", "Café"], ["IceCreamShop", "Sorveteria"], ["FoodEstablishment", "Outro"]]},
+        {"chave": "culinaria", "rotulo": "Tipo de comida (um por linha)", "tipo": "linhas", "ajuda": "Ex.: Brasileira / Comida caseira"}
+      ]
+    },
+    {
+      "id": "cardapio",
+      "titulo": "Cardápio da semana",
+      "ajuda": "O dia de hoje fica destacado sozinho e vai para a comanda do topo.",
+      "campos": [
+        {"chave": "cardapio_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "cardapio", "rotulo": "Dias", "tipo": "lista", "item": "Dia", "campos": [
+          {"chave": "dia", "rotulo": "Dia (como aparece)", "tipo": "texto", "ajuda": "Ex.: Segunda"},
+          {"chave": "sigla", "rotulo": "Dia da semana", "tipo": "selecao", "opcoes": [["seg", "Segunda"], ["ter", "Terça"], ["qua", "Quarta"], ["qui", "Quinta"], ["sex", "Sexta"], ["sab", "Sábado"], ["dom", "Domingo"]]},
+          {"chave": "prato", "rotulo": "Prato principal", "tipo": "texto"},
+          {"chave": "acompanha", "rotulo": "Acompanhamentos", "tipo": "texto"},
+          {"chave": "opcao", "rotulo": "Opção do dia", "tipo": "texto"}
+        ]},
+        {"chave": "cardapio_nota", "rotulo": "Observação abaixo do cardápio", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "tamanhos",
+      "titulo": "Tamanhos e preços",
+      "campos": [
+        {"chave": "tamanhos_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "tamanhos_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "tamanhos", "rotulo": "Tamanhos", "tipo": "lista", "item": "Tamanho", "campos": [
+          {"chave": "sigla", "rotulo": "Letra", "tipo": "texto", "ajuda": "Ex.: P"},
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Marmita média"},
+          {"chave": "peso", "rotulo": "Peso", "tipo": "texto", "ajuda": "Ex.: 700 g"},
+          {"chave": "obs", "rotulo": "Observação", "tipo": "texto"},
+          {"chave": "preco", "rotulo": "Preço (R$)", "tipo": "numero"},
+          {"chave": "popular", "rotulo": "Marcar como \"mais pedida\"", "tipo": "check"}
+        ]},
+        {"chave": "extras", "rotulo": "Extras (bebidas, sobremesas)", "tipo": "lista", "item": "Extra", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "preco", "rotulo": "Preço (R$)", "tipo": "numero"}
+        ]}
+      ]
+    },
+    {
+      "id": "entrega",
+      "titulo": "Entrega",
+      "campos": [
+        {"chave": "entrega.pedido_ate", "rotulo": "Pedidos até", "tipo": "hora"},
+        {"chave": "entrega.dias", "rotulo": "Dias de entrega", "tipo": "texto", "ajuda": "Ex.: segunda a sexta"},
+        {"chave": "entrega.janela", "rotulo": "Horário de entrega", "tipo": "texto", "ajuda": "Ex.: 11h às 13h30"},
+        {"chave": "entrega.taxa", "rotulo": "Taxa de entrega (R$)", "tipo": "numero"},
+        {"chave": "entrega.bairros", "rotulo": "Bairros atendidos (um por linha)", "tipo": "linhas"},
+        {"chave": "entrega.nota", "rotulo": "Observação", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor de destaque (título e preços)", "tipo": "cor", "padrao": "#c63f24"},
+        {"chave": "cores.folha", "rotulo": "Cor dos botões", "tipo": "cor", "padrao": "#2f6b3a"},
+        {"chave": "cores.tinta", "rotulo": "Cor escura (textos e rodapé)", "tipo": "cor", "padrao": "#2b1d14"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#fffaf4"}
+      ]
+    }
+  ]
+}

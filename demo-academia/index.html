@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Força Funcional | Treino funcional em Pinheiros, São Paulo</title>
+<meta name="description" content="Estúdio de treino funcional em Pinheiros, São Paulo. Turmas pequenas, horários das 6h às 21h e aula experimental grátis. Veja planos e agende pelo WhatsApp.">
+<link rel="canonical" href="https://modelos.wglsoftware.com/demo-academia/">
+<meta name="theme-color" content="#0d1222">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Studio Força Funcional">
+<meta property="og:title" content="Studio Força Funcional | Treino funcional em Pinheiros, São Paulo">
+<meta property="og:description" content="Estúdio de treino funcional em Pinheiros, São Paulo. Turmas pequenas, horários das 6h às 21h e aula experimental grátis. Veja planos e agende pelo WhatsApp.">
+<meta property="og:url" content="https://modelos.wglsoftware.com/demo-academia/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%232340e8%27%2F%3E%3Ctext%20x%3D%2732%27%20y%3D%2744%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%2736%27%20font-weight%3D%27700%27%20text-anchor%3D%27middle%27%20fill%3D%27%23ffffff%27%3EF%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700;800&amp;family=Barlow:wght@400;500;600;700&amp;display=swap">
+<style>
+/* Layout: herói escuro com faixa cobalto inclinada e o cartão "aulas de hoje", modalidades, grade semanal com o dia de hoje marcado, planos */
+:root{
+  --fundo:#f3f4f8; --superficie:#ffffff; --tinta:#0d1222; --tinta-suave:#4f5670; --linha:#dde0ea;
+  --destaque:#2340e8; --amarelo:#ffd23f; --cta:#2340e8; --cta-hover:color-mix(in srgb,#2340e8 82%,#000); --sobre-cta:#ffffff;
+  --fonte-titulo:"Saira Condensed","Arial Narrow",Impact,sans-serif;
+  --fonte-texto:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --raio:12px; --raio-botao:6px; --topo-fundo:color-mix(in srgb,var(--fundo) 92%,transparent); --rodape-fundo:#0d1222;
+}/* ===== Base comum a todos os modelos (usa os tokens definidos por cada nicho) ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:5rem;color-scheme:light}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--fonte-texto);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fonte-titulo);line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--foco,var(--destaque));outline-offset:3px;border-radius:4px}
+.embrulho{width:100%;max-width:var(--largura,72rem);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:var(--fundo);padding:.75rem 1rem;z-index:100}
+.pular:focus{left:1rem;top:1rem}
+
+/* barra de demonstração */
+.barra-demo{background:#16181d;color:#e9ebef;font:500 .8125rem/1.4 var(--fonte-texto)}
+.barra-demo .embrulho{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;padding-block:.5rem}
+.barra-demo a{color:#c6f135;text-decoration:none;font-weight:600}
+.barra-demo a:hover{text-decoration:underline}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:20;background:var(--topo-fundo,var(--fundo));border-bottom:1px solid var(--linha);backdrop-filter:saturate(1.4) blur(8px)}
+.topo-linha{display:flex;align-items:center;gap:1rem;min-height:4rem}
+.marca{text-decoration:none;display:flex;align-items:center;gap:.5rem;margin-right:auto;min-width:0}
+.marca-nome{font-family:var(--fonte-titulo);font-weight:800;font-size:1.25rem;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{display:none;gap:1.5rem;font-weight:500;font-size:.9375rem}
+.menu a{text-decoration:none;color:var(--tinta-suave)}
+.menu a:hover{color:var(--tinta)}
+@media (min-width:62rem){.menu{display:flex}}
+
+/* botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:.75rem 1.375rem;border-radius:var(--raio-botao,var(--raio));font:700 1rem/1.1 var(--fonte-texto);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.botao:hover{transform:translateY(-1px)}
+.botao svg{width:1.25rem;height:1.25rem;flex:none}
+.botao-cta{background:var(--cta);color:var(--sobre-cta)}
+.botao-cta:hover{background:var(--cta-hover,var(--cta))}
+.botao-contorno{border-color:currentColor;background:transparent}
+.botao-pequeno{min-height:2.5rem;padding:.5rem 1rem;font-size:.9375rem}
+@media (max-width:30rem){.topo .botao-pequeno span{display:none}.topo .botao-pequeno{padding:.5rem .75rem}}
+.link-seta{font-weight:700;text-underline-offset:.2em}
+.link-seta::after{content:" →"}
+
+/* seções */
+.secao{padding-block:clamp(3.5rem,8vw,6rem)}
+.titulo-secao{font-size:clamp(1.875rem,4.5vw,2.875rem);margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.rotulo{font:700 .8125rem/1.2 var(--fonte-util,var(--fonte-texto));letter-spacing:.1em;text-transform:uppercase;color:var(--destaque)}
+
+/* diferenciais */
+.diferenciais{list-style:none;padding:0;margin:0;display:grid;gap:1px;background:var(--linha);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.diferenciais li{background:var(--superficie);padding:1.5rem;display:grid;gap:.375rem;align-content:start}
+.diferenciais strong{font-family:var(--fonte-titulo);font-size:1.25rem;line-height:1.2}
+.diferenciais span{color:var(--tinta-suave)}
+
+/* galeria */
+.galeria{list-style:none;padding:0;margin:0;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr))}
+.galeria img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--raio)}
+
+/* sobre */
+.sobre{display:grid;gap:1rem 3rem}
+@media (min-width:56rem){.sobre{grid-template-columns:1fr 1.4fr}}
+.sobre-texto{display:grid;gap:1rem;max-width:62ch;color:var(--tinta-suave);font-size:1.125rem}
+
+/* depoimentos */
+.depoimentos{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr))}
+.depoimentos li{background:var(--superficie);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.depoimentos blockquote{margin:0 0 1rem}
+.depoimentos cite{font-style:normal;font-weight:700}
+
+/* faq */
+.faq-grade{display:grid;gap:0 3rem}
+@media (min-width:56rem){.faq-grade{grid-template-columns:1fr 1.6fr}}
+.faq{border-top:1px solid var(--linha)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;padding:1.125rem 0;font-weight:700;font-size:1.0625rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.5rem/1 var(--fonte-titulo);color:var(--destaque);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 1.25rem;color:var(--tinta-suave);max-width:62ch}
+
+/* local e horários */
+.secao-local{background:var(--superficie);border-top:1px solid var(--linha)}
+.local{display:grid;gap:2.5rem}
+@media (min-width:56rem){.local{grid-template-columns:1.2fr 1fr;align-items:start}}
+.local address{font-style:normal;font-size:1.125rem;margin-bottom:1rem}
+.contato-linhas{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-bottom:1.5rem;color:var(--tinta-suave)}
+.contato-linhas a{font-weight:600}
+.local-botoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.horarios{background:var(--fundo);border:1px solid var(--linha);border-radius:var(--raio);padding:1.5rem}
+.horarios h3{font-size:1.25rem;margin-bottom:1rem}
+.horarios table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horarios th,.horarios td{padding:.625rem 0;border-bottom:1px dashed var(--linha);text-align:left;font-weight:500}
+.horarios td{text-align:right;font-weight:700}
+.horarios tr:last-child th,.horarios tr:last-child td{border-bottom:0}
+.horarios .obs{margin-top:.75rem;font-size:.9375rem;color:var(--tinta-suave)}
+.mapa{grid-column:1/-1}
+.mapa iframe{width:100%;height:22rem;border:0;border-radius:var(--raio)}
+
+/* rodapé */
+.rodape{background:var(--rodape-fundo,var(--tinta));color:var(--rodape-tinta,var(--fundo));padding-block:2.5rem calc(2.5rem + env(safe-area-inset-bottom,0px));font-size:.9375rem}
+.rodape-linha{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem}
+.rodape-links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.rodape a{opacity:.85;text-underline-offset:.2em}
+.rodape a:hover{opacity:1}
+
+/* WhatsApp flutuante */
+.zap-flutuante{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:3.5rem;height:3.5rem;border-radius:50%;display:grid;place-items:center;background:#1f8f4e;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s}
+.zap-flutuante:hover{transform:scale(1.06)}
+.zap-flutuante svg{width:1.75rem;height:1.75rem}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+h1,h2,h3,.marca-nome{font-weight:800;text-transform:uppercase;font-style:italic;letter-spacing:.005em}
+.marca-nome{font-size:1.5rem}
+.raio{width:1.5rem;height:1.75rem;background:var(--destaque);clip-path:polygon(55% 0,0 58%,42% 58%,30% 100%,100% 38%,58% 38%);flex:none}
+.rotulo{color:var(--amarelo)}
+.titulo-secao{font-size:clamp(2.125rem,5vw,3.25rem)}
+
+.hero{background:var(--tinta);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-6rem;top:0;bottom:0;width:22rem;background:var(--destaque);transform:skewX(-14deg);opacity:.9}
+.hero-grade{position:relative;z-index:1;display:grid;gap:2.5rem;padding-block:clamp(2.75rem,7vw,5rem)}
+@media (min-width:60rem){.hero-grade{grid-template-columns:1.35fr 1fr;align-items:center}}
+.hero .rotulo{display:block;margin-bottom:1rem}
+.hero h1{font-size:clamp(3rem,9vw,6rem);line-height:.88}
+.hero h1 em{color:var(--amarelo);font-style:italic}
+.hero-sub{margin-top:1.25rem;font-size:1.1875rem;color:#c5cadb;max-width:34rem}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.hero .botao-cta{background:var(--amarelo);color:var(--tinta)}
+.hero .botao-cta:hover{background:color-mix(in srgb,var(--amarelo) 88%,#000)}
+.hero .botao-contorno{color:#fff}
+.numeros{list-style:none;padding:0;margin:2rem 0 0;display:flex;flex-wrap:wrap;gap:1.5rem 2.5rem}
+.numeros li{display:grid}
+.numeros strong{font:800 italic 2.25rem/1 var(--fonte-titulo);color:#fff}
+.numeros span{font-size:.875rem;color:#aab1c7}
+
+.hoje{background:var(--superficie);color:var(--tinta);border-radius:var(--raio);padding:1.5rem;box-shadow:0 28px 50px -24px rgba(0,0,0,.6)}
+.hoje-cab{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.75rem}
+.hoje-cab h2{font-size:1.625rem}
+.hoje-cab span{font-weight:700;color:var(--destaque);text-transform:uppercase;font-size:.8125rem;letter-spacing:.08em}
+.hoje ul{list-style:none;margin:0;padding:0}
+.hoje li{display:grid;grid-template-columns:4.25rem 1fr;gap:.75rem;padding:.625rem 0;border-bottom:1px solid var(--linha);align-items:baseline}
+.hoje li:last-child{border-bottom:0}
+.hoje time{font:800 italic 1.25rem/1 var(--fonte-titulo);color:var(--destaque);font-variant-numeric:tabular-nums}
+.hoje-vazio{color:var(--tinta-suave);padding:.5rem 0}
+.hoje .botao{width:100%;margin-top:1rem}
+
+.cab-secao{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:clamp(1.5rem,3vw,2.25rem)}
+.cab-secao .titulo-secao{margin:0}
+.cab-secao p{max-width:30rem;color:var(--tinta-suave)}
+.modalidades{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))}
+.mod{background:var(--superficie);border-radius:var(--raio);padding:1.5rem;border-top:5px solid var(--destaque);display:flex;flex-direction:column;gap:.5rem}
+.mod h3{font-size:1.625rem;line-height:1}
+.mod p{color:var(--tinta-suave)}
+.mod-info{margin-top:auto;padding-top:.5rem;display:flex;flex-wrap:wrap;gap:.375rem}
+.mod-info span{background:var(--fundo);border-radius:6px;padding:.25rem .5rem;font-size:.8125rem;font-weight:700}
+
+.secao-grade{background:var(--superficie)}
+.grade-rolagem{overflow-x:auto;border:1px solid var(--linha);border-radius:var(--raio)}
+.grade-aulas{width:100%;border-collapse:collapse;min-width:44rem;font-size:.9375rem}
+.grade-aulas th,.grade-aulas td{padding:.75rem .875rem;border-bottom:1px solid var(--linha);text-align:left;vertical-align:top}
+.grade-aulas thead th{font:800 italic 1.125rem/1 var(--fonte-titulo);text-transform:uppercase;background:var(--fundo)}
+.grade-aulas tbody th{font:800 italic 1.25rem/1 var(--fonte-titulo);color:var(--destaque);font-variant-numeric:tabular-nums;white-space:nowrap}
+.grade-aulas td span{display:block;font-weight:600}
+.grade-aulas td:empty::after{content:"—";color:var(--linha)}
+.grade-aulas .col-hoje{background:color-mix(in srgb,var(--amarelo) 22%,#fff)}
+.grade-aulas thead .col-hoje{background:var(--amarelo)}
+.grade-aulas tr:last-child th,.grade-aulas tr:last-child td{border-bottom:0}
+
+.planos{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));align-items:stretch}
+.plano{background:var(--superficie);border:2px solid var(--linha);border-radius:var(--raio);padding:1.75rem 1.5rem;display:flex;flex-direction:column;gap:.75rem;position:relative}
+.plano.destaque{border-color:var(--destaque);box-shadow:0 18px 40px -26px color-mix(in srgb,var(--destaque) 70%,transparent)}
+.plano-tag{position:absolute;top:-.875rem;left:1.5rem;background:var(--destaque);color:#fff;font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;padding:.35rem .75rem;border-radius:6px}
+.plano h3{font-size:1.5rem}
+.plano-preco{font:800 italic 2.75rem/1 var(--fonte-titulo);font-variant-numeric:tabular-nums}
+.plano-preco small{font:600 normal 1rem/1 var(--fonte-texto);color:var(--tinta-suave);text-transform:none}
+.plano-detalhe{color:var(--tinta-suave);font-size:.9375rem}
+.plano ul{list-style:none;margin:0;padding:.75rem 0 0;border-top:1px solid var(--linha);display:grid;gap:.375rem}
+.plano ul li{display:flex;gap:.5rem}
+.plano ul li::before{content:"";width:.5rem;height:.5rem;margin-top:.5rem;background:var(--destaque);transform:skewX(-14deg);flex:none}
+.plano .botao{margin-top:auto}
+.secao-diferenciais .titulo-secao,.secao-faq .titulo-secao,.secao-sobre .titulo-secao,.secao-local .titulo-secao{text-transform:uppercase;font-style:italic}
+</style>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Studio Força Funcional",
+    "description": "Estúdio de treino funcional em Pinheiros, São Paulo. Turmas pequenas, horários das 6h às 21h e aula experimental grátis. Veja planos e agende pelo WhatsApp.",
+    "url": "https://modelos.wglsoftware.com/demo-academia/",
+    "telephone": "+5500000000000",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua das Paineiras, 320",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+    },
+    "priceRange": "R$ 199 – R$ 329",
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "06:00",
+            "closes": "21:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "12:00"
+        }
+    ]
+}</script>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Nunca treinei. Consigo acompanhar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Cada exercício tem uma versão mais leve, e o professor ajusta para você durante a aula."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Preciso agendar as aulas?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, pelo WhatsApp ou pelo aplicativo do estúdio, para garantir no máximo 10 alunos por turma."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Tem fidelidade?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O plano mensal não tem. Os planos trimestral e anual têm preço menor e permitem congelar nas férias."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Como funciona a aula experimental?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "É grátis e sem compromisso. Escolha um horário da grade e chame no WhatsApp para reservar."
+            }
+        }
+    ]
+}</script></head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="barra-demo" role="note"><div class="embrulho">
+  <span>Modelo de demonstração · negócio fictício</span>
+  <a href="https://modelos.wglsoftware.com/">Ver todos os modelos da WGL Software</a>
+</div></div>
+
+<header class="topo">
+  <div class="embrulho topo-linha">
+    <a class="marca" href="#inicio" aria-label="Studio Força Funcional, início"><span class="raio" aria-hidden="true"></span><span class="marca-nome">Força Funcional</span></a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#modalidades">Modalidades</a><a href="#grade">Horários</a><a href="#planos">Planos</a><a href="#duvidas">Dúvidas</a>    </nav>
+    <a class="botao botao-cta botao-pequeno" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Studio%20For%C3%A7a%20Funcional%20e%20quero%20conhecer%20o%20est%C3%BAdio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Aula grátis</span></a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="t-hero">
+  <div class="embrulho hero-grade">
+    <div>
+      <span class="rotulo">Treino funcional · Pinheiros, São Paulo</span>
+      <h1 id="t-hero">Treino em turma pequena, <em>resultado de verdade.</em></h1>
+      <p class="hero-sub">Aulas de 50 minutos com no máximo 10 alunos e professor corrigindo cada movimento. A primeira aula é por nossa conta.</p>
+      <div class="hero-acoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar aula experimental</span></a>
+        <a class="botao botao-contorno" href="#planos">Ver planos</a>      </div>
+            <ul class="numeros">
+        <li><strong>4</strong><span>modalidades</span></li>        <li><strong>27</strong><span>aulas por semana</span></li>        <li><strong>1ª</strong><span>aula grátis</span></li>      </ul>
+          </div>
+        <aside class="hoje" aria-labelledby="t-hoje">
+      <div class="hoje-cab"><h2 id="t-hoje">Aulas de hoje</h2><span id="hoje-dia">Segunda</span></div>
+      <ul id="hoje-lista">
+        <li><time>06:30</time><span>Funcional</span></li><li><time>07:30</time><span>HIIT</span></li><li><time>12:15</time><span>Funcional</span></li><li><time>18:30</time><span>Funcional</span></li><li><time>19:30</time><span>Mobilidade</span></li>      </ul>
+      <p class="hoje-vazio" id="hoje-vazio" hidden>Sem aulas hoje. Veja a grade da semana.</p>
+      <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20aula%20experimental.%20Qual%20hor%C3%A1rio%20tem%20vaga%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Reservar vaga</span></a>
+    </aside>
+      </div>
+</section>
+<section class="secao" id="modalidades" aria-labelledby="t-mod">
+  <div class="embrulho">
+    <div class="cab-secao">
+      <h2 id="t-mod" class="titulo-secao">Modalidades</h2>
+      <p>Todas as aulas são adaptadas ao seu nível, do iniciante ao avançado.</p>    </div>
+    <ul class="modalidades">
+            <li class="mod">
+        <h3>Funcional</h3>
+        <p>Força, mobilidade e condicionamento no mesmo treino.</p>
+        <div class="mod-info"><span>50 min</span><span>Todos os níveis</span></div>
+      </li>
+            <li class="mod">
+        <h3>HIIT</h3>
+        <p>Treino intervalado de alta intensidade para queimar calorias.</p>
+        <div class="mod-info"><span>40 min</span><span>Intermediário</span></div>
+      </li>
+            <li class="mod">
+        <h3>Mobilidade</h3>
+        <p>Alongamento ativo e controle do corpo para quem passa o dia sentado.</p>
+        <div class="mod-info"><span>50 min</span><span>Todos os níveis</span></div>
+      </li>
+            <li class="mod">
+        <h3>Força 50+</h3>
+        <p>Treino de força pensado para quem tem mais de 50 anos.</p>
+        <div class="mod-info"><span>50 min</span><span>Iniciante</span></div>
+      </li>
+          </ul>
+  </div>
+</section>
+
+<section class="secao secao-grade" id="grade" aria-labelledby="t-grade">
+  <div class="embrulho">
+    <div class="cab-secao">
+      <h2 id="t-grade" class="titulo-secao">Horários da semana</h2>
+      <p>Você escolhe o horário de cada dia. O dia de hoje aparece destacado.</p>    </div>
+    <div class="grade-rolagem">
+      <table class="grade-aulas">
+        <thead><tr><th scope="col">Horário</th><th scope="col" data-dia="seg">Seg</th><th scope="col" data-dia="ter">Ter</th><th scope="col" data-dia="qua">Qua</th><th scope="col" data-dia="qui">Qui</th><th scope="col" data-dia="sex">Sex</th><th scope="col" data-dia="sab">Sáb</th></tr></thead>
+        <tbody>
+                    <tr><th scope="row">06:30</th><td data-dia="seg"><span>Funcional</span></td><td data-dia="ter"><span>Funcional</span></td><td data-dia="qua"><span>Funcional</span></td><td data-dia="qui"><span>Funcional</span></td><td data-dia="sex"><span>Funcional</span></td><td data-dia="sab"></td></tr>
+                    <tr><th scope="row">07:30</th><td data-dia="seg"><span>HIIT</span></td><td data-dia="ter"><span>Mobilidade</span></td><td data-dia="qua"><span>HIIT</span></td><td data-dia="qui"><span>Mobilidade</span></td><td data-dia="sex"><span>HIIT</span></td><td data-dia="sab"></td></tr>
+                    <tr><th scope="row">09:00</th><td data-dia="seg"></td><td data-dia="ter"></td><td data-dia="qua"></td><td data-dia="qui"></td><td data-dia="sex"></td><td data-dia="sab"><span>Funcional</span></td></tr>
+                    <tr><th scope="row">10:00</th><td data-dia="seg"></td><td data-dia="ter"><span>Força 50+</span></td><td data-dia="qua"></td><td data-dia="qui"><span>Força 50+</span></td><td data-dia="sex"></td><td data-dia="sab"></td></tr>
+                    <tr><th scope="row">12:15</th><td data-dia="seg"><span>Funcional</span></td><td data-dia="ter"><span>Funcional</span></td><td data-dia="qua"><span>Funcional</span></td><td data-dia="qui"><span>Funcional</span></td><td data-dia="sex"><span>Funcional</span></td><td data-dia="sab"></td></tr>
+                    <tr><th scope="row">18:30</th><td data-dia="seg"><span>Funcional</span></td><td data-dia="ter"><span>Funcional</span></td><td data-dia="qua"><span>Funcional</span></td><td data-dia="qui"><span>Funcional</span></td><td data-dia="sex"><span>Funcional</span></td><td data-dia="sab"></td></tr>
+                    <tr><th scope="row">19:30</th><td data-dia="seg"><span>Mobilidade</span></td><td data-dia="ter"><span>HIIT</span></td><td data-dia="qua"><span>Mobilidade</span></td><td data-dia="qui"><span>HIIT</span></td><td data-dia="sex"></td><td data-dia="sab"></td></tr>
+                  </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="planos" aria-labelledby="t-planos">
+  <div class="embrulho">
+    <div class="cab-secao">
+      <h2 id="t-planos" class="titulo-secao">Planos</h2>
+      <p>Sem taxa de matrícula. Todos os planos dão acesso a todas as modalidades.</p>    </div>
+    <ul class="planos">
+            <li class="plano">
+                <h3>Mensal</h3>
+        <span class="plano-preco">R$ 329 <small>/mês</small></span>
+        <span class="plano-detalhe">Sem fidelidade</span>        <ul><li>Aulas ilimitadas</li><li>Avaliação física inicial</li></ul>        <a class="botao botao-contorno" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20plano%20Mensal." target="_blank" rel="noopener">Quero este plano</a>
+      </li>
+            <li class="plano destaque">
+        <span class="plano-tag">Mais escolhido</span>        <h3>Trimestral</h3>
+        <span class="plano-preco">R$ 279 <small>/mês</small></span>
+        <span class="plano-detalhe">R$ 837 no trimestre</span>        <ul><li>Aulas ilimitadas</li><li>Avaliação física a cada 3 meses</li><li>1 semana de férias congelada</li></ul>        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20plano%20Trimestral." target="_blank" rel="noopener">Quero este plano</a>
+      </li>
+            <li class="plano">
+                <h3>Anual</h3>
+        <span class="plano-preco">R$ 239 <small>/mês</small></span>
+        <span class="plano-detalhe">12x no cartão</span>        <ul><li>Aulas ilimitadas</li><li>Avaliação física a cada 3 meses</li><li>1 mês de férias congelado</li><li>Camiseta do estúdio</li></ul>        <a class="botao botao-contorno" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20plano%20Anual." target="_blank" rel="noopener">Quero este plano</a>
+      </li>
+          </ul>
+  </div>
+</section>
+
+<section class="secao secao-diferenciais" aria-labelledby="t-dif">
+  <div class="embrulho">
+    <h2 id="t-dif" class="titulo-secao">Por que treinar aqui</h2>
+    <ul class="diferenciais">
+      <li><strong>Até 10 alunos</strong><span>Turma pequena para o professor acompanhar cada um.</span></li><li><strong>Sem fila de aparelho</strong><span>Cada aluno tem a sua estação durante a aula.</span></li><li><strong>Vestiário com ducha</strong><span>Para treinar antes do trabalho.</span></li><li><strong>Avaliação física</strong><span>Você acompanha a evolução a cada 3 meses.</span></li>    </ul>
+  </div>
+</section>
+
+
+<section class="secao secao-sobre" id="sobre" aria-labelledby="t-sobre">
+  <div class="embrulho sobre">
+    <h2 id="t-sobre" class="titulo-secao">O estúdio</h2>
+    <div class="sobre-texto"><p>O Studio Força Funcional fica em Pinheiros, a duas quadras do metrô, com 180 m² de área de treino.</p><p>Nossos professores são formados em Educação Física e montam cada aula para que iniciantes e avançados treinem juntos, cada um no seu ritmo.</p></div>
+  </div>
+</section>
+
+
+<section class="secao secao-faq" id="duvidas" aria-labelledby="t-faq">
+  <div class="embrulho faq-grade">
+    <h2 id="t-faq" class="titulo-secao">Perguntas frequentes</h2>
+    <div class="faq">
+            <details open><summary>Nunca treinei. Consigo acompanhar?</summary><p>Sim. Cada exercício tem uma versão mais leve, e o professor ajusta para você durante a aula.</p></details>
+            <details><summary>Preciso agendar as aulas?</summary><p>Sim, pelo WhatsApp ou pelo aplicativo do estúdio, para garantir no máximo 10 alunos por turma.</p></details>
+            <details><summary>Tem fidelidade?</summary><p>O plano mensal não tem. Os planos trimestral e anual têm preço menor e permitem congelar nas férias.</p></details>
+            <details><summary>Como funciona a aula experimental?</summary><p>É grátis e sem compromisso. Escolha um horário da grade e chame no WhatsApp para reservar.</p></details>
+          </div>
+  </div>
+</section>
+
+<section class="secao secao-local" id="contato" aria-labelledby="t-local">
+  <div class="embrulho local">
+    <div class="local-info">
+      <h2 id="t-local" class="titulo-secao">Como chegar</h2>
+            <address>Rua das Paineiras, 320<br>Pinheiros · São Paulo – SP</address>
+            <p class="contato-linhas">
+        <span>WhatsApp <strong>(11) 0000-0000</strong></span>                      </p>
+      <div class="local-botoes">
+        <a class="botao botao-cta" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Studio%20For%C3%A7a%20Funcional%20e%20quero%20conhecer%20o%20est%C3%BAdio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg><span>Agendar aula experimental</span></a>
+        <a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Studio%20For%C3%A7a%20Funcional%20Rua%20das%20Paineiras%2C%20320%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>      </div>
+    </div>
+        <div class="horarios">
+      <h3>Horário de atendimento</h3>
+      <table><tbody>
+                <tr><th scope="row">Segunda a sexta</th><td>6h às 21h</td></tr>
+                <tr><th scope="row">Sábado</th><td>8h às 12h</td></tr>
+                <tr><th scope="row">Domingo</th><td>Fechado</td></tr>
+              </tbody></table>
+      <p class="obs">A duas quadras do metrô.</p>    </div>
+          </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="embrulho rodape-linha">
+    <p><strong>Studio Força Funcional</strong><br>São Paulo – SP · © 2026</p>
+    <p class="rodape-links"><a href="politica-de-privacidade.html">Política de privacidade</a><a href="https://wglsoftware.com" rel="noopener">Site por WGL Software</a></p>
+  </div>
+</footer>
+
+<a class="zap-flutuante" href="https://wa.me/5500000000000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Studio%20For%C3%A7a%20Funcional%20e%20quero%20conhecer%20o%20est%C3%BAdio." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 9.5c.3 2.3 2.6 4.6 5 5l1.3-1.3 2 .9"/></svg></a>
+<script>
+(function(){
+  var A=[{"h":"06:30","m":"Funcional","d":["seg","ter","qua","qui","sex"]},{"h":"07:30","m":"HIIT","d":["seg","qua","sex"]},{"h":"07:30","m":"Mobilidade","d":["ter","qui"]},{"h":"09:00","m":"Funcional","d":["sab"]},{"h":"10:00","m":"Força 50+","d":["ter","qui"]},{"h":"12:15","m":"Funcional","d":["seg","ter","qua","qui","sex"]},{"h":"18:30","m":"Funcional","d":["seg","ter","qua","qui","sex"]},{"h":"19:30","m":"HIIT","d":["ter","qui"]},{"h":"19:30","m":"Mobilidade","d":["seg","qua"]}];
+  var siglas=['dom','seg','ter','qua','qui','sex','sab'], nomes=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+  var i=new Date().getDay(), d=siglas[i];
+  document.querySelectorAll('[data-dia="'+d+'"]').forEach(function(c){c.classList.add('col-hoje')});
+  var hoje=A.filter(function(a){return a.d.indexOf(d)>=0}).sort(function(a,b){return a.h<b.h?-1:1});
+  document.getElementById('hoje-dia').textContent=nomes[i];
+  var ul=document.getElementById('hoje-lista'); ul.innerHTML='';
+  hoje.forEach(function(a){var li=document.createElement('li');var t=document.createElement('time');t.textContent=a.h;var s=document.createElement('span');s.textContent=a.m;li.appendChild(t);li.appendChild(s);ul.appendChild(li)});
+  document.getElementById('hoje-vazio').hidden=hoje.length>0;
+})();
+</script></body>
+</html>

@@ -1,0 +1,190 @@
+{
+    "modelo": "servicos",
+    "slug": "demo-refrigeracao",
+    "dominio": "",
+    "nome": "Frio Certo Climatização",
+    "nome_curto": "Frio Certo",
+    "tipo_schema": "HVACBusiness",
+    "faixa_preco": "R$ 180 – R$ 650",
+    "documento": "",
+    "whatsapp": "5500000000000",
+    "telefone_exibicao": "(11) 0000-0000",
+    "instagram": "",
+    "email": "",
+    "mensagem_padrao": "Olá! Vim pelo site da Frio Certo e quero um orçamento.",
+    "cta_topo": "Orçamento",
+    "cta_final": "Pedir orçamento pelo WhatsApp",
+    "cores": [],
+    "seo": {
+        "titulo": "Frio Certo | Instalação e manutenção de ar-condicionado em São Paulo",
+        "descricao": "Instalação, limpeza e conserto de ar-condicionado split na Zona Sul de São Paulo. Orçamento pelo WhatsApp, nota fiscal e garantia de 90 dias no serviço."
+    },
+    "hero": {
+        "rotulo": "Ar-condicionado · Zona Sul de São Paulo",
+        "titulo": "Instalação e manutenção de ar-condicionado em São Paulo",
+        "subtitulo": "Mande uma foto do cômodo pelo WhatsApp e receba o orçamento no mesmo dia. Instalamos, limpamos e consertamos split de todas as marcas.",
+        "cta": "Pedir orçamento",
+        "cta_msg": "Olá! Vim pelo site e quero um orçamento de ar-condicionado."
+    },
+    "garantias": [
+        "Nota fiscal",
+        "Garantia de 90 dias",
+        "Técnicos com NR-10 e NR-35"
+    ],
+    "calculadora": {
+        "ativa": true,
+        "titulo": "Quantos BTUs eu preciso?"
+    },
+    "servicos_titulo": "Serviços e preços",
+    "servicos_intro": "Preços para split hi-wall de até 12.000 BTUs. Para aparelhos maiores, o valor sai no orçamento.",
+    "servicos": [
+        {
+            "nome": "Instalação de split",
+            "preco": 450,
+            "a_partir": true,
+            "descricao": "Instalação completa com até 3 metros de tubulação.",
+            "inclui": [
+                "Suporte e fixação da condensadora",
+                "Vácuo na tubulação",
+                "Teste de funcionamento"
+            ]
+        },
+        {
+            "nome": "Limpeza e higienização",
+            "preco": 180,
+            "descricao": "Limpeza da evaporadora com bactericida, sem sujar a parede.",
+            "inclui": [
+                "Lavagem da serpentina e dos filtros",
+                "Desobstrução do dreno",
+                "Medição da temperatura de saída"
+            ]
+        },
+        {
+            "nome": "Conserto e recarga de gás",
+            "preco": 120,
+            "a_partir": true,
+            "descricao": "Visita de diagnóstico. O valor é abatido se você aprovar o conserto.",
+            "inclui": [
+                "Teste de vazamento",
+                "Orçamento do reparo na hora",
+                "Recarga com gás R-32 ou R-410A"
+            ]
+        },
+        {
+            "nome": "Desinstalação e mudança",
+            "preco": 250,
+            "a_partir": true,
+            "descricao": "Retiramos o aparelho recolhendo o gás e reinstalamos no novo endereço.",
+            "inclui": [
+                "Recolhimento do gás",
+                "Transporte combinado",
+                "Reinstalação cobrada à parte"
+            ]
+        },
+        {
+            "nome": "Contrato para empresas",
+            "preco": "sob consulta",
+            "descricao": "Manutenção preventiva mensal ou trimestral com laudo, conforme o PMOC.",
+            "inclui": [
+                "Visitas programadas",
+                "Relatório por aparelho",
+                "Atendimento prioritário"
+            ]
+        }
+    ],
+    "etapas": [
+        {
+            "titulo": "Mande uma foto",
+            "texto": "Pelo WhatsApp, do cômodo e de onde vai a condensadora."
+        },
+        {
+            "titulo": "Receba o orçamento",
+            "texto": "Com o preço fechado e o que está incluso, no mesmo dia."
+        },
+        {
+            "titulo": "Agende a visita",
+            "texto": "Escolha o dia. A instalação leva em média 3 horas."
+        },
+        {
+            "titulo": "Garantia de 90 dias",
+            "texto": "Qualquer problema no serviço, voltamos sem custo."
+        }
+    ],
+    "areas_atendidas": [
+        "Moema",
+        "Vila Mariana",
+        "Saúde",
+        "Ipiranga",
+        "Campo Belo",
+        "Brooklin",
+        "Santo Amaro"
+    ],
+    "areas_nota": "Outras regiões de São Paulo: consulte a taxa de deslocamento.",
+    "diferenciais": [],
+    "sobre": {
+        "titulo": "Quem somos",
+        "paragrafos": [
+            "A Frio Certo é uma empresa da Zona Sul de São Paulo especializada em ar-condicionado residencial e comercial.",
+            "Trabalhamos com equipe própria, sem terceirizar, e emitimos nota fiscal em todos os serviços."
+        ]
+    },
+    "faq": [
+        {
+            "pergunta": "Vocês vendem o aparelho?",
+            "resposta": "Não. Você compra onde preferir e nós instalamos. Se quiser, indicamos o modelo certo para o cômodo."
+        },
+        {
+            "pergunta": "De quanto em quanto tempo preciso limpar o ar-condicionado?",
+            "resposta": "Em casa, a cada 6 meses. Em comércio com uso diário, a cada 3 meses."
+        },
+        {
+            "pergunta": "A instalação suja muito?",
+            "resposta": "Não. Cobrimos os móveis, furamos com coletor de pó e deixamos o cômodo limpo."
+        },
+        {
+            "pergunta": "Quais formas de pagamento vocês aceitam?",
+            "resposta": "Pix, débito e crédito em até 3 vezes sem juros."
+        }
+    ],
+    "local_titulo": "Fale com a gente",
+    "endereco": {
+        "rua": "",
+        "bairro": "",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "cep": ""
+    },
+    "horarios": [
+        {
+            "dias": "Segunda a sexta",
+            "schema": [
+                "seg",
+                "ter",
+                "qua",
+                "qui",
+                "sex"
+            ],
+            "abre": "08:00",
+            "fecha": "18:00"
+        },
+        {
+            "dias": "Sábado",
+            "schema": [
+                "sab"
+            ],
+            "abre": "08:00",
+            "fecha": "12:00"
+        },
+        {
+            "dias": "Domingo",
+            "fechado": true
+        }
+    ],
+    "horario_obs": "Atendemos em domicílio. Não temos loja aberta ao público.",
+    "situacao": "demonstracao",
+    "fotos": [],
+    "depoimentos": [],
+    "criado_em": "2026-10-01T10:00:00-03:00",
+    "previa_desde": "2026-10-01T10:00:00-03:00",
+    "atualizado_em": "2026-10-01T10:04:00-03:00"
+}

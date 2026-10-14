@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="32 81 382 199" role="img" aria-label="WGL Software">
+  <g stroke-linejoin="round" stroke-width="6">
+    <line x1="160" y1="245" x2="222" y2="118" stroke="#f6b33c" stroke-width="64" stroke-linecap="round"/>
+    <polygon points="38.8,85 111.2,85 188.3,230 131.7,260" fill="#f35a2c" stroke="#f35a2c"/>
+    <circle cx="160" cy="245" r="32" fill="#c0392b"/>
+    <polygon points="259.7,230.1 316.3,259.9 408.2,85 335.8,85" fill="#1b74c9" stroke="#1b74c9"/>
+    <line x1="222" y1="118" x2="288" y2="245" stroke="#28995a" stroke-width="64" stroke-linecap="round"/>
+    <circle cx="288" cy="245" r="32" fill="#14683a"/>
+  </g>
+</svg>

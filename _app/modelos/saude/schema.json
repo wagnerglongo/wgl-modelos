@@ -1,0 +1,85 @@
+{
+  "nome": "Saúde e bem-estar",
+  "descricao": "Visual calmo e confiável, cartão da primeira consulta, especialidades, equipe e convênios.",
+  "nichos": "Dentistas, fisioterapia, psicologia, nutrição, clínicas",
+  "ordem": 4,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Odontologia · Vila Mariana, São Paulo"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "hero.titulo_destaque", "rotulo": "Final do título em destaque (itálico)", "tipo": "texto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "selos", "rotulo": "Selos de confiança (um por linha)", "tipo": "linhas", "ajuda": "Ex.: Atendimento com hora marcada / Acessível para cadeirantes"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de negócio para o Google", "tipo": "selecao", "opcoes": [["Dentist", "Dentista"], ["Physiotherapy", "Fisioterapia"], ["MedicalClinic", "Clínica médica"], ["Optician", "Ótica"], ["MedicalBusiness", "Psicologia, nutrição e outros"]]}
+      ]
+    },
+    {
+      "id": "consulta",
+      "titulo": "Cartão da primeira consulta",
+      "ajuda": "Aparece ao lado do título. Deixe tudo vazio para esconder.",
+      "campos": [
+        {"chave": "consulta.titulo", "rotulo": "Título do cartão", "tipo": "texto", "ajuda": "Ex.: Sua primeira consulta"},
+        {"chave": "consulta.duracao", "rotulo": "Duração", "tipo": "texto", "ajuda": "Ex.: 40 min"},
+        {"chave": "consulta.valor", "rotulo": "Valor particular (R$)", "tipo": "numero", "ajuda": "Deixe vazio se preferir não mostrar."},
+        {"chave": "consulta.reembolso", "rotulo": "Reembolso", "tipo": "texto", "ajuda": "Ex.: Recibo para reembolso"},
+        {"chave": "consulta.nota", "rotulo": "Nota destacada", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "especialidades",
+      "titulo": "Especialidades e tratamentos",
+      "campos": [
+        {"chave": "especialidades_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Tratamentos"},
+        {"chave": "especialidades_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "especialidades", "rotulo": "Especialidades", "tipo": "lista", "item": "Especialidade", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "descricao", "rotulo": "Descrição", "tipo": "area"},
+          {"chave": "detalhe", "rotulo": "Detalhe em destaque", "tipo": "texto", "ajuda": "Ex.: Resultado em 3 semanas"}
+        ]}
+      ]
+    },
+    {
+      "id": "equipe",
+      "titulo": "Equipe",
+      "campos": [
+        {"chave": "equipe_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "equipe", "rotulo": "Profissionais", "tipo": "lista", "item": "Profissional", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "funcao", "rotulo": "Função ou especialidade", "tipo": "texto"},
+          {"chave": "registro", "rotulo": "Registro profissional", "tipo": "texto", "ajuda": "Ex.: CRO-SP 12345, CRP 06/12345, CREFITO-3 12345-F"},
+          {"chave": "bio", "rotulo": "Formação e experiência", "tipo": "area"},
+          {"chave": "foto", "rotulo": "Foto (nome do arquivo enviado em Fotos)", "tipo": "texto", "ajuda": "Opcional. Sem foto, aparecem as iniciais."}
+        ]}
+      ]
+    },
+    {
+      "id": "convenios",
+      "titulo": "Convênios e primeira consulta",
+      "campos": [
+        {"chave": "convenios", "rotulo": "Convênios aceitos (um por linha)", "tipo": "linhas"},
+        {"chave": "convenios_nota", "rotulo": "Observação", "tipo": "texto", "ajuda": "Ex.: Atendemos particular com recibo para reembolso."},
+        {"chave": "passos_titulo", "rotulo": "Título do passo a passo", "tipo": "texto"},
+        {"chave": "passos", "rotulo": "Passo a passo", "tipo": "lista", "item": "Passo", "campos": [
+          {"chave": "titulo", "rotulo": "Título", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Texto", "tipo": "texto"}
+        ]}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal", "tipo": "cor", "padrao": "#0f6e6a"},
+        {"chave": "cores.menta", "rotulo": "Cor clara de apoio", "tipo": "cor", "padrao": "#e2f1ed"},
+        {"chave": "cores.tinta", "rotulo": "Cor dos textos", "tipo": "cor", "padrao": "#12302f"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#f6f9f8"}
+      ]
+    }
+  ]
+}

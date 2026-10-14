@@ -1,0 +1,79 @@
+{
+  "nome": "Academia e estúdio",
+  "descricao": "Visual esportivo, aulas de hoje automáticas, grade da semana, modalidades e planos.",
+  "nichos": "Academias de bairro, estúdios funcionais, pilates, crossfit, lutas, dança",
+  "ordem": 6,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Treino funcional · Pinheiros, São Paulo"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "hero.titulo_destaque", "rotulo": "Final do título em destaque (amarelo)", "tipo": "texto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "hero.destaque_extra", "rotulo": "Número extra no topo (opcional)", "tipo": "texto", "ajuda": "Ex.: 1ª aula grátis → escreva \"1ª\" aqui e \"aula grátis\" abaixo"},
+        {"chave": "hero.destaque_extra_rotulo", "rotulo": "Texto do número extra", "tipo": "texto"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de negócio para o Google", "tipo": "selecao", "opcoes": [["ExerciseGym", "Academia ou estúdio"], ["SportsActivityLocation", "Centro esportivo, lutas, natação"], ["DanceGroup", "Escola de dança"], ["HealthClub", "Clube ou spa"]]}
+      ]
+    },
+    {
+      "id": "modalidades",
+      "titulo": "Modalidades",
+      "campos": [
+        {"chave": "modalidades_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "modalidades_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "modalidades", "rotulo": "Modalidades", "tipo": "lista", "item": "Modalidade", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "descricao", "rotulo": "Descrição", "tipo": "area"},
+          {"chave": "duracao", "rotulo": "Duração da aula", "tipo": "texto", "ajuda": "Ex.: 50 min"},
+          {"chave": "nivel", "rotulo": "Nível", "tipo": "texto", "ajuda": "Ex.: Todos os níveis"}
+        ]}
+      ]
+    },
+    {
+      "id": "grade",
+      "titulo": "Grade de horários",
+      "ajuda": "A grade e as \"aulas de hoje\" do topo são montadas a partir desta lista.",
+      "campos": [
+        {"chave": "grade_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "grade_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "aulas", "rotulo": "Aulas", "tipo": "lista", "item": "Aula", "campos": [
+          {"chave": "modalidade", "rotulo": "Modalidade", "tipo": "texto"},
+          {"chave": "horario", "rotulo": "Horário", "tipo": "hora"},
+          {"chave": "dias", "rotulo": "Dias", "tipo": "dias"}
+        ]}
+      ]
+    },
+    {
+      "id": "planos",
+      "titulo": "Planos",
+      "campos": [
+        {"chave": "planos_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "planos_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "planos", "rotulo": "Planos", "tipo": "lista", "item": "Plano", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "preco", "rotulo": "Preço (R$)", "tipo": "numero"},
+          {"chave": "periodo", "rotulo": "Depois do preço", "tipo": "texto", "ajuda": "Ex.: /mês"},
+          {"chave": "detalhe", "rotulo": "Detalhe", "tipo": "texto", "ajuda": "Ex.: no plano anual, R$ 2.388 à vista"},
+          {"chave": "inclui", "rotulo": "O que inclui (um por linha)", "tipo": "linhas"},
+          {"chave": "tag", "rotulo": "Etiqueta", "tipo": "texto", "ajuda": "Ex.: Mais escolhido"},
+          {"chave": "destaque", "rotulo": "Destacar este plano", "tipo": "check"}
+        ]}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal", "tipo": "cor", "padrao": "#2340e8"},
+        {"chave": "cores.amarelo", "rotulo": "Cor de destaque", "tipo": "cor", "padrao": "#ffd23f"},
+        {"chave": "cores.tinta", "rotulo": "Cor escura (topo e rodapé)", "tipo": "cor", "padrao": "#0d1222"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#f3f4f8"}
+      ]
+    }
+  ]
+}

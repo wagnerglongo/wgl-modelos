@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------
+# Dados do servidor: NUNCA vão para o Git (senha do painel, prévias
+# de leads, lixeira, sites de clientes gerados pelo painel).
+# ---------------------------------------------------------------
+/_app/dados/*
+!/_app/dados/index.html
+!/_app/dados/fichas/
+/_app/dados/fichas/*
+!/_app/dados/fichas/demo-*.json
+
+# Cada site criado no painel vira uma pasta na raiz: fica só no servidor.
+/*/
+!/_app/
+!/admin/
+!/assets/
+!/demo-*/
+
+# Arquivos de backup e pacotes de atualização
+*.bak
+*.zip
+atualizar-*.php
+instalar-*.php
+.DS_Store
+Thumbs.db

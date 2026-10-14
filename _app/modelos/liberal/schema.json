@@ -1,0 +1,73 @@
+{
+  "nome": "Profissional liberal",
+  "descricao": "Visual sóbrio e editorial, áreas de atuação, como trabalhamos e equipe. Sem preços, como pede a OAB.",
+  "nichos": "Advocacia, contabilidade, corretores de imóveis, consultorias",
+  "ordem": 7,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Advocacia · Bela Vista, São Paulo"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "hero.titulo_destaque", "rotulo": "Final do título em destaque (itálico)", "tipo": "texto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "atendimento.titulo", "rotulo": "Título da ficha de atendimento", "tipo": "texto"},
+        {"chave": "atendimento.itens", "rotulo": "Itens da ficha (um por linha)", "tipo": "linhas", "ajuda": "Ex.: Atendimento presencial e online / Retorno em até 1 dia útil"},
+        {"chave": "atendimento.nota", "rotulo": "Nota da ficha", "tipo": "texto"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de negócio para o Google", "tipo": "selecao", "opcoes": [["LegalService", "Advocacia"], ["AccountingService", "Contabilidade"], ["RealEstateAgent", "Corretor ou imobiliária"], ["InsuranceAgency", "Corretora de seguros"], ["ProfessionalService", "Consultoria e outros"]]}
+      ]
+    },
+    {
+      "id": "areas",
+      "titulo": "Áreas de atuação",
+      "campos": [
+        {"chave": "areas_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Serviços, para contadores"},
+        {"chave": "areas", "rotulo": "Áreas", "tipo": "lista", "item": "Área", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "descricao", "rotulo": "Descrição", "tipo": "area"},
+          {"chave": "itens", "rotulo": "O que inclui (um por linha)", "tipo": "linhas"}
+        ]}
+      ]
+    },
+    {
+      "id": "etapas",
+      "titulo": "Como trabalhamos",
+      "campos": [
+        {"chave": "etapas_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "etapas", "rotulo": "Etapas", "tipo": "lista", "item": "Etapa", "campos": [
+          {"chave": "titulo", "rotulo": "Título", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Texto", "tipo": "texto"}
+        ]}
+      ]
+    },
+    {
+      "id": "equipe",
+      "titulo": "Equipe",
+      "campos": [
+        {"chave": "equipe_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "equipe", "rotulo": "Profissionais", "tipo": "lista", "item": "Profissional", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto"},
+          {"chave": "cargo", "rotulo": "Cargo ou área", "tipo": "texto"},
+          {"chave": "registro", "rotulo": "Registro profissional", "tipo": "texto", "ajuda": "Ex.: OAB/SP 123.456, CRC 1SP123456, CRECI 12345-F"},
+          {"chave": "bio", "rotulo": "Formação e experiência", "tipo": "area"},
+          {"chave": "foto", "rotulo": "Foto (nome do arquivo enviado em Fotos)", "tipo": "texto", "ajuda": "Opcional. Sem foto, aparecem as iniciais."}
+        ]},
+        {"chave": "aviso_legal", "rotulo": "Aviso legal (aparece abaixo da equipe)", "tipo": "area", "ajuda": "Para advogados: o site deve ser informativo, sem promessa de resultado nem preço."}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal", "tipo": "cor", "padrao": "#24453a"},
+        {"chave": "cores.bronze", "rotulo": "Cor de detalhe", "tipo": "cor", "padrao": "#a07c43"},
+        {"chave": "cores.tinta", "rotulo": "Cor dos textos", "tipo": "cor", "padrao": "#1b2330"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#f5f6f4"}
+      ]
+    }
+  ]
+}
