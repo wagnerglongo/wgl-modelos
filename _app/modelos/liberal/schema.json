@@ -1,8 +1,8 @@
 {
   "nome": "Profissional liberal",
   "descricao": "Visual sóbrio e editorial, áreas de atuação, como trabalhamos e equipe. Sem preços, como pede a OAB.",
-  "nichos": "Advocacia, contabilidade, corretores de imóveis, consultorias",
-  "ordem": 7,
+  "nichos": "Escritórios com equipe: advocacia, contabilidade, corretores de imóveis, consultorias",
+  "ordem": 8,
   "secoes": [
     {
       "id": "abertura",

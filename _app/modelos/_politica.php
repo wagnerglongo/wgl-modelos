@@ -30,17 +30,29 @@ a{color:#0b5cad}
 <p>Este site não tem cadastro nem formulário que guarde dados. Quando você clica em um botão de contato, a conversa acontece no WhatsApp, e nós recebemos o seu nome de perfil, o seu número e o que você escrever na mensagem.</p>
 
 <h2>Para que usamos</h2>
+<?php if (in_array($M['tipo_schema'] ?? '', ['Attorney', 'LegalService'], true)): ?>
+<ul>
+<li>Responder o seu contato, agendar a conversa inicial e avaliar o seu caso.</li>
+<li>Prestar o serviço contratado e cumprir obrigações legais.</li>
+</ul>
+<p>Tudo o que você conta está protegido pelo sigilo profissional da advocacia, mesmo que você não contrate.</p>
+<?php else: ?>
 <ul>
 <li>Responder o seu contato, fazer orçamento, agendar ou combinar pedidos e entregas.</li>
 <li>Emitir nota fiscal e cumprir obrigações legais, quando houver uma compra.</li>
 </ul>
+<?php endif; ?>
 <p>Não vendemos nem repassamos os seus dados para terceiros com fins de publicidade.</p>
 
 <h2>Por quanto tempo guardamos</h2>
 <p>Guardamos as conversas enquanto forem necessárias para o atendimento e pelo prazo exigido por lei para documentos fiscais.</p>
 
 <h2>Cookies e estatísticas</h2>
+<?php if (preg_match('/^GTM-[A-Z0-9]{4,12}$/i', trim((string)$v('gtm_id')))): ?>
+<p>Com a sua autorização no aviso de cookies, o site usa o Google Tag Manager e o Google Analytics para contar visitas e cliques nos botões de contato (páginas vistas, tipo de aparelho e cidade aproximada). Se você recusar, nada disso é carregado. Para mudar a escolha, apague os dados do site no seu navegador.</p>
+<?php else: ?>
 <p>O site pode usar ferramentas de estatística de visitas, que registram dados como páginas vistas, tipo de aparelho e cidade aproximada, sem identificar você pessoalmente.</p>
+<?php endif; ?>
 
 <h2>Seus direitos (LGPD)</h2>
 <p>Pela Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você pode pedir para ver, corrigir ou apagar os seus dados, ou saber com quem eles foram compartilhados. Basta pedir pelo WhatsApp <?= e($v('telefone_exibicao')) ?><?php if ($v('email')): ?> ou pelo e-mail <?= e($v('email')) ?><?php endif; ?>.</p>

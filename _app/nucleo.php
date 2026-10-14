@@ -198,10 +198,13 @@ function schema_modelo(string $modelo): array
     $comum = ler_json(MODELOS_DIR . '/_comum.schema.json');
     $proprio = ler_json(MODELOS_DIR . "/$modelo/schema.json");
     // seções do modelo entram depois de "Identificação" e "Contato"
+    // o modelo pode esconder seções comuns ("ocultar_comuns": ["sobre", "depoimentos"])
+    $ocultar = (array)($proprio['ocultar_comuns'] ?? []);
+    $resto = array_values(array_filter(array_slice($comum['secoes'] ?? [], 2), fn($s) => !in_array($s['id'] ?? '', $ocultar, true)));
     $secoes = array_merge(
         array_slice($comum['secoes'] ?? [], 0, 2),
         $proprio['secoes'] ?? [],
-        array_slice($comum['secoes'] ?? [], 2)
+        $resto
     );
     return ['nome' => $proprio['nome'] ?? $modelo, 'secoes' => $secoes];
 }

@@ -1,0 +1,90 @@
+{
+  "nome": "Advocacia",
+  "descricao": "Para advogada ou advogado com escritório próprio: áreas de atuação em abas de pasta, apresentação com OAB, etapas do atendimento e formulário que abre no WhatsApp. Segue o Provimento 205/2021 da OAB: sem preço, sem promessa de resultado e sem depoimentos.",
+  "nichos": "Advogadas e advogados, escritórios pequenos",
+  "ordem": 7,
+  "ocultar_comuns": ["sobre", "depoimentos"],
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Nome e cidade ajudam no Google. Ex.: Marina Valente, advogada em São José do Rio Preto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area", "ajuda": "Diga quem você atende e o que a pessoa ganha com a primeira conversa. Sem promessa de resultado."},
+        {"chave": "hero.fatos", "rotulo": "Informações rápidas (uma por linha)", "tipo": "linhas", "ajuda": "Até 3. Ex.: Atendimento presencial e online / Retorno em até 1 dia útil"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto", "ajuda": "Ex.: Conversar pelo WhatsApp"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"},
+        {"chave": "tipo_schema", "rotulo": "Tipo para o Google", "tipo": "selecao", "opcoes": [["Attorney", "Advogada ou advogado"], ["LegalService", "Escritório de advocacia"]]}
+      ]
+    },
+    {
+      "id": "advogada",
+      "titulo": "Apresentação",
+      "campos": [
+        {"chave": "advogada.nome", "rotulo": "Nome profissional", "tipo": "texto", "ajuda": "Como aparece na OAB. Ex.: Dra. Marina Valente"},
+        {"chave": "advogada.registro", "rotulo": "Número da OAB", "tipo": "texto", "ajuda": "Obrigatório na publicidade da advocacia. Ex.: OAB/SP 123.456"},
+        {"chave": "advogada.foto", "rotulo": "Foto profissional (nome do arquivo enviado em Fotos)", "tipo": "texto", "ajuda": "Retrato na vertical. Sem foto, aparecem as iniciais."},
+        {"chave": "apresentacao.titulo", "rotulo": "Título da apresentação", "tipo": "texto", "ajuda": "Ex.: Sobre mim, ou O escritório"},
+        {"chave": "apresentacao.paragrafos", "rotulo": "Texto (deixe uma linha em branco entre os parágrafos)", "tipo": "paragrafos"},
+        {"chave": "formacao", "rotulo": "Formação e trajetória", "tipo": "lista", "item": "Etapa", "campos": [
+          {"chave": "ano", "rotulo": "Ano", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Curso ou experiência", "tipo": "texto"}
+        ]}
+      ]
+    },
+    {
+      "id": "areas",
+      "titulo": "Áreas de atuação",
+      "ajuda": "Cada área vira uma aba. O botão de cada aba abre o WhatsApp já citando a área.",
+      "campos": [
+        {"chave": "areas_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Áreas de atuação"},
+        {"chave": "areas", "rotulo": "Áreas", "tipo": "lista", "item": "Área", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Curto, cabe na aba. Ex.: Família"},
+          {"chave": "resumo", "rotulo": "Resumo", "tipo": "area"},
+          {"chave": "situacoes", "rotulo": "Situações comuns (uma por linha)", "tipo": "linhas"}
+        ]}
+      ]
+    },
+    {
+      "id": "atendimento",
+      "titulo": "Como funciona o atendimento",
+      "campos": [
+        {"chave": "etapas_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "etapas", "rotulo": "Etapas", "tipo": "lista", "item": "Etapa", "campos": [
+          {"chave": "titulo", "rotulo": "Título", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Texto", "tipo": "texto"}
+        ]},
+        {"chave": "etapas_nota", "rotulo": "Nota abaixo das etapas", "tipo": "texto", "ajuda": "Ex.: Durante o processo, você recebe cada movimentação importante pelo WhatsApp."},
+        {"chave": "areas_atendidas", "rotulo": "Cidades atendidas (uma por linha)", "tipo": "linhas", "ajuda": "Vai para o Google (SEO local)."}
+      ]
+    },
+    {
+      "id": "formulario",
+      "titulo": "Formulário de contato",
+      "ajuda": "O formulário monta a mensagem e abre no WhatsApp. Nada fica gravado no site.",
+      "campos": [
+        {"chave": "contato.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Ex.: Conte o seu caso"},
+        {"chave": "contato.texto", "rotulo": "Texto", "tipo": "area"},
+        {"chave": "aviso_legal", "rotulo": "Aviso legal", "tipo": "area", "ajuda": "Aparece abaixo do formulário."}
+      ]
+    },
+    {
+      "id": "medicao",
+      "titulo": "Medição de cliques (Google)",
+      "campos": [
+        {"chave": "gtm_id", "rotulo": "ID do Google Tag Manager", "tipo": "texto", "ajuda": "Ex.: GTM-ABC1234. Só carrega depois que o visitante aceita os cookies. Eventos enviados: clique_whatsapp e envio_formulario."}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal (botões e detalhes)", "tipo": "cor", "padrao": "#8f1d32"},
+        {"chave": "cores.escuro", "rotulo": "Cor escura (formulário e rodapé)", "tipo": "cor", "padrao": "#1b2130"},
+        {"chave": "cores.tinta", "rotulo": "Cor dos textos", "tipo": "cor", "padrao": "#1b2130"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#eceff1"}
+      ]
+    }
+  ]
+}

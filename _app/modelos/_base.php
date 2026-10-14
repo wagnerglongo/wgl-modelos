@@ -9,6 +9,10 @@ $deps = array_values(array_filter($f['depoimentos'] ?? [], fn($x) => !empty($x['
 $paragrafos = array_values(array_filter((array)$v('sobre.paragrafos', []), fn($p) => trim((string)$p) !== ''));
 $ctaTopoMsg = $v('cta_topo_msg') ?: null;
 $ctaFinalMsg = $v('cta_final_msg') ?: null;
+// o modelo pode esconder seções comuns que não fazem sentido para o nicho (ex.: depoimentos na advocacia)
+$ocultar = $M['ocultar'] ?? [];
+if (in_array('sobre', $ocultar, true)) { $paragrafos = []; $difs = []; }
+if (in_array('depoimentos', $ocultar, true)) { $deps = []; }
 $linkWgl = $wglZap ? 'https://wa.me/' . $wglZap . '?text=' . rawurlencode('Olá! Vi o modelo "' . ($f['nome'] ?? '') . '" e quero um site assim.') : $wglSite;
 ?><!doctype html>
 <html lang="pt-BR">
@@ -124,6 +128,8 @@ $linkWgl = $wglZap ? 'https://wa.me/' . $wglZap . '?text=' . rawurlencode('Olá!
   </div>
 </section>
 <?php endif; ?>
+
+<?= $B['contato'] ?>
 
 <section class="secao secao-local" id="contato" aria-labelledby="t-local">
   <div class="embrulho local">

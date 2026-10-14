@@ -1,0 +1,200 @@
+{
+    "modelo": "advocacia",
+    "slug": "demo-advogada",
+    "situacao": "demonstracao",
+    "nome": "Marina Valente Advocacia",
+    "nome_curto": "Marina Valente",
+    "tipo_schema": "Attorney",
+    "faixa_preco": "",
+    "documento": "",
+    "dominio": "",
+    "whatsapp": "5500000000000",
+    "telefone_exibicao": "(17) 0000-0000",
+    "instagram": "",
+    "email": "",
+    "mensagem_padrao": "Olá! Vim pelo site e gostaria de agendar uma conversa com a Dra. Marina.",
+    "cta_topo": "WhatsApp",
+    "cta_final": "Conversar pelo WhatsApp",
+    "seo": {
+        "titulo": "Marina Valente | Advogada em São José do Rio Preto: família, INSS e consumidor",
+        "descricao": "Advogada em São José do Rio Preto. Família e sucessões, previdenciário (INSS), consumidor e trabalho. Atendimento presencial e online, com retorno em até 1 dia útil."
+    },
+    "hero": {
+        "titulo": "Marina Valente, advogada em São José do Rio Preto",
+        "subtitulo": "Atendo pessoas em questões de família, INSS, consumo e trabalho. Na primeira conversa você entende a sua situação, quais caminhos existem e o que cada um envolve.",
+        "fatos": [
+            "Presencial em Rio Preto e online",
+            "Retorno em até 1 dia útil",
+            "Explicações sem juridiquês"
+        ],
+        "cta": "Conversar pelo WhatsApp",
+        "cta_msg": "Olá! Vim pelo site e gostaria de agendar uma conversa para explicar o meu caso."
+    },
+    "advogada": {
+        "nome": "Dra. Marina Valente",
+        "registro": "OAB/SP 000.000",
+        "foto": ""
+    },
+    "apresentacao": {
+        "titulo": "Sobre mim",
+        "paragrafos": [
+            "Sou advogada desde 2013. Antes de abrir o meu escritório, trabalhei seis anos em um escritório de Direito de Família e Previdenciário aqui em Rio Preto.",
+            "Meu compromisso é que você entenda o próprio caso. Explico cada etapa, digo com franqueza quando não vale a pena seguir e mantenho você informado sobre o andamento, sem precisar ficar perguntando."
+        ]
+    },
+    "formacao": [
+        {
+            "ano": "2012",
+            "texto": "Bacharelado em Direito"
+        },
+        {
+            "ano": "2013",
+            "texto": "Inscrição na OAB/SP"
+        },
+        {
+            "ano": "2015",
+            "texto": "Pós-graduação em Direito de Família e Sucessões"
+        },
+        {
+            "ano": "2019",
+            "texto": "Pós-graduação em Direito Previdenciário"
+        },
+        {
+            "ano": "2021",
+            "texto": "Escritório próprio e formação em mediação de conflitos"
+        }
+    ],
+    "areas_titulo": "Áreas de atuação",
+    "areas": [
+        {
+            "nome": "Família",
+            "resumo": "Divórcio, guarda e pensão pedem cuidado com as pessoas envolvidas, não só com o processo. Sempre que possível, o caminho é o acordo.",
+            "situacoes": [
+                "Divórcio consensual ou litigioso",
+                "Guarda e convivência com os filhos",
+                "Pensão alimentícia: pedido, revisão e cobrança",
+                "Inventário e partilha, no cartório ou na Justiça",
+                "Reconhecimento de união estável"
+            ]
+        },
+        {
+            "nome": "INSS",
+            "resumo": "Do planejamento da aposentadoria ao recurso quando o INSS nega ou corta um benefício.",
+            "situacoes": [
+                "Aposentadorias e planejamento",
+                "Benefício negado ou cortado",
+                "Auxílio por incapacidade",
+                "BPC/LOAS para idosos e pessoas com deficiência",
+                "Revisão do valor do benefício"
+            ]
+        },
+        {
+            "nome": "Consumidor",
+            "resumo": "Quando uma empresa, banco ou plano de saúde não resolve o problema pelos canais de atendimento.",
+            "situacoes": [
+                "Cobrança indevida e nome negativado",
+                "Negativa de cobertura do plano de saúde",
+                "Voo cancelado ou bagagem extraviada",
+                "Produto com defeito ou serviço não prestado"
+            ]
+        },
+        {
+            "nome": "Trabalho",
+            "resumo": "Orientação a trabalhadores sobre os seus direitos durante o contrato e na rescisão.",
+            "situacoes": [
+                "Verbas rescisórias não pagas",
+                "Horas extras",
+                "Trabalho sem registro em carteira",
+                "Assédio no ambiente de trabalho"
+            ]
+        }
+    ],
+    "etapas_titulo": "Como funciona o atendimento",
+    "etapas": [
+        {
+            "titulo": "Você me conta o caso",
+            "texto": "Pelo WhatsApp ou pelo formulário, em poucas linhas. Respondo em até 1 dia útil para marcar a conversa."
+        },
+        {
+            "titulo": "Conversa inicial",
+            "texto": "Presencial ou por vídeo. Ouço a situação e explico quais caminhos existem."
+        },
+        {
+            "titulo": "Análise dos documentos",
+            "texto": "Estudo o que você enviar e digo com clareza se há fundamento para seguir."
+        },
+        {
+            "titulo": "Proposta por escrito",
+            "texto": "Honorários e etapas no contrato, antes de qualquer providência."
+        }
+    ],
+    "etapas_nota": "Durante o processo, você recebe cada movimentação importante pelo WhatsApp, explicada em linguagem simples.",
+    "areas_atendidas": [
+        "São José do Rio Preto",
+        "Mirassol",
+        "Bady Bassitt",
+        "Cedral",
+        "Guapiaçu"
+    ],
+    "contato": {
+        "titulo": "Conte o seu caso",
+        "texto": "Escreva em poucas linhas o que aconteceu. A mensagem abre no WhatsApp já preenchida, e você revisa antes de enviar."
+    },
+    "aviso_legal": "Conteúdo informativo, conforme o Código de Ética e Disciplina da OAB e o Provimento 205/2021. As informações deste site não substituem a análise de um caso concreto.",
+    "gtm_id": "",
+    "cores": {},
+    "fotos": [],
+    "faq": [
+        {
+            "pergunta": "A primeira conversa é cobrada?",
+            "resposta": "As condições da conversa inicial são informadas no primeiro contato pelo WhatsApp. Nenhum serviço começa sem contrato de honorários assinado."
+        },
+        {
+            "pergunta": "Você atende online?",
+            "resposta": "Sim. A conversa pode ser por videochamada e os documentos podem ser enviados pelo WhatsApp ou por e-mail. Atendo também clientes de outras cidades."
+        },
+        {
+            "pergunta": "Quanto tempo leva um processo?",
+            "resposta": "Depende do tipo de caso e da vara. Na conversa inicial explico o prazo comum para situações como a sua, sem prometer datas."
+        },
+        {
+            "pergunta": "Que documentos devo separar?",
+            "resposta": "Documento com foto, comprovante de endereço e tudo o que tiver sobre o caso: contratos, cartas do INSS, carteira de trabalho, mensagens e comprovantes."
+        },
+        {
+            "pergunta": "O que eu contar fica em sigilo?",
+            "resposta": "Sim. O sigilo profissional é um dever da advocacia e vale desde o primeiro contato, mesmo que você não contrate."
+        }
+    ],
+    "local_titulo": "Onde atendo",
+    "endereco": {
+        "rua": "Rua das Acácias, 410, sala 52",
+        "bairro": "Centro",
+        "cidade": "São José do Rio Preto",
+        "uf": "SP",
+        "cep": ""
+    },
+    "mapa_embed": "",
+    "horarios": [
+        {
+            "dias": "Segunda a sexta",
+            "schema": [
+                "seg",
+                "ter",
+                "qua",
+                "qui",
+                "sex"
+            ],
+            "abre": "09:00",
+            "fecha": "18:00"
+        },
+        {
+            "dias": "Sábado e domingo",
+            "fechado": true
+        }
+    ],
+    "horario_obs": "Atendimento presencial com hora marcada.",
+    "criado_em": "2026-10-13T21:40:00-03:00",
+    "previa_desde": "2026-10-13T21:40:00-03:00",
+    "atualizado_em": "2026-10-13T21:40:00-03:00"
+}

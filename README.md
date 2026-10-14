@@ -21,7 +21,11 @@ _app/dados/              DADOS DO SERVIDOR (fora do Git, ver abaixo)
 demo-*/                  demonstrações geradas a partir de _app/dados/fichas/demo-*.json
 ```
 
-Modelos: beleza, serviços técnicos, alimentação, saúde e bem-estar, pet shop, academia e profissional liberal.
+Modelos: beleza, serviços técnicos, alimentação, saúde e bem-estar, pet shop, academia, advocacia e profissional liberal.
+
+O modelo **advocacia** (`_app/modelos/advocacia/`) segue o Provimento 205/2021 da OAB: sem preço, sem promessa de resultado e sem depoimentos, com o número da OAB visível. Tem áreas de atuação em abas, formulário que monta a mensagem e abre no WhatsApp (nada é gravado), eventos `clique_whatsapp` e `envio_formulario` para o Google Tag Manager, que só carrega depois do aceite de cookies. Demonstração: `demo-advogada/`.
+
+Um modelo pode esconder seções comuns que não servem ao nicho com `"ocultar_comuns"` no `schema.json` (e `$M['ocultar']` no `modelo.php`), e pode incluir um bloco antes do endereço em `$B['contato']`.
 
 ## O que fica fora do Git
 
