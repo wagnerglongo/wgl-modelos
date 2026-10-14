@@ -27,6 +27,10 @@ $sistemas = [
     ['id' => 'crm-cobranca', 'etiqueta' => 'Call center e cobrança', 'nome' => 'CRM de cobrança para operação de call center',
      'texto' => 'Sistema usado em produção numa operação real: cargas do credor, filas de operadores, acionamentos, acordos e boletos integrados por API, dashboards de supervisão.',
      'itens' => ['Integração com a API do credor', 'API REST documentada', 'Busca e dashboards em tempo real']],
+    ['id' => 'plataforma-ead', 'etiqueta' => 'Escolas, institutos e treinamentos', 'nome' => 'Plataforma de cursos online com certificado',
+     'texto' => 'Aulas em vídeo, materiais e avaliações. O aluno continua de onde parou e, ao concluir, recebe o certificado em PDF com QR Code que qualquer empresa confere online.',
+     'itens' => ['Mede o tempo realmente assistido', 'Certificado com validação pública', 'Painel com relatórios e permissões'],
+     'demo' => 'https://plataforma-ead.wglsoftware.com'],
 ];
 ?><!doctype html>
 <html lang="pt-BR">
@@ -116,7 +120,7 @@ a{color:inherit}
 .sistemas .rotulo{font:500 .8125rem/1 var(--mono);color:var(--lima);letter-spacing:.06em;text-transform:uppercase}
 .sistemas>.largura>h2{font-size:clamp(1.75rem,4.5vw,2.75rem);margin-top:.875rem;max-width:22ch}
 .sistemas .sub{margin-top:1rem;color:#c3cdc7;max-width:60ch}
-.sis-lista{list-style:none;margin:2.25rem 0 0;padding:0;display:grid;gap:clamp(1.25rem,3vw,2rem);grid-template-columns:repeat(auto-fill,minmax(min(100%,21rem),1fr))}
+.sis-lista{list-style:none;margin:2.25rem 0 0;padding:0;display:grid;gap:clamp(1.25rem,3vw,2rem);grid-template-columns:repeat(auto-fill,minmax(min(100%,24rem),1fr))}
 .sis{display:grid;grid-template-rows:auto 1fr;background:#1b2b23;border:1px solid rgba(255,255,255,.1);border-radius:12px;overflow:hidden}
 .sis img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top left;border-bottom:1px solid rgba(255,255,255,.1)}
 .sis-corpo{display:flex;flex-direction:column;gap:.75rem;padding:1.25rem 1.25rem 1.5rem}
@@ -212,7 +216,7 @@ a{color:inherit}
           <h3><?= e($s['nome']) ?></h3>
           <p><?= e($s['texto']) ?></p>
           <ul><?php foreach ($s['itens'] as $i): ?><li><?= e($i) ?></li><?php endforeach; ?></ul>
-          <p class="links"><a href="https://github.com/wagnerglongo/<?= e($s['id']) ?>" target="_blank" rel="noopener">Ver o código</a><a href="<?= e($contato('Olá! Vi o sistema "' . $s['nome'] . '" e quero algo parecido para o meu negócio.')) ?>" target="_blank" rel="noopener">Quero um sistema assim</a></p>
+          <p class="links"><?php if (!empty($s['demo'])): ?><a href="<?= e($s['demo']) ?>" target="_blank" rel="noopener">Ver funcionando</a><?php endif; ?><a href="https://github.com/wagnerglongo/<?= e($s['id']) ?>" target="_blank" rel="noopener">Ver o código</a><a href="<?= e($contato('Olá! Vi o sistema "' . $s['nome'] . '" e quero algo parecido para o meu negócio.')) ?>" target="_blank" rel="noopener">Quero um sistema assim</a></p>
         </div>
       </li>
       <?php endforeach; ?>

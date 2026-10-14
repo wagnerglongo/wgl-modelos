@@ -3,8 +3,9 @@ DirectoryIndex index.php index.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  # pasta interna do painel
+  # pasta interna do painel e arquivos do Git
   RewriteRule ^_app(/|$) - [F,L]
+  RewriteRule ^(\.git|\.gitignore|README\.md)(/|$) - [F,L]
 </IfModule>
 
 <IfModule mod_headers.c>
