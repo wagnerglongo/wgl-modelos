@@ -1,0 +1,67 @@
+{
+  "nome": "Loja e catálogo",
+  "descricao": "Vitrine com filtro por categoria, sacola de compras e pedido fechado no WhatsApp, sem mensalidade de plataforma de loja.",
+  "nichos": "Semijoias, bijuterias, moda, cosméticos, presentes, artesanato",
+  "ordem": 8,
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "campos": [
+        {"chave": "hero.rotulo", "rotulo": "Linha pequena acima do título", "tipo": "texto", "ajuda": "Ex.: Semijoias · São Paulo"},
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto"},
+        {"chave": "hero.titulo_destaque", "rotulo": "Final do título em destaque (outra cor)", "tipo": "texto"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão principal", "tipo": "texto", "ajuda": "Leva até a coleção. Ex.: Ver a coleção"},
+        {"chave": "selos", "rotulo": "Selos abaixo da abertura (um por linha)", "tipo": "linhas", "ajuda": "Só o que for verdade. Ex.: Banho de ouro 18k / Enviamos para todo o Brasil"},
+        {"chave": "tipo_schema", "rotulo": "Tipo de loja para o Google", "tipo": "selecao", "opcoes": [["JewelryStore", "Joias e semijoias"], ["ClothingStore", "Roupas e moda"], ["ShoeStore", "Calçados"], ["HealthAndBeautyBusiness", "Cosméticos e beleza"], ["HobbyShop", "Artesanato"], ["Store", "Outra loja"]]}
+      ]
+    },
+    {
+      "id": "colecao",
+      "titulo": "Produtos",
+      "ajuda": "As categorias viram filtros sozinhas. Para a foto, envie as imagens na seção Fotos e informe aqui o número delas (1 = a primeira). Sem foto, aparece um desenho da categoria.",
+      "campos": [
+        {"chave": "colecao_titulo", "rotulo": "Título da coleção", "tipo": "texto", "ajuda": "Ex.: A coleção"},
+        {"chave": "colecao_intro", "rotulo": "Texto ao lado do título", "tipo": "texto"},
+        {"chave": "produtos", "rotulo": "Produtos", "tipo": "lista", "item": "Produto", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Brinco gota cristal"},
+          {"chave": "categoria", "rotulo": "Categoria", "tipo": "texto", "ajuda": "Ex.: Brincos, Colares, Anéis, Pulseiras, Conjuntos"},
+          {"chave": "detalhe", "rotulo": "Material ou detalhe", "tipo": "texto", "ajuda": "Ex.: Banho de ouro 18k · zircônia"},
+          {"chave": "preco", "rotulo": "Preço (R$)", "tipo": "numero"},
+          {"chave": "preco_de", "rotulo": "Preço antigo (R$), se estiver em oferta", "tipo": "numero"},
+          {"chave": "codigo", "rotulo": "Código", "tipo": "texto", "ajuda": "Opcional. Vai no pedido para você achar a peça."},
+          {"chave": "foto", "rotulo": "Nº da foto (seção Fotos)", "tipo": "numero"},
+          {"chave": "destaque", "rotulo": "Mostrar na vitrine da abertura", "tipo": "check"},
+          {"chave": "novidade", "rotulo": "Marcar como novidade", "tipo": "check"},
+          {"chave": "esgotado", "rotulo": "Esgotado", "tipo": "check"}
+        ]}
+      ]
+    },
+    {
+      "id": "compra",
+      "titulo": "Como comprar",
+      "campos": [
+        {"chave": "compra_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Como comprar"},
+        {"chave": "passos", "rotulo": "Passos", "tipo": "lista", "item": "Passo", "campos": [
+          {"chave": "titulo", "rotulo": "Título", "tipo": "texto"},
+          {"chave": "texto", "rotulo": "Texto", "tipo": "texto"}
+        ]},
+        {"chave": "pagamento", "rotulo": "Formas de pagamento (uma por linha)", "tipo": "linhas", "ajuda": "Ex.: Pix / Cartão em até 3x"},
+        {"chave": "envio", "rotulo": "Como você entrega (uma por linha)", "tipo": "linhas", "ajuda": "Ex.: Correios para todo o Brasil / Retirada combinada"},
+        {"chave": "pedido_minimo", "rotulo": "Observação do pedido", "tipo": "texto", "ajuda": "Aparece na sacola. Ex.: Frete grátis acima de R$ 250"}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor de destaque (dourado)", "tipo": "cor", "padrao": "#8a6127"},
+        {"chave": "cores.botao", "rotulo": "Cor dos botões", "tipo": "cor", "padrao": "#5a2733"},
+        {"chave": "cores.tinta", "rotulo": "Cor escura (textos e rodapé)", "tipo": "cor", "padrao": "#2a1d1f"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#fbf7f2"}
+      ]
+    }
+  ]
+}

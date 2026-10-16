@@ -13,6 +13,8 @@ $ctaFinalMsg = $v('cta_final_msg') ?: null;
 $ocultar = $M['ocultar'] ?? [];
 if (in_array('sobre', $ocultar, true)) { $paragrafos = []; $difs = []; }
 if (in_array('depoimentos', $ocultar, true)) { $deps = []; }
+// 'fotos': as fotos continuam no compartilhamento (og:image), mas sem a galeria solta (ex.: loja, onde viram fotos dos produtos)
+$fotosGaleria = in_array('fotos', $ocultar, true) ? [] : $fotos;
 $linkWgl = $wglZap ? 'https://wa.me/' . $wglZap . '?text=' . rawurlencode('Olá! Vi o modelo "' . ($f['nome'] ?? '') . '" e quero um site assim.') : $wglSite;
 ?><!doctype html>
 <html lang="pt-BR">
@@ -84,12 +86,12 @@ $linkWgl = $wglZap ? 'https://wa.me/' . $wglZap . '?text=' . rawurlencode('Olá!
 </section>
 <?php endif; ?>
 
-<?php if ($fotos): ?>
+<?php if ($fotosGaleria): ?>
 <section class="secao secao-galeria" id="fotos" aria-labelledby="t-fotos">
   <div class="embrulho">
     <h2 id="t-fotos" class="titulo-secao"><?= e($v('fotos_titulo') ?: 'Fotos') ?></h2>
     <ul class="galeria">
-      <?php foreach ($fotos as $ft): ?><li><img src="fotos/<?= e($ft['arquivo']) ?>" alt="<?= e($ft['descricao'] ?? '') ?>" loading="lazy" width="800" height="600"></li><?php endforeach; ?>
+      <?php foreach ($fotosGaleria as $ft): ?><li><img src="fotos/<?= e($ft['arquivo']) ?>" alt="<?= e($ft['descricao'] ?? '') ?>" loading="lazy" width="800" height="600"></li><?php endforeach; ?>
     </ul>
   </div>
 </section>

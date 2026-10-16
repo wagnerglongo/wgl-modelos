@@ -1,0 +1,276 @@
+{
+  "modelo": "loja",
+  "slug": "demo-semijoias",
+  "dominio": "",
+  "nome": "Lírio Dourado Semijoias",
+  "nome_curto": "Lírio Dourado",
+  "tipo_schema": "JewelryStore",
+  "faixa_preco": "R$ 59 – R$ 189",
+  "documento": "",
+  "whatsapp": "5500000000000",
+  "telefone_exibicao": "(11) 0000-0000",
+  "instagram": "",
+  "email": "",
+  "mensagem_padrao": "Olá! Vim pelo site da Lírio Dourado e tenho uma dúvida.",
+  "cta_topo": "Falar com a loja",
+  "cta_final": "Falar pelo WhatsApp",
+  "cores": [],
+  "seo": {
+    "titulo": "Lírio Dourado Semijoias | Brincos, colares e anéis em São Paulo",
+    "descricao": "Semijoias com banho de ouro 18k e ródio: brincos, colares, anéis e pulseiras. Monte sua sacola no site e finalize o pedido pelo WhatsApp."
+  },
+  "hero": {
+    "rotulo": "Semijoias · São Paulo",
+    "titulo": "Peças para usar todo dia",
+    "titulo_destaque": "e brilhar no fim de semana.",
+    "subtitulo": "Brincos, colares, anéis e pulseiras com banho de ouro 18k e ródio. Escolha no site, monte a sacola e finalize o pedido pelo WhatsApp.",
+    "cta": "Ver a coleção"
+  },
+  "selos": [
+    "Banho de ouro 18k e ródio",
+    "Enviamos para todo o Brasil",
+    "Embalagem para presente"
+  ],
+  "colecao_titulo": "A coleção",
+  "colecao_intro": "Toque em Adicionar para montar a sacola. O pedido sai pronto no WhatsApp.",
+  "produtos": [
+    {
+      "nome": "Brinco gota cristal",
+      "categoria": "Brincos",
+      "detalhe": "Banho de ouro 18k · zircônia",
+      "preco": 89,
+      "preco_de": "",
+      "codigo": "LD-B01",
+      "foto": "",
+      "destaque": true,
+      "novidade": true,
+      "esgotado": false
+    },
+    {
+      "nome": "Colar ponto de luz",
+      "categoria": "Colares",
+      "detalhe": "Banho de ouro 18k · zircônia",
+      "preco": 119,
+      "preco_de": "",
+      "codigo": "LD-C01",
+      "foto": "",
+      "destaque": true,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Anel solitário",
+      "categoria": "Anéis",
+      "detalhe": "Banho de ouro 18k · zircônia",
+      "preco": 79,
+      "preco_de": "",
+      "codigo": "LD-A01",
+      "foto": "",
+      "destaque": true,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Argola média lisa",
+      "categoria": "Brincos",
+      "detalhe": "Banho de ouro 18k",
+      "preco": 69,
+      "preco_de": "",
+      "codigo": "LD-B02",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Choker elos",
+      "categoria": "Colares",
+      "detalhe": "Banho de ouro 18k",
+      "preco": 139,
+      "preco_de": 169,
+      "codigo": "LD-C02",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Pulseira riviera",
+      "categoria": "Pulseiras",
+      "detalhe": "Banho de ródio branco · zircônias",
+      "preco": 149,
+      "preco_de": "",
+      "codigo": "LD-P01",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Ear cuff folhas",
+      "categoria": "Brincos",
+      "detalhe": "Banho de ródio branco",
+      "preco": 59,
+      "preco_de": "",
+      "codigo": "LD-B03",
+      "foto": "",
+      "destaque": false,
+      "novidade": true,
+      "esgotado": false
+    },
+    {
+      "nome": "Colar medalha estrela",
+      "categoria": "Colares",
+      "detalhe": "Banho de ouro 18k",
+      "preco": 129,
+      "preco_de": "",
+      "codigo": "LD-C03",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Bracelete liso",
+      "categoria": "Pulseiras",
+      "detalhe": "Banho de ouro 18k",
+      "preco": 99,
+      "preco_de": "",
+      "codigo": "LD-P02",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Anel aparador trançado",
+      "categoria": "Anéis",
+      "detalhe": "Banho de ródio branco",
+      "preco": 59,
+      "preco_de": "",
+      "codigo": "LD-A02",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": true
+    },
+    {
+      "nome": "Brinco pérola",
+      "categoria": "Brincos",
+      "detalhe": "Banho de ouro 18k · pérola sintética",
+      "preco": 65,
+      "preco_de": "",
+      "codigo": "LD-B04",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    },
+    {
+      "nome": "Conjunto gota (colar e brinco)",
+      "categoria": "Conjuntos",
+      "detalhe": "Banho de ouro 18k · zircônia",
+      "preco": 189,
+      "preco_de": 208,
+      "codigo": "LD-K01",
+      "foto": "",
+      "destaque": false,
+      "novidade": false,
+      "esgotado": false
+    }
+  ],
+  "compra_titulo": "Como comprar",
+  "passos": [
+    {
+      "titulo": "Escolha as peças",
+      "texto": "Adicione à sacola o que gostar, na quantidade que quiser."
+    },
+    {
+      "titulo": "Envie pelo WhatsApp",
+      "texto": "A sacola monta a mensagem com as peças, os códigos e o total."
+    },
+    {
+      "titulo": "Combine pagamento e envio",
+      "texto": "A gente passa o frete e você paga por Pix ou cartão."
+    }
+  ],
+  "pagamento": [
+    "Pix",
+    "Cartão de crédito em até 3x",
+    "Dinheiro na retirada"
+  ],
+  "envio": [
+    "Correios para todo o Brasil",
+    "Motoboy em São Paulo",
+    "Retirada com hora marcada"
+  ],
+  "pedido_minimo": "Frete grátis para compras acima de R$ 250.",
+  "fotos_titulo": "",
+  "fotos": [],
+  "sobre": {
+    "titulo": "Sobre a Lírio Dourado",
+    "paragrafos": [
+      "Escolhemos cada peça pensando no uso de verdade: no trabalho, no dia a dia e nas ocasiões especiais.",
+      "Todas vêm com banho de ouro 18k ou ródio e chegam em embalagem pronta para presentear."
+    ]
+  },
+  "diferenciais_titulo": "",
+  "diferenciais": [],
+  "faq": [
+    {
+      "pergunta": "Como faço o pedido?",
+      "resposta": "Adicione as peças à sacola e toque em Enviar pedido pelo WhatsApp. A mensagem já vai com as peças e o total, e a gente responde com o frete."
+    },
+    {
+      "pergunta": "Quanto tempo dura o banho?",
+      "resposta": "Depende do cuidado. Evite perfume, cremes, água do mar e piscina, e guarde cada peça separada, longe da umidade."
+    },
+    {
+      "pergunta": "Posso trocar ou devolver?",
+      "resposta": "Pode. Em compras a distância você tem 7 dias após o recebimento para desistir, como garante o Código de Defesa do Consumidor."
+    },
+    {
+      "pergunta": "Vocês enviam para presente?",
+      "resposta": "Sim. Avise na observação do pedido e a peça vai em embalagem de presente, sem nota com valor."
+    }
+  ],
+  "depoimentos": [],
+  "link_avaliacoes": "",
+  "local_titulo": "Atendimento",
+  "endereco": {
+    "rua": "",
+    "bairro": "",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": ""
+  },
+  "mapa_embed": "",
+  "horarios": [
+    {
+      "dias": "Segunda a sexta",
+      "schema": [
+        "seg",
+        "ter",
+        "qua",
+        "qui",
+        "sex"
+      ],
+      "abre": "09:00",
+      "fecha": "18:00"
+    },
+    {
+      "dias": "Sábado",
+      "schema": [
+        "sab"
+      ],
+      "abre": "09:00",
+      "fecha": "13:00"
+    },
+    {
+      "dias": "Domingo",
+      "fechado": true
+    }
+  ],
+  "horario_obs": "Atendimento pelo WhatsApp. Retirada com hora marcada.",
+  "situacao": "demonstracao"
+}

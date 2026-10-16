@@ -62,6 +62,19 @@ function montar_jsonld(array $f, array $M, string $url): array
         $ofertas[] = $o;
     }
     if ($ofertas) $neg['hasOfferCatalog'] = ['@type' => 'OfferCatalog', 'name' => 'Serviços e preços', 'itemListElement' => $ofertas];
+    // modelo loja: produtos com preço e disponibilidade
+    $produtos = [];
+    foreach ($f['produtos'] ?? [] as $item) {
+        if (empty($item['nome'])) continue;
+        $o = ['@type' => 'Offer', 'itemOffered' => array_filter(['@type' => 'Product', 'name' => $item['nome'], 'category' => $item['categoria'] ?? '', 'sku' => $item['codigo'] ?? '']),
+              'availability' => !empty($item['esgotado']) ? 'https://schema.org/OutOfStock' : 'https://schema.org/InStock'];
+        if (isset($item['preco']) && is_numeric($item['preco'])) {
+            $o['price'] = number_format((float)$item['preco'], 2, '.', '');
+            $o['priceCurrency'] = 'BRL';
+        }
+        $produtos[] = $o;
+    }
+    if ($produtos && !$ofertas) $neg['hasOfferCatalog'] = ['@type' => 'OfferCatalog', 'name' => 'Produtos', 'itemListElement' => $produtos];
     $neg = array_filter($neg, fn($x) => $x !== null && $x !== '' && $x !== []);
 
     $faq = ['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => array_map(fn($q) => [
