@@ -75,6 +75,8 @@ function montar_jsonld(array $f, array $M, string $url): array
         $produtos[] = $o;
     }
     if ($produtos && !$ofertas) $neg['hasOfferCatalog'] = ['@type' => 'OfferCatalog', 'name' => 'Produtos', 'itemListElement' => $produtos];
+    // dados extras do nicho (ex.: especialidade médica)
+    if (!empty($M['schema_extra']) && is_array($M['schema_extra'])) $neg += $M['schema_extra'];
     $neg = array_filter($neg, fn($x) => $x !== null && $x !== '' && $x !== []);
 
     $faq = ['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => array_map(fn($q) => [

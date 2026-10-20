@@ -1,0 +1,131 @@
+{
+  "nome": "Pediatria",
+  "descricao": "Para pediatra com consultório e/ou teleconsulta: agendador na abertura (presencial ou online, idade da criança e motivo, e a mensagem sai pronta no WhatsApp), aviso de sinais de urgência, régua das consultas de rotina, temas de atendimento e apresentação com CRM e RQE. Segue as regras de publicidade médica do CFM: sem promessa de resultado e sem depoimentos.",
+  "nichos": "Pediatras, consultórios infantis e teleconsulta pediátrica",
+  "ordem": 6,
+  "ocultar_comuns": ["sobre", "depoimentos"],
+  "secoes": [
+    {
+      "id": "abertura",
+      "titulo": "Abertura do site",
+      "ajuda": "Pela Resolução CFM 2.336/2023, não use \"o melhor\", promessa de resultado nem garantia de cura.",
+      "campos": [
+        {"chave": "hero.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Serviço e cidade ajudam no Google. Ex.: Pediatra em Blumenau e online para todo o Brasil"},
+        {"chave": "hero.subtitulo", "rotulo": "Subtítulo", "tipo": "area", "ajuda": "Como é o atendimento. Ex.: Consultas sem pressa, do recém-nascido à adolescência."},
+        {"chave": "hero.fatos", "rotulo": "Informações rápidas (uma por linha)", "tipo": "linhas", "ajuda": "Até 3. Ex.: Consultas de 50 minutos / Retorno pelo WhatsApp em até 7 dias"},
+        {"chave": "hero.cta", "rotulo": "Texto do botão", "tipo": "texto", "ajuda": "Ex.: Agendar consulta"},
+        {"chave": "hero.cta_msg", "rotulo": "Mensagem do botão no WhatsApp", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "agendador",
+      "titulo": "Agendador da abertura",
+      "ajuda": "Aparece ao lado do título: a família escolhe presencial ou online, a idade e o motivo, e a mensagem sai pronta no WhatsApp. Nada é gravado no site.",
+      "campos": [
+        {"chave": "agendador.esconder", "rotulo": "Esconder o agendador", "tipo": "check"},
+        {"chave": "agendador.titulo", "rotulo": "Título", "tipo": "texto", "ajuda": "Ex.: Agende em três toques"},
+        {"chave": "agendador.texto", "rotulo": "Texto", "tipo": "texto"},
+        {"chave": "agendador.idades", "rotulo": "Faixas de idade (uma por linha)", "tipo": "linhas", "ajuda": "Vazio = Recém-nascido, 1 a 6 meses, 7 a 12 meses, 1 a 2 anos, 3 a 5 anos, 6 a 11 anos, 12 anos ou mais, Ainda vai nascer."},
+        {"chave": "agendador.motivos", "rotulo": "Motivos (um por linha)", "tipo": "linhas", "ajuda": "Vazio = Consulta de rotina, Primeira consulta, Está doente, Amamentação ou alimentação, Sono ou desenvolvimento, Retorno, Consulta pré-natal com a pediatra. Um motivo com a palavra \"doente\" destaca o aviso de urgência."},
+        {"chave": "agendador.alerta", "rotulo": "Aviso de urgência", "tipo": "area", "ajuda": "Sempre visível. Vazio = texto padrão com os sinais de alerta, pronto-socorro e 192."}
+      ]
+    },
+    {
+      "id": "atendimento",
+      "titulo": "Presencial e online",
+      "ajuda": "Se atender só de uma forma, marque para esconder a outra: o agendador deixa de perguntar.",
+      "campos": [
+        {"chave": "atendimento.titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Duas formas de atendimento"},
+        {"chave": "atendimento.presencial_esconder", "rotulo": "Não atende presencialmente", "tipo": "check"},
+        {"chave": "atendimento.presencial_onde", "rotulo": "Onde (aparece no agendador)", "tipo": "texto", "ajuda": "Vazio = cidade do endereço. Ex.: Consultório no Centro de Blumenau"},
+        {"chave": "atendimento.presencial_titulo", "rotulo": "Título do presencial", "tipo": "texto"},
+        {"chave": "atendimento.presencial_texto", "rotulo": "Texto do presencial", "tipo": "area"},
+        {"chave": "atendimento.presencial_itens", "rotulo": "Itens do presencial (um por linha)", "tipo": "linhas"},
+        {"chave": "atendimento.online_esconder", "rotulo": "Não atende online", "tipo": "check"},
+        {"chave": "atendimento.online_onde", "rotulo": "Onde (aparece no agendador)", "tipo": "texto", "ajuda": "Ex.: De qualquer lugar do Brasil"},
+        {"chave": "atendimento.online_titulo", "rotulo": "Título do online", "tipo": "texto"},
+        {"chave": "atendimento.online_texto", "rotulo": "Texto do online", "tipo": "area"},
+        {"chave": "atendimento.online_itens", "rotulo": "Itens do online (um por linha)", "tipo": "linhas", "ajuda": "Deixe claro que a teleconsulta não serve para emergências."}
+      ]
+    },
+    {
+      "id": "rotina",
+      "titulo": "Régua das consultas de rotina",
+      "ajuda": "Cada marco tem um link que abre o WhatsApp pedindo aquela consulta. O exemplo segue o calendário mínimo da Caderneta da Criança (Ministério da Saúde).",
+      "campos": [
+        {"chave": "rotina.titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Consultas de rotina"},
+        {"chave": "rotina.intro", "rotulo": "Texto ao lado do título", "tipo": "area"},
+        {"chave": "rotina.marcos", "rotulo": "Marcos", "tipo": "lista", "item": "Marco", "campos": [
+          {"chave": "idade", "rotulo": "Idade", "tipo": "texto", "ajuda": "Ex.: 6 meses"},
+          {"chave": "foco", "rotulo": "O que é visto nessa consulta", "tipo": "texto", "ajuda": "Ex.: Início da alimentação e vacinas dos 6 meses"}
+        ]},
+        {"chave": "rotina.nota", "rotulo": "Nota abaixo da régua", "tipo": "texto"}
+      ]
+    },
+    {
+      "id": "temas",
+      "titulo": "Do que cuida",
+      "campos": [
+        {"chave": "temas_titulo", "rotulo": "Título da seção", "tipo": "texto", "ajuda": "Ex.: Do que a gente cuida"},
+        {"chave": "temas_intro", "rotulo": "Texto ao lado do título", "tipo": "area"},
+        {"chave": "temas", "rotulo": "Temas", "tipo": "lista", "item": "Tema", "campos": [
+          {"chave": "nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Amamentação"},
+          {"chave": "texto", "rotulo": "Texto curto", "tipo": "texto"}
+        ]}
+      ]
+    },
+    {
+      "id": "pediatra",
+      "titulo": "A pediatra",
+      "ajuda": "Nome e CRM são obrigatórios na publicidade médica. Ao dizer \"pediatra\" como especialidade, mostre também o RQE.",
+      "campos": [
+        {"chave": "pediatra_titulo", "rotulo": "Chamada acima do nome", "tipo": "texto", "ajuda": "Ex.: Quem vai atender"},
+        {"chave": "pediatra.nome", "rotulo": "Nome", "tipo": "texto", "ajuda": "Ex.: Dra. Helena Vieira"},
+        {"chave": "pediatra.profissao", "rotulo": "Profissão", "tipo": "texto", "ajuda": "Vazio = Médica pediatra. Ex.: Médico pediatra"},
+        {"chave": "pediatra.crm", "rotulo": "CRM", "tipo": "texto", "ajuda": "Ex.: CRM-SC 12345"},
+        {"chave": "pediatra.rqe", "rotulo": "RQE", "tipo": "texto", "ajuda": "Ex.: RQE 6789"},
+        {"chave": "pediatra.bio", "rotulo": "Apresentação (deixe uma linha em branco entre parágrafos)", "tipo": "paragrafos"},
+        {"chave": "pediatra.formacao", "rotulo": "Formação (uma por linha)", "tipo": "linhas", "ajuda": "Só títulos que possam ser comprovados."},
+        {"chave": "pediatra.foto", "rotulo": "Foto (nome do arquivo enviado em Fotos)", "tipo": "texto", "ajuda": "Sem foto, aparecem as iniciais."}
+      ]
+    },
+    {
+      "id": "convenios",
+      "titulo": "Convênios e reembolso",
+      "campos": [
+        {"chave": "convenios_titulo", "rotulo": "Título da seção", "tipo": "texto"},
+        {"chave": "convenios", "rotulo": "Convênios aceitos (um por linha)", "tipo": "linhas"},
+        {"chave": "convenios_nota", "rotulo": "Nota", "tipo": "texto", "ajuda": "Ex.: Atendimento particular, com recibo para pedir reembolso ao seu plano."}
+      ]
+    },
+    {
+      "id": "registro",
+      "titulo": "Clínica (rodapé)",
+      "ajuda": "Só para clínica (pessoa jurídica): diretor técnico e inscrição no CRM. O nome, o CRM e o RQE da pediatra já aparecem no rodapé.",
+      "campos": [
+        {"chave": "clinica.responsavel", "rotulo": "Diretor(a) técnico(a)", "tipo": "texto", "ajuda": "Ex.: Dra. Helena Vieira, CRM-SC 12345, RQE 6789"},
+        {"chave": "clinica.registro", "rotulo": "Inscrição da clínica", "tipo": "texto", "ajuda": "Ex.: Clínica inscrita no CRM-SC sob o nº 1234"}
+      ]
+    },
+    {
+      "id": "medicao",
+      "titulo": "Medição de cliques (Google)",
+      "campos": [
+        {"chave": "gtm_id", "rotulo": "ID do Google Tag Manager", "tipo": "texto", "ajuda": "Ex.: GTM-ABC1234. Só carrega depois que o visitante aceita os cookies. Evento enviado: clique_whatsapp (sem a idade nem o motivo, que são dados de saúde)."}
+      ]
+    },
+    {
+      "id": "cores",
+      "titulo": "Cores",
+      "ajuda": "Deixe em branco para usar as cores do modelo.",
+      "campos": [
+        {"chave": "cores.destaque", "rotulo": "Cor principal (botões)", "tipo": "cor", "padrao": "#b4472d"},
+        {"chave": "cores.suave", "rotulo": "Cor clara 1 (consultório e régua)", "tipo": "cor", "padrao": "#f4dccb"},
+        {"chave": "cores.verde", "rotulo": "Cor clara 2 (online e escolhas)", "tipo": "cor", "padrao": "#d8e8df"},
+        {"chave": "cores.escuro", "rotulo": "Cor escura (rodapé)", "tipo": "cor", "padrao": "#1f3a3d"},
+        {"chave": "cores.tinta", "rotulo": "Cor dos textos", "tipo": "cor", "padrao": "#1f3a3d"},
+        {"chave": "cores.fundo", "rotulo": "Fundo", "tipo": "cor", "padrao": "#fbf5ec"}
+      ]
+    }
+  ]
+}

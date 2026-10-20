@@ -43,6 +43,13 @@ a{color:#0b5cad}
 <li>Emitir nota fiscal ou recibo e cumprir obrigações legais.</li>
 </ul>
 <p>O que você conta sobre a sua saúde é dado sensível pela LGPD e fica protegido pelo sigilo profissional. O seletor "onde está incomodando" só monta a mensagem no seu aparelho: o dente e o motivo que você escolhe não ficam gravados no site e só chegam à clínica se você enviar a mensagem.</p>
+<?php elseif (($M['tipo_schema'] ?? '') === 'Physician'): ?>
+<ul>
+<li>Responder o seu contato e agendar a consulta, presencial ou online.</li>
+<li>Registrar o atendimento no prontuário médico, como exigem as normas do Conselho Federal de Medicina.</li>
+<li>Emitir nota fiscal ou recibo e cumprir obrigações legais.</li>
+</ul>
+<p>O que você conta sobre a saúde da criança é dado sensível pela LGPD e fica protegido pelo sigilo médico. O agendador do site só monta a mensagem no seu aparelho: a idade e o motivo que você escolhe não ficam gravados no site e só chegam ao consultório se você enviar a mensagem.</p>
 <?php else: ?>
 <ul>
 <li>Responder o seu contato, fazer orçamento, agendar ou combinar pedidos e entregas.</li>
@@ -52,7 +59,7 @@ a{color:#0b5cad}
 <p>Não vendemos nem repassamos os seus dados para terceiros com fins de publicidade.</p>
 
 <h2>Por quanto tempo guardamos</h2>
-<p>Guardamos as conversas enquanto forem necessárias para o atendimento e pelo prazo exigido por lei para documentos fiscais<?= ($M['tipo_schema'] ?? '') === 'Dentist' ? ' e para o prontuário' : '' ?>.</p>
+<p>Guardamos as conversas enquanto forem necessárias para o atendimento e pelo prazo exigido por lei para documentos fiscais<?= in_array($M['tipo_schema'] ?? '', ['Dentist', 'Physician'], true) ? ' e para o prontuário' : '' ?>.</p>
 
 <h2>Cookies e estatísticas</h2>
 <?php if (preg_match('/^GTM-[A-Z0-9]{4,12}$/i', trim((string)$v('gtm_id')))): ?>

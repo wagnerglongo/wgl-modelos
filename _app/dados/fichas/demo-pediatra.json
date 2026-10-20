@@ -1,0 +1,240 @@
+{
+    "modelo": "pediatria",
+    "slug": "demo-pediatra",
+    "situacao": "demonstracao",
+    "nome": "Dra. Helena Vieira · Pediatria",
+    "nome_curto": "Dra. Helena Vieira",
+    "faixa_preco": "",
+    "documento": "",
+    "dominio": "",
+    "whatsapp": "5500000000000",
+    "telefone_exibicao": "(47) 0000-0000",
+    "instagram": "",
+    "email": "",
+    "mensagem_padrao": "Olá! Vim pelo site da Dra. Helena Vieira e gostaria de agendar uma consulta.",
+    "cta_topo": "Agendar",
+    "cta_final": "Agendar pelo WhatsApp",
+    "seo": {
+        "titulo": "Dra. Helena Vieira | Pediatra em Blumenau e online",
+        "descricao": "Pediatra em Blumenau, SC, com teleconsulta para todo o Brasil. Recém-nascido, puericultura, amamentação, alimentação e adolescência. Agende pelo WhatsApp."
+    },
+    "hero": {
+        "titulo": "Pediatra em Blumenau e online para todo o Brasil",
+        "subtitulo": "Consultas sem pressa, do recém-nascido à adolescência, com orientação por escrito ao final e retorno combinado com a família.",
+        "fatos": [
+            "Consultas de 50 minutos",
+            "Teleconsulta por vídeo em qualquer estado",
+            "Orientações enviadas por escrito depois da consulta"
+        ],
+        "cta": "Agendar consulta",
+        "cta_msg": "Olá! Vim pelo site e gostaria de agendar uma consulta."
+    },
+    "agendador": {
+        "esconder": false,
+        "titulo": "Agende em três toques",
+        "texto": "Escolha como prefere ser atendido, a idade da criança e o motivo. A mensagem chega pronta no WhatsApp.",
+        "idades": [],
+        "motivos": [],
+        "alerta": ""
+    },
+    "atendimento": {
+        "titulo": "Duas formas de atendimento",
+        "presencial_esconder": false,
+        "presencial_onde": "Consultório no Centro de Blumenau",
+        "presencial_titulo": "No consultório, em Blumenau",
+        "presencial_texto": "Para a primeira consulta, as consultas de rotina e sempre que a criança precisa ser examinada.",
+        "presencial_itens": [
+            "Exame físico completo, peso, altura e perímetro cefálico",
+            "Sala de espera separada para bebês pequenos",
+            "Trocador e espaço para amamentar"
+        ],
+        "online_esconder": false,
+        "online_onde": "De qualquer lugar do Brasil",
+        "online_titulo": "Teleconsulta, de onde você estiver",
+        "online_texto": "Por videochamada, no celular ou no computador, para famílias de qualquer cidade.",
+        "online_itens": [
+            "Amamentação, introdução alimentar, sono e desenvolvimento",
+            "Retornos e acompanhamento de quem já é paciente",
+            "Receitas, pedidos de exame e atestados com assinatura digital",
+            "Não serve para emergências: nesses casos, procure o pronto-socorro"
+        ]
+    },
+    "rotina": {
+        "titulo": "Consultas de rotina",
+        "intro": "Mesmo com a criança bem, cada fase tem a sua consulta: é nela que se acompanham o crescimento, o desenvolvimento e as vacinas. Toque na idade para agendar.",
+        "marcos": [
+            {
+                "idade": "1ª semana",
+                "foco": "Peso, amamentação, icterícia e os testes do recém-nascido"
+            },
+            {
+                "idade": "1 mês",
+                "foco": "Ganho de peso, sono e rotina das mamadas"
+            },
+            {
+                "idade": "2 meses",
+                "foco": "Vacinas dos 2 meses e primeiros sorrisos"
+            },
+            {
+                "idade": "4 meses",
+                "foco": "Vacinas dos 4 meses e firmeza do pescoço"
+            },
+            {
+                "idade": "6 meses",
+                "foco": "Início da alimentação e vacinas dos 6 meses"
+            },
+            {
+                "idade": "9 meses",
+                "foco": "Sentar sem apoio e segurança dentro de casa"
+            },
+            {
+                "idade": "12 meses",
+                "foco": "Primeiros passos, primeiras palavras e vacinas de 1 ano"
+            },
+            {
+                "idade": "18 meses",
+                "foco": "Fala, comportamento e reforços de vacina"
+            },
+            {
+                "idade": "2 anos",
+                "foco": "Desenvolvimento, sono e desfralde"
+            },
+            {
+                "idade": "Depois, 1 vez por ano",
+                "foco": "Crescimento, visão, escola e adolescência"
+            }
+        ],
+        "nota": "Calendário mínimo da Caderneta da Criança, do Ministério da Saúde. Dependendo da criança, a pediatra pode indicar consultas a mais."
+    },
+    "temas_titulo": "Do que a gente cuida",
+    "temas_intro": "O acompanhamento de rotina e também as dúvidas do dia a dia, que costumam ser as que mais tiram o sono da família.",
+    "temas": [
+        {
+            "nome": "Recém-nascido",
+            "texto": "Primeiras semanas, umbigo, icterícia e os testes da maternidade."
+        },
+        {
+            "nome": "Amamentação",
+            "texto": "Pega, dor ao amamentar, ganho de peso e volta ao trabalho."
+        },
+        {
+            "nome": "Alimentação",
+            "texto": "Introdução alimentar, seletividade e alergias alimentares."
+        },
+        {
+            "nome": "Sono",
+            "texto": "Rotina, despertares noturnos e mudanças de fase."
+        },
+        {
+            "nome": "Desenvolvimento",
+            "texto": "Marcos motores, fala, comportamento e escola."
+        },
+        {
+            "nome": "Doenças comuns",
+            "texto": "Febre, viroses, otites, alergias e problemas de pele."
+        },
+        {
+            "nome": "Vacinas",
+            "texto": "Calendário em dia, atrasos e vacinas da rede particular."
+        },
+        {
+            "nome": "Adolescência",
+            "texto": "Crescimento, puberdade, hábitos e conversa sem os pais, quando for o caso."
+        }
+    ],
+    "pediatra_titulo": "Quem vai atender",
+    "pediatra": {
+        "nome": "Dra. Helena Vieira",
+        "profissao": "Médica pediatra",
+        "crm": "CRM-SC 000000",
+        "rqe": "RQE 00000",
+        "bio": [
+            "Atendo crianças e adolescentes há mais de dez anos, no consultório em Blumenau e por teleconsulta para famílias de todo o Brasil.",
+            "Gosto de consulta com tempo: para examinar com calma, ouvir as dúvidas que a família trouxe anotadas e sair com um plano que caiba na rotina da casa."
+        ],
+        "formacao": [
+            "Medicina pela Universidade Federal de Santa Catarina",
+            "Residência em Pediatria",
+            "Título de especialista em Pediatria (RQE 00000)"
+        ],
+        "foto": ""
+    },
+    "convenios_titulo": "Convênios e reembolso",
+    "convenios": [],
+    "convenios_nota": "Atendimento particular, com recibo para você pedir reembolso ao seu plano de saúde. Pergunte pelo WhatsApp como funciona.",
+    "clinica": {
+        "responsavel": "",
+        "registro": ""
+    },
+    "gtm_id": "",
+    "cores": {},
+    "diferenciais": [],
+    "sobre": {
+        "titulo": "",
+        "paragrafos": []
+    },
+    "faq": [
+        {
+            "pergunta": "A teleconsulta vale como consulta de verdade?",
+            "resposta": "Sim. A teleconsulta é regulamentada pelo Conselho Federal de Medicina, fica registrada em prontuário e pode gerar receitas, pedidos de exame e atestados com assinatura digital. Quando a criança precisa ser examinada, a pediatra indica a consulta presencial."
+        },
+        {
+            "pergunta": "Moro em outro estado. Posso fazer a consulta online?",
+            "resposta": "Pode. A teleconsulta atende famílias de qualquer cidade do Brasil, com horário marcado pelo WhatsApp."
+        },
+        {
+            "pergunta": "Quando fazer a primeira consulta do bebê?",
+            "resposta": "Na primeira semana de vida, poucos dias depois da alta da maternidade."
+        },
+        {
+            "pergunta": "Atende criança doente no mesmo dia?",
+            "resposta": "Quando há horário, sim. Chame no WhatsApp contando os sintomas. Em sinais de urgência, como dificuldade para respirar ou convulsão, vá direto ao pronto-socorro."
+        },
+        {
+            "pergunta": "Posso fazer uma consulta antes do bebê nascer?",
+            "resposta": "Pode. A consulta pré-natal com a pediatra serve para tirar dúvidas sobre os primeiros dias, amamentação e cuidados em casa."
+        }
+    ],
+    "fotos_titulo": "O consultório",
+    "fotos": [],
+    "depoimentos": [],
+    "local_titulo": "Contato e endereço",
+    "endereco": {
+        "rua": "Rua das Palmeiras, 210, sala 504",
+        "bairro": "Centro",
+        "cidade": "Blumenau",
+        "uf": "SC",
+        "cep": ""
+    },
+    "mapa_embed": "",
+    "horarios": [
+        {
+            "dias": "Segunda a sexta",
+            "schema": [
+                "seg",
+                "ter",
+                "qua",
+                "qui",
+                "sex"
+            ],
+            "abre": "08:00",
+            "fecha": "18:00"
+        },
+        {
+            "dias": "Sábado",
+            "schema": [
+                "sab"
+            ],
+            "abre": "08:00",
+            "fecha": "12:00"
+        },
+        {
+            "dias": "Domingo",
+            "fechado": true
+        }
+    ],
+    "horario_obs": "Teleconsultas também no início da noite, com hora marcada.",
+    "criado_em": "2026-10-20T09:30:00-03:00",
+    "previa_desde": "2026-10-20T09:30:00-03:00",
+    "atualizado_em": "2026-10-20T09:30:00-03:00"
+}
